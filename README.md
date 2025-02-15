@@ -1,2 +1,3 @@
 # 8051-Pipeline
-Complete implementation of an 8051-like microcontroller with pipelined instructions. Done by the students of the Master's degree in Computers and Industrial Electronics Engineering in the field of Embedded Systems.
+Complete implementation of the 8051 ISA with pipelined instructions, deplyable on an FPGA board (Zilinx Zybo Z7-10). Developed using Verilog HDL and Vivado. 
+Done by the students of the Master's degree in Computers and Industrial Electronics Engineering in the field of Embedded Systems.
