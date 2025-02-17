@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pipelinedV1.srcs/sources_1/new/8051CPU.v" \
+"../../../../pipelinedV1.srcs/sources_1/new/Fetch.v" \
+"../../../../pipelinedV1.srcs/sources_1/new/ROM.v" \
+"../../../../pipelinedV1.srcs/sources_1/new/decode.v" \
+"../../../../pipelinedV1.srcs/sources_1/new/fsm.v" \
+"../../../../pipelinedV1.srcs/sources_1/new/program_counter.v" \
+"../../../../pipelinedV1.srcs/sim_1/new/8051CPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
