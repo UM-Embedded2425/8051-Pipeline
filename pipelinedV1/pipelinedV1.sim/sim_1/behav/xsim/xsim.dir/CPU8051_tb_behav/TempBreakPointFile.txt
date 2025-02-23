@@ -1,2 +1,1 @@
 Breakpoint File Version 1.0
-23,true,"/home/luis/8051_microprocessor_pipelined/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v"

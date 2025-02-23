@@ -1,3 +1,4 @@
 Time resolution is 1 ps
 Time = 0 | reset = 1 | ACC = 0
-Stopped at time : 15 ns : File "/home/luis/8051_microprocessor_pipelined/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v" Line 23
+Time = 15000 | reset = 0 | ACC = 0
+$finish called at time : 515 ns : File "/home/telmo/Desktop/Vivado/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sim_1/new/8051CPU_tb.v" Line 28
