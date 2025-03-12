@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="diogo" Host="diogo-OMEN-by-HP-Laptop" Pid="7807" HostCore="12" HostMemory="16177464">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="diogo" Host="diogo-OMEN-by-HP-Laptop" Pid="18303" HostCore="12" HostMemory="16177464">
+    </Process>
+</ProcessHandle>
