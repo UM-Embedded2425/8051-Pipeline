@@ -1,0 +1,14 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1741737258,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,blk_mem_gen_0,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1740412252,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/PLLtest.v,,clk_wiz_0,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1740412252,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sim_1/new/top_tb.v,1741606637,verilog,,,,top_tb,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/PLLtest.v,1740698008,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/horizontal_counter.v,,PLLtest,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/horizontal_counter.v,1741535886,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/image.v,,horizontal_counter,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/image.v,1741607152,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/top.v,,image,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/top.v,1741619796,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/vertical_counter.v,,top,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,
+/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sources_1/new/vertical_counter.v,1741535894,verilog,,/home/diogo/VGAmicrocontroller8051/PLLtest/PLLtest.srcs/sim_1/new/top_tb.v,,vertical_counter,,,../../../../PLLtest.ip_user_files/ipstatic,,,,,

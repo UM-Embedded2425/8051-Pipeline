@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PLLtest.ip_user_files/ipstatic" \
+"../../../../PLLtest.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../PLLtest.srcs/sources_1/new/PLLtest.v" \
+"../../../../PLLtest.srcs/sources_1/new/horizontal_counter.v" \
+"../../../../PLLtest.srcs/sources_1/new/image.v" \
+"../../../../PLLtest.srcs/sources_1/new/top.v" \
+"../../../../PLLtest.srcs/sources_1/new/vertical_counter.v" \
+"../../../../PLLtest.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
