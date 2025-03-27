@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 25 02:02:45 2025
+# Process ID         : 54994
+# Current directory  : /home/diana/Documents/git/git2/8051-Pipeline/VGAmicrocontroller8051/VGA/PLLtest.runs/clk_wiz_0_synth_1
+# Command line       : vivado -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
+# Log file           : /home/diana/Documents/git/git2/8051-Pipeline/VGAmicrocontroller8051/VGA/PLLtest.runs/clk_wiz_0_synth_1/clk_wiz_0.vds
+# Journal file       : /home/diana/Documents/git/git2/8051-Pipeline/VGAmicrocontroller8051/VGA/PLLtest.runs/clk_wiz_0_synth_1/vivado.jou
+# Running On         : diana
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 3922.710 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16649 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20944 MB
+# Available Virtual  : 15848 MB
+#-----------------------------------------------------------
+source clk_wiz_0.tcl -notrace

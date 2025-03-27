@@ -1,0 +1,123 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "PLLtest")
+(DATE "Wed Feb 26 22:40:25 2025")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2024.1")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE clk_vga_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3327.9:3530.1:3530.1) (3327.9:3530.1:3530.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE locked_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3306.9:3508.9:3508.9) (3306.9:3508.9:3508.9))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE pll_inst/inst/clkf_buf)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:101.0:101.0) (91.0:101.0:101.0))
+    )
+  )
+    (TIMINGCHECK
+      (PERIOD (posedge I) (2155.2:2155.2:2155.2))
+      (PERIOD (negedge I) (2155.2:2155.2:2155.2))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE pll_inst/inst/clkin1_ibufg)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1421.1:1491.8:1491.8) (1421.1:1491.8:1491.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE pll_inst/inst/clkout1_buf)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:101.0:101.0) (91.0:101.0:101.0))
+    )
+  )
+    (TIMINGCHECK
+      (PERIOD (posedge I) (2155.2:2155.2:2155.2))
+      (PERIOD (negedge I) (2155.2:2155.2:2155.2))
+    )
+)
+(CELL 
+  (CELLTYPE "PLLE2_ADV")
+  (INSTANCE pll_inst/inst/plle2_adv_inst)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge RST) LOCKED (3000.0:3000.0:3000.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge DEN) (posedge DCLK) (2156.0:2290.0:2290.0) (0.0:0.0:0.0))
+      (SETUPHOLD (negedge DEN) (posedge DCLK) (2156.0:2290.0:2290.0) (0.0:0.0:0.0))
+      (SETUPHOLD (posedge DWE) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DWE) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+      (PERIOD (posedge CLKFBOUT) (1249.0:1249.0:1249.0))
+      (PERIOD (negedge CLKFBOUT) (1249.0:1249.0:1249.0))
+      (PERIOD (posedge CLKOUT0) (1249.0:1249.0:1249.0))
+      (PERIOD (negedge CLKOUT0) (1249.0:1249.0:1249.0))
+      (PERIOD (posedge CLKFBIN) (1249.0:1249.0:1249.0))
+      (PERIOD (negedge CLKFBIN) (1249.0:1249.0:1249.0))
+      (PERIOD (posedge CLKIN1) (1249.0:1249.0:1249.0))
+      (PERIOD (negedge CLKIN1) (1249.0:1249.0:1249.0))
+      (WIDTH (negedge CLKIN1) (2000.0:2000.0:2000.0))
+      (WIDTH (posedge CLKIN1) (2000.0:2000.0:2000.0))
+      (WIDTH (posedge RST) (5000.0:5000.0:5000.0))
+      (SETUPHOLD (posedge DI[15:0]) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DI[15:0]) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+      (SETUPHOLD (posedge DADDR[6:0]) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+      (SETUPHOLD (negedge DADDR[6:0]) (posedge DCLK) (1527.0:1622.0:1622.0) (150.0:150.0:150.0))
+    )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE rst_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1495.5:1567.0:1567.0) (1495.5:1567.0:1567.0))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "PLLtest")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT pll_inst/inst/clkf_buf/O pll_inst/inst/plle2_adv_inst/CLKFBIN (1495.7:1688.0:1688.0) (1495.7:1688.0:1688.0))
+      (INTERCONNECT pll_inst/inst/clkin1_ibufg/O pll_inst/inst/plle2_adv_inst/CLKIN1 (1180.9:1306.0:1306.0) (1180.9:1306.0:1306.0))
+      (INTERCONNECT pll_inst/inst/clkout1_buf/O clk_vga_OBUF_inst/I (2679.5:3043.8:3043.8) (2679.5:3043.8:3043.8))
+      (INTERCONNECT pll_inst/inst/plle2_adv_inst/CLKFBOUT pll_inst/inst/clkf_buf/I (1594.1:1754.0:1754.0) (1594.1:1754.0:1754.0))
+      (INTERCONNECT pll_inst/inst/plle2_adv_inst/CLKOUT0 pll_inst/inst/clkout1_buf/I (1594.1:1754.0:1754.0) (1594.1:1754.0:1754.0))
+      (INTERCONNECT pll_inst/inst/plle2_adv_inst/LOCKED locked_OBUF_inst/I (1697.7:1986.7:1986.7) (1697.7:1986.7:1986.7))
+      (INTERCONNECT rst_IBUF_inst/O pll_inst/inst/plle2_adv_inst/RST (1881.7:2236.7:2236.7) (1881.7:2236.7:2236.7))
+      )
+    )
+)
+)

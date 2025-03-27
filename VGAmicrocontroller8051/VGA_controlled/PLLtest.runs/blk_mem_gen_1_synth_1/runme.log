@@ -1,0 +1,24 @@
+
+*** Running vivado
+    with args -log blk_mem_gen_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Mar 27 17:43:03 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source blk_mem_gen_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1513.902 ; gain = 73.840 ; free physical = 5800 ; free virtual = 15140
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: blk_mem_gen_1
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry d46aca55561b74ab to dir: /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.cache/ip/2024.2/d/4/d46aca55561b74ab/blk_mem_gen_1_sim_netlist.vhdl to /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.cache/ip/2024.2/d/4/d46aca55561b74ab/blk_mem_gen_1_stub.v to /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.cache/ip/2024.2/d/4/d46aca55561b74ab/blk_mem_gen_1.dcp to /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.cache/ip/2024.2/d/4/d46aca55561b74ab/blk_mem_gen_1_sim_netlist.v to /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.cache/ip/2024.2/d/4/d46aca55561b74ab/blk_mem_gen_1_stub.vhdl to /home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_1, cache-ID = d46aca55561b74ab.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 17:43:18 2025...

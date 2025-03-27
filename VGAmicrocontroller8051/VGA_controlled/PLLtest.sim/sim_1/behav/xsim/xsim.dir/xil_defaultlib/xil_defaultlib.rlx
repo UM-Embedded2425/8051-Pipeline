@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:55
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1742868685,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,,blk_mem_gen_0,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.gen/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1743096855,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,,blk_mem_gen_1,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,1742868234,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/PLLtest.v,,clk_wiz_0;clk_wiz_0_clk_wiz;glbl,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sim_1/new/top_tb.v,1743092952,verilog,,,,top_tb,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/PLLtest.v,1743087247,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/horizontal_counter.v,,PLLtest,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/horizontal_counter.v,1743004331,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/image.v,,horizontal_counter,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/image.v,1743089758,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/send_info.v,,image,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/send_info.v,1743097271,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/top.v,,send_info,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/top.v,1743093378,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/vertical_counter.v,,top,,,,,,,,
+/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sources_1/new/vertical_counter.v,1742825726,verilog,,/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sim_1/new/top_tb.v,,vertical_counter,,,,,,,,

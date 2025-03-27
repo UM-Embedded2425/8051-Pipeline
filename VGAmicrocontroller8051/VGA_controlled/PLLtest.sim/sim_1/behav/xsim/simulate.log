@@ -1,0 +1,9 @@
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_tb.uut.rom_mem.inst.native_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module top_tb.uut.mem.inst.native_mem_module.blk_mem_gen_v8_4_9_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Stopped at time : 100100 ns : File "/home/diana/Documents/git/VGAmicrocontroller8051/VGA/PLLtest.srcs/sim_1/new/top_tb.v" Line 29
+INFO: xsimkernel Simulation Memory Usage: 277072 KB (Peak: 321096 KB), Simulation CPU Usage: 21390 ms

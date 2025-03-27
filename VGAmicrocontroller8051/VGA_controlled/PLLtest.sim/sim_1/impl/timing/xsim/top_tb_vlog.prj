@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../PLLtest.ip_user_files/ipstatic" \
+"top_tb_time_impl.v" \
+"../../../../../PLLtest.srcs/sim_1/new/top_tb.v" \
+
+# Do not sort compile order
+nosort
