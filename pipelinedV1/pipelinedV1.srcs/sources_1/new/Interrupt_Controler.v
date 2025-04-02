@@ -41,13 +41,13 @@ module Interrupt_Controler(
             pending = 5'h00;
         // Interrupt detection & Enable logic
         end else if (IE[7]) begin
-            if (en0 & IE[0]) pending[0] = 1'b1;
-            if (en1 & IE[1]) pending[1] = 1'b1;
-            if (en2 & IE[2]) pending[2] = 1'b1;
-            if (en3 & IE[3]) pending[3] = 1'b1;
-            if (en4 & IE[4]) pending[4] = 1'b1;  
+            pending[0] = (en0 & IE[0]);
+            pending[1] = (en1 & IE[1]);
+            pending[2] = (en2 & IE[2]);
+            pending[3] = (en3 & IE[3]);
+            pending[4] = (en4 & IE[4]);
             // Clear finished interrupt 
-            if (done) pending[active_int] = 1'b0;
+            pending[active_int] = !done;
         end
         
         // Priority encoder
