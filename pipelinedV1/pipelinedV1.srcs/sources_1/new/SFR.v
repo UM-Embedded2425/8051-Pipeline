@@ -1,4 +1,4 @@
-reg SFR [128:0] bits[7:0]
+//`define [7:0] SFR [128:0]
 
 //ACC
 `define SFR['hE0] ACC
