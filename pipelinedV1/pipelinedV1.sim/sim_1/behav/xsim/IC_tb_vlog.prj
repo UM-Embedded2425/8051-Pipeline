@@ -1,6 +1,5 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../pipelinedV1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 "../../../../pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v" \
 "../../../../pipelinedV1.srcs/sim_1/new/IC_tb.v" \
 

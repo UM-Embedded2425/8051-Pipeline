@@ -6,7 +6,7 @@ module IC_tb();
     reg [7:0] data;
     wire [7:0] IE_out, IP_out;
     wire [15:0] it_addr;
-    
+  
     Interrupt_Controler ic_inst(
         .clk(clk),
         .rst(rst),
@@ -23,12 +23,12 @@ module IC_tb();
         .jmp_addr(it_addr),
         .IE_out(IE_out),
         .IP_out(IP_out)
-       );
+        );
     
     initial begin
         clk <= 1'b1;
         rst <= 1'b1;
-        data <= 8'b10000010;
+        data <= 8'b10001010;
         IE_Load <= 1'b0;
         IP_Load <= 1'b0;
         en0 <= 1'b0;
@@ -47,23 +47,27 @@ module IC_tb();
         #10
         IE_Load <= 1'b0;
         
-        #2
+        #5
         en1 <= 1'b1;
         en3 <= 1'b1;
         
-        #2
+        #5
         en1 <= 1'b0;
-        
-        #16
         en3 <= 1'b0;
                 
-        #100
+        #15
         done <= 1'b1;
         
         #10 
         done <= 1'b0;
         
-        #1000
+        #15
+        done <= 1'b1;
+        
+        #10 
+        done <= 1'b0;
+        
+        #10
         $finish;
         
     end
