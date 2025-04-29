@@ -47,6 +47,14 @@ module IC_tb();
         #10
         IE_Load <= 1'b0;
         
+        data <= 8'b00001000;
+        
+        #10
+        IP_Load <= 1'b1;
+        
+        #10
+        IP_Load <= 1'b0;
+        
         #5
         en1 <= 1'b1;
         en3 <= 1'b1;
@@ -55,18 +63,18 @@ module IC_tb();
         en1 <= 1'b0;
         en3 <= 1'b0;
                 
-        #15
+        #20
         done <= 1'b1;
         
-        #10 
+        #10
         done <= 1'b0;
         
-        #15
+        #20
         done <= 1'b1;
         
-        #10 
+        #10
         done <= 1'b0;
-        
+                
         #10
         $finish;
         

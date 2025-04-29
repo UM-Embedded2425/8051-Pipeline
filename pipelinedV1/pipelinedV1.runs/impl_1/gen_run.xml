@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1745419220">
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="CPU8051_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="CPU8051_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="CPU8051.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="CPU8051.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="CPU8051.ltx"/>
+  <File Type="RBD_FILE" Name="CPU8051.rbd"/>
+  <File Type="NPI_FILE" Name="CPU8051.npi"/>
+  <File Type="RNPI_FILE" Name="CPU8051.rnpi"/>
+  <File Type="CFI_FILE" Name="CPU8051.cfi"/>
+  <File Type="RCFI_FILE" Name="CPU8051.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="CPU8051_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="CPU8051_boot.pdi"/>
+  <File Type="RDI-RDI" Name="CPU8051.vdi"/>
+  <File Type="PDI-FILE" Name="CPU8051.pdi"/>
+  <File Type="BITSTR-MMI" Name="CPU8051.mmi"/>
+  <File Type="BITSTR-BMM" Name="CPU8051_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="CPU8051.nky"/>
+  <File Type="BITSTR-RBT" Name="CPU8051.rbt"/>
+  <File Type="BITSTR-MSK" Name="CPU8051.msk"/>
+  <File Type="BG-BIN" Name="CPU8051.bin"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIT" Name="CPU8051.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="CPU8051_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="CPU8051_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="CPU8051_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="CPU8051_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="CPU8051_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="CPU8051_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="CPU8051_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="CPU8051_postroute_physopt.dcp"/>
+  <File Type="BG-DRC" Name="CPU8051.drc"/>
+  <File Type="ROUTE-RQS-PB" Name="CPU8051_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="CPU8051_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="CPU8051_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="CPU8051_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="CPU8051_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="CPU8051_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="CPU8051_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="CPU8051_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="CPU8051_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="CPU8051_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="CPU8051_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="CPU8051_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="CPU8051_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="CPU8051_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="CPU8051_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="CPU8051_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="CPU8051_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="CPU8051_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="CPU8051_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="CPU8051_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="CPU8051_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="CPU8051_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="CPU8051_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="CPU8051_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="CPU8051_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="CPU8051_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="CPU8051_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="CPU8051_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="CPU8051_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="CPU8051_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="CPU8051_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="CPU8051_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="CPU8051_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="CPU8051_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="CPU8051_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="CPU8051_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="CPU8051_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="CPU8051_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="CPU8051_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="CPU8051_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="CPU8051_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="CPU8051_rqa_opted.pb"/>
+  <File Type="OPT-HWDEF" Name="CPU8051.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="CPU8051_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="CPU8051_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="CPU8051_opt.dcp"/>
+  <File Type="OPT-TIMING" Name="CPU8051_timing_summary_opted.rpt"/>
+  <File Type="REPORTS-TCL" Name="CPU8051_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="CPU8051_timing_summary_init.rpt"/>
+  <File Type="PA-TCL" Name="CPU8051.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Fetch.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ROM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/defines.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/decode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fsm.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/program_counter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/8051CPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/execute.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Interrupt_Controler.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/Lookup_ROM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SFR.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU8051"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/CPU8051.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

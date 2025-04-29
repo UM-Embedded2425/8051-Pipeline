@@ -6,6 +6,7 @@ module CPU8051(
     output reg ACC
 );
 
+    wire isr_pool_en;
     wire fetch_en;           
     wire decode_en;           
     wire execute_en;       

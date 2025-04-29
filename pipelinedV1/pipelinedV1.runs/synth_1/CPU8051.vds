@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Apr 23 15:36:26 2025
+# Process ID         : 75571
+# Current directory  : /home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.runs/synth_1
+# Command line       : vivado -log CPU8051.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU8051.tcl
+# Log file           : /home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.runs/synth_1/CPU8051.vds
+# Journal file       : /home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.runs/synth_1/vivado.jou
+# Running On         : viny
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.1 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+# CPU Frequency      : 1448.882 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16537 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20832 MB
+# Available Virtual  : 13255 MB
+#-----------------------------------------------------------
+source CPU8051.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/utils_1/imports/synth_1/CPU8051.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU8051 -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 75610
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1963.984 ; gain = 430.094 ; free physical = 1662 ; free virtual = 11395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/8051CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v:3]
+INFO: [Synth 8-226] default block is never used [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v:32]
+INFO: [Synth 8-226] default block is never used [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/fsm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/program_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/decode.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/decode.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/8051CPU.v:3]
+WARNING: [Synth 8-7129] Port IR2[7] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[6] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[5] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[4] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[3] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[2] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[1] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR2[0] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[7] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[6] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[5] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[4] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[3] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[2] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[1] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IR3[0] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module ROM is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2035.922 ; gain = 502.031 ; free physical = 1574 ; free virtual = 11307
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2053.734 ; gain = 519.844 ; free physical = 1575 ; free virtual = 11308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2061.738 ; gain = 527.848 ; free physical = 1575 ; free virtual = 11308
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |                             0001 |                               00
+                  DECODE |                             0010 |                               01
+                 EXECUTE |                             0100 |                               10
+               WRITEBACK |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2085.762 ; gain = 551.871 ; free physical = 1560 ; free virtual = 11293
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (fsm/FSM_onehot_current_state_reg[3]) is unused and will be removed from module CPU8051.
+WARNING: [Synth 8-3332] Sequential element (fsm/FSM_onehot_current_state_reg[2]) is unused and will be removed from module CPU8051.
+WARNING: [Synth 8-3332] Sequential element (fsm/FSM_onehot_current_state_reg[1]) is unused and will be removed from module CPU8051.
+WARNING: [Synth 8-3332] Sequential element (fsm/FSM_onehot_current_state_reg[0]) is unused and will be removed from module CPU8051.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2160.762 ; gain = 626.871 ; free physical = 1474 ; free virtual = 11210
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ROM         | rom_memory | 32x8          | LUT            | 
+|ROM         | rom_memory | 32x8          | LUT            | 
+|ROM         | rom_memory | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2184.574 ; gain = 650.684 ; free physical = 1466 ; free virtual = 11203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2184.574 ; gain = 650.684 ; free physical = 1458 ; free virtual = 11195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.387 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2343.395 ; gain = 809.496 ; free physical = 1348 ; free virtual = 11085
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2357.262 ; gain = 0.000 ; free physical = 1481 ; free virtual = 11217
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2451.855 ; gain = 0.000 ; free physical = 1392 ; free virtual = 11129
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 64e706d6
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2451.855 ; gain = 932.906 ; free physical = 1392 ; free virtual = 11129
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1737.163; main = 1737.163; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 2451.859; main = 2451.859; forked = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.867 ; gain = 0.000 ; free physical = 1392 ; free virtual = 11129
+INFO: [Common 17-1381] The checkpoint '/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.runs/synth_1/CPU8051.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU8051_utilization_synth.rpt -pb CPU8051_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 23 15:36:45 2025...

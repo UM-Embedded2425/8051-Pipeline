@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Interrupt_Controler
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sim_1/new/IC_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IC_tb

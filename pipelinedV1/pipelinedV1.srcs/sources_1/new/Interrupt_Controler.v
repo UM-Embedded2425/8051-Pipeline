@@ -33,12 +33,16 @@ module Interrupt_Controler(
             endcase
         end
     endfunction
+    
     reg [7:0] IE;               // Interrupt Enable
     reg [7:0] IP;               // Interrupt Priority
     reg [4:0] pending;          // pending interrupts
     reg [2:0] active_int;       // currently executing interrupt
     reg [2:0] next_int;         // Next interrupt to service
-        
+    
+    
+    reg [4:0]temp;
+    
     initial begin
         
         IE <= 8'h00;
@@ -58,10 +62,10 @@ module Interrupt_Controler(
         // Interrupt detection & Enable logic
         end else if (IE[7]) begin
             pending[0] = pending[0] | (en0 & IE[0]); //EX0
-            pending[1] = pending[1] |(en1 & IE[1]); //ET0
-            pending[2] = pending[2] |(en2 & IE[2]); //EX1
-            pending[3] = pending[3] |(en3 & IE[3]); //ET1
-            pending[4] = pending[4] |(en4 & IE[4]); //ES
+            pending[1] = pending[1] | (en1 & IE[1]); //ET0
+            pending[2] = pending[2] | (en2 & IE[2]); //EX1
+            pending[3] = pending[3] | (en3 & IE[3]); //ET1
+            pending[4] = pending[4] | (en4 & IE[4]); //ES 
             // Clear finished interrupt 
             
         end
@@ -70,19 +74,36 @@ module Interrupt_Controler(
         next_int = 3'b000;
          
         // Check low priority
-        if      (pending[0]) next_int = 3'b001;
-        else if (pending[1]) next_int = 3'b010;
-        else if (pending[2]) next_int = 3'b011;
-        else if (pending[3]) next_int = 3'b100;
-        else if (pending[4]) next_int = 3'b101;
+        /*
+        if (pending[4])            next_int = 3'b101;
+        if (pending[3])            next_int = 3'b100;
+        if (pending[2])            next_int = 3'b011;   
+        if (pending[1])            next_int = 3'b010;
+        if (pending[0])            next_int = 3'b001;
+        
         // Check high priority
-        else if (pending[0] & IP[0]) next_int = 3'b001;
-        else if (pending[1] & IP[1]) next_int = 3'b010;
-        else if (pending[2] & IP[2]) next_int = 3'b011;
-        else if (pending[3] & IP[3]) next_int = 3'b100;
-        else if (pending[4] & IP[4]) next_int = 3'b101;
+        if (pending[4] & IP[4])    next_int = 3'b101;
+        if (pending[3] & IP[3])    next_int = 3'b100;
+        if (pending[2] & IP[2])    next_int = 3'b011;
+        if (pending[1] & IP[1])    next_int = 3'b010;
+        if (pending[0] & IP[0])    next_int = 3'b001;
         
+        */
         
+        ///*
+        temp = pending & IP;
+        if (temp) begin
+        // Check high priority
+            next_int[2] = (~temp[0] & ~temp[1] & ~temp[2] & temp[4]) | (~temp[0] & ~temp[1] & ~temp[2] & temp[3]);
+            next_int[1] = (~temp[0] & temp[2]) | (~temp[0] & temp[1]);
+            next_int[0] = (~temp[1] & ~temp[3] & temp[4]) | (~temp[1] & temp[2]) | (temp[0]);
+        end else begin
+        // Check low priority
+            next_int[2] = (~pending[0] & ~pending[1] & ~pending[2] & pending[4]) | (~pending[0] & ~pending[1] & ~pending[2] & pending[3]);
+            next_int[1] = (~pending[0] & pending[2]) | (~pending[0] & pending[1]);
+            next_int[0] = (~pending[1] & ~pending[3] & pending[4]) | (~pending[1] & pending[2]) | (pending[0]);
+        end
+        //*/
     end
     
     always @(posedge clk) begin
@@ -98,19 +119,18 @@ module Interrupt_Controler(
             
             // finish logic
             if (done) begin
-                pending[active_int-1] = 0;
+                pending[active_int - 1'b1] = 0;
                 active_int <= 3'b000;
-            // preemptive logic         
+            // preemptive logic
             end else if (next_int != active_int) begin
                 active_int <= next_int;
                 trigger_it <= 1'b1;
-                
             // base case
             end else trigger_it <= 1'b0;
         end
     end
     
-    assign jmp_addr = isr_jump_vector(active_int);
+    assign jmp_addr = isr_jump_vector(active_int - 1'b1);
     
  
     // vector table
