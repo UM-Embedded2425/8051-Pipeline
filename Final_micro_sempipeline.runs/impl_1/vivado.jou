@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May  8 20:03:41 2025
+# Process ID         : 214422
+# Current directory  : /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/impl_1
+# Command line       : vivado -log CPU8051.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CPU8051.tcl -notrace
+# Log file           : /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/impl_1/CPU8051.vdi
+# Journal file       : /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/impl_1/vivado.jou
+# Running On         : viny
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+# CPU Frequency      : 1990.675 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16537 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20832 MB
+# Available Virtual  : 15535 MB
+#-----------------------------------------------------------
+source CPU8051.tcl -notrace

@@ -1,0 +1,6 @@
+muxpart__427_RAM
+RAM__GB1
+RAM__GB2
+RAM__GB3
+RAM__GB4
+CPU8051__GC0

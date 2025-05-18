@@ -1,0 +1,1224 @@
+
+*** Running vivado
+    with args -log CPU8051.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU8051.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed May  7 17:23:48 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CPU8051.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1513.664 ; gain = 77.840 ; free physical = 3259 ; free virtual = 13469
+Command: read_checkpoint -auto_incremental -incremental /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU8051 -part xc7z010clg400-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 41606
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.906 ; gain = 418.828 ; free physical = 2409 ; free virtual = 12447
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9694] invalid size of integer constant literal [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'DPL', assumed default net type 'wire' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:131]
+INFO: [Synth 8-11241] undeclared symbol 'DPH', assumed default net type 'wire' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:131]
+INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_Controler' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_Controler' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:5]
+WARNING: [Synth 8-7071] port 'data_in' of module 'Interrupt_Controler' is unconnected for instance 'isr_controler' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:66]
+WARNING: [Synth 8-7023] instance 'isr_controler' of module 'Interrupt_Controler' has 9 connections declared, but only 8 given [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:66]
+INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registers' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/SFR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/SFR.v:3]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:85]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:85]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'DPL' does not match port width (8) of module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:131]
+WARNING: [Synth 8-689] width (1) of port connection 'DPH' does not match port width (8) of module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:131]
+WARNING: [Synth 8-7071] port 'readr0' of module 'decode' is unconnected for instance 'decode_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:113]
+WARNING: [Synth 8-7071] port 'readr1' of module 'decode' is unconnected for instance 'decode_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:113]
+WARNING: [Synth 8-7023] instance 'decode_unit' of module 'decode' has 65 connections declared, but only 63 given [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:113]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-226] default block is never used [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:40]
+INFO: [Synth 8-6157] synthesizing module 'alu_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'DPL' does not match port width (8) of module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:162]
+WARNING: [Synth 8-689] width (1) of port connection 'DPH' does not match port width (8) of module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:162]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:175]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:3]
+WARNING: [Synth 8-7137] Register isr_trigger_historic_reg in module program_counter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:21]
+WARNING: [Synth 8-7137] Register mux_select2_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:95]
+WARNING: [Synth 8-7137] Register operand_1_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:96]
+WARNING: [Synth 8-7137] Register reg_address_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:36]
+WARNING: [Synth 8-7137] Register address1_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:650]
+WARNING: [Synth 8-7137] Register address_sfr_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:896]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'shadow_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "shadow_ram_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port psw_in[5] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[4] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[3] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[1] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[0] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_acess_en in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[2] in module execute is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2314.875 ; gain = 568.797 ; free physical = 2288 ; free virtual = 12326
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2326.750 ; gain = 580.672 ; free physical = 2291 ; free virtual = 12329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2326.750 ; gain = 580.672 ; free physical = 2291 ; free virtual = 12329
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2326.750 ; gain = 0.000 ; free physical = 2288 ; free virtual = 12327
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram_inst/RAM_IP'
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram_inst/RAM_IP'
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'fetch_unit/rom_instance/ROM_ip'
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-41541-viny/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'fetch_unit/rom_instance/ROM_ip'
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SCON[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SCON[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SCON[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SCON[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SCON[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SCON[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SCON[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SCON[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'TL0[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'TL0[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'TL0[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'TL0[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'TL0[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'TL0[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'TL0[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'TL0[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'SCON[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'SCON[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'SCON[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'SCON[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'SCON[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'SCON[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'SCON[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'SCON[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'TL0[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'TL0[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'TL0[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'TL0[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'TL0[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'TL0[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'TL0[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'TL0[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:70]
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CPU8051_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU8051_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU8051_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2418.488 ; gain = 0.000 ; free physical = 2313 ; free virtual = 12351
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2418.488 ; gain = 0.000 ; free physical = 2313 ; free virtual = 12351
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ram_inst/RAM_IP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2418.488 ; gain = 672.410 ; free physical = 2401 ; free virtual = 12437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2426.492 ; gain = 680.414 ; free physical = 2401 ; free virtual = 12437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ram_inst/RAM_IP. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fetch_unit/rom_instance/ROM_ip. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2426.492 ; gain = 680.414 ; free physical = 2401 ; free virtual = 12437
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu_fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'pending_reg' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:54]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |                            00001 |                              000
+                  DECODE |                            00010 |                              001
+               MEM_ACESS |                            00100 |                              010
+                 EXECUTE |                            01000 |                              011
+               WRITEBACK |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu_fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[1]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_read_reg' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[0]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[2]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[3]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[4]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[5]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[6]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[7]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[8]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[9]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[10]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[11]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[12]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[13]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[14]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[15]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[16]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[17]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[18]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[19]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[20]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[21]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[22]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[23]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[24]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[25]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[26]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[27]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[28]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[29]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[30]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[31]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2426.492 ; gain = 680.414 ; free physical = 2351 ; free virtual = 12475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 2     
+	   4 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 329   
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input 2048 Bit        Muxes := 4     
+	   4 Input 2048 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	  53 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 390   
+	   3 Input    8 Bit        Muxes := 96    
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 24    
+	  22 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][2]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[2]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[1]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[0]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[4]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[3]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[2]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[1]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[0]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+WARNING: [Synth 8-3332] Sequential element (pending_reg[4]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[3]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[2]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[1]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[0]__0) is unused and will be removed from module Interrupt_Controler.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fetch_unit/branch_en_reg/Q' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:22]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:22]
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][0]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][1]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][2]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][3]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][4]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][5]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][6]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][7]) is unused and will be removed from module decode.
+
+*** Running vivado
+    with args -log CPU8051.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU8051.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu May  8 20:01:12 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source CPU8051.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1513.922 ; gain = 44.840 ; free physical = 5615 ; free virtual = 14215
+Command: read_checkpoint -auto_incremental -incremental /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top CPU8051 -part xc7z010clg400-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'blk_mem_gen_0' (customized with software release 2024.1) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 213509
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2164.227 ; gain = 419.828 ; free physical = 4611 ; free virtual = 13274
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'DPL', assumed default net type 'wire' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:116]
+INFO: [Synth 8-11241] undeclared symbol 'DPH', assumed default net type 'wire' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:116]
+INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_Controler' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_Controler' (0#1) [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:5]
+WARNING: [Synth 8-7071] port 'data_in' of module 'Interrupt_Controler' is unconnected for instance 'isr_controler' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:66]
+WARNING: [Synth 8-7023] instance 'isr_controler' of module 'Interrupt_Controler' has 9 connections declared, but only 8 given [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:66]
+INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registers' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/SFR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/SFR.v:3]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:86]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:86]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'DPL' does not match port width (8) of module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:116]
+WARNING: [Synth 8-689] width (1) of port connection 'DPH' does not match port width (8) of module 'decode' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:116]
+WARNING: [Synth 8-7071] port 'readr0' of module 'decode' is unconnected for instance 'decode_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:98]
+WARNING: [Synth 8-7071] port 'readr1' of module 'decode' is unconnected for instance 'decode_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:98]
+WARNING: [Synth 8-7023] instance 'decode_unit' of module 'decode' has 64 connections declared, but only 62 given [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:98]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-226] default block is never used [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:40]
+INFO: [Synth 8-6157] synthesizing module 'alu_unit' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:182]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v:4]
+WARNING: [Synth 8-689] width (1) of port connection 'DPL' does not match port width (8) of module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:147]
+WARNING: [Synth 8-689] width (1) of port connection 'DPH' does not match port width (8) of module 'execute' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:147]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v:3]
+WARNING: [Synth 8-7137] Register mux_select2_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:96]
+WARNING: [Synth 8-7137] Register operand_1_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:97]
+WARNING: [Synth 8-7137] Register reg_address_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:36]
+WARNING: [Synth 8-7137] Register address1_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:650]
+WARNING: [Synth 8-7137] Register address_sfr_reg in module decode has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v:896]
+WARNING: [Synth 8-7137] Register isr_trigger_historic_reg in module program_counter has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v:21]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'shadow_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "shadow_ram_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port psw_in[5] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[4] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[3] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[1] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port psw_in[0] in module alu_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port mem_acess_en in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P2[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port P3[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TMOD[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TCON[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL0[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TH1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TL1[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[2] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[1] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IE[0] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[7] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[6] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[5] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[4] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[3] in module execute is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IP[2] in module execute is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2314.195 ; gain = 569.797 ; free physical = 4555 ; free virtual = 13195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2326.070 ; gain = 581.672 ; free physical = 4555 ; free virtual = 13195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2326.070 ; gain = 581.672 ; free physical = 4555 ; free virtual = 13195
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2326.070 ; gain = 0.000 ; free physical = 4572 ; free virtual = 13212
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram_inst/RAM_IP'
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'ram_inst/RAM_IP'
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'fetch_unit/rom_instance/ROM_ip'
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/.Xil/Vivado-213207-viny/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'fetch_unit/rom_instance/ROM_ip'
+Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ACC[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'ACC[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'ACC[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'ACC[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'ACC[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'ACC[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'ACC[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'ACC[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SCON[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SCON[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SCON[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SCON[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SCON[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SCON[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SCON[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SCON[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'TL0[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'TL0[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'TL0[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'TL0[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'TL0[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'TL0[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'TL0[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'TL0[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'ACC[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ACC[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'ACC[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'ACC[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'ACC[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'ACC[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ACC[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'ACC[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'SBUF[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'SCON[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'SCON[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'SCON[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'SCON[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'SCON[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'SCON[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'SCON[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'SCON[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'TL0[7]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'TL0[6]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'TL0[5]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'TL0[4]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'TL0[3]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'TL0[2]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'TL0[1]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'TL0[0]'. [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc:70]
+Finished Parsing XDC File [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/CPU8051_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/constrs_1/new/micro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU8051_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU8051_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2420.809 ; gain = 0.000 ; free physical = 4569 ; free virtual = 13209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2420.809 ; gain = 0.000 ; free physical = 4569 ; free virtual = 13209
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ram_inst/RAM_IP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2420.809 ; gain = 676.410 ; free physical = 4591 ; free virtual = 13232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2428.812 ; gain = 684.414 ; free physical = 4591 ; free virtual = 13232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ram_inst/RAM_IP. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for fetch_unit/rom_instance/ROM_ip. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2428.812 ; gain = 684.414 ; free physical = 4595 ; free virtual = 13235
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu_fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'pending_reg' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:54]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |                            00001 |                              000
+                  DECODE |                            00010 |                              001
+               MEM_ACESS |                            00100 |                              010
+                 EXECUTE |                            01000 |                              011
+               WRITEBACK |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu_fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[1]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_read_reg' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[0]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[2]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[3]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[4]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[5]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[6]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[7]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[8]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[9]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[10]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[11]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[12]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[13]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[14]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[15]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[16]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[17]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[18]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[19]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[20]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[21]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[22]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[23]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[24]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[25]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[26]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[27]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[28]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[29]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[30]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_file_reg[31]' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2428.812 ; gain = 684.414 ; free physical = 4654 ; free virtual = 13297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 2     
+	   4 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   3 Input    8 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 329   
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input 2048 Bit        Muxes := 4     
+	   4 Input 2048 Bit        Muxes := 1     
+	  55 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 390   
+	   3 Input    8 Bit        Muxes := 96    
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 1     
+	   7 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 24    
+	  22 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[21][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[20][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[19][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[18][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[17][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[16][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[15][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[14][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[13][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[12][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[11][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[10][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[9][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[8][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[31][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[30][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[29][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[28][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[27][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[26][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[25][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[24][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[23][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_0/decode_unit/\registers_inst/reg_file_reg[22][2]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[2]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[1]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/next_int_reg[0]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:118]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[4]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[3]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[2]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[1]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/isr_controler/pending_reg[0]/Q' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v:117]
+WARNING: [Synth 8-3332] Sequential element (pending_reg[4]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[3]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[2]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[1]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (pending_reg[0]__0) is unused and will be removed from module Interrupt_Controler.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][0]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][1]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][2]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][3]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][4]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][5]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][6]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (registers_inst/reg_file_reg[24][7]) is unused and will be removed from module decode.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 2472.746 ; gain = 728.348 ; free physical = 405 ; free virtual = 7926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 2508.832 ; gain = 764.434 ; free physical = 1016 ; free virtual = 8554
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 2789.301 ; gain = 1044.902 ; free physical = 419 ; free virtual = 7958
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 306 ; free virtual = 7346
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 341 ; free virtual = 7381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:34 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 341 ; free virtual = 7381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:35 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 334 ; free virtual = 7374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:35 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 334 ; free virtual = 7374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:36 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 328 ; free virtual = 7369
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:36 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 328 ; free virtual = 7369
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
+|2     |blk_mem_gen_0  |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |blk_mem_gen  |     1|
+|2     |dist_mem_gen |     1|
+|3     |BUFG         |     1|
+|4     |CARRY4       |    46|
+|5     |LUT1         |     5|
+|6     |LUT2         |   166|
+|7     |LUT3         |   246|
+|8     |LUT4         |   352|
+|9     |LUT5         |  3192|
+|10    |LUT6         |  8471|
+|11    |MUXF7        |  1129|
+|12    |MUXF8        |   544|
+|13    |FDCE         |   300|
+|14    |FDPE         |     3|
+|15    |FDRE         |  2187|
+|16    |LD           |    80|
+|17    |IBUF         |     2|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:36 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 328 ; free virtual = 7369
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 24 critical warnings and 432 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:21 ; elapsed = 00:01:35 . Memory (MB): peak = 2801.227 ; gain = 962.090 ; free physical = 6120 ; free virtual = 13161
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:37 . Memory (MB): peak = 2801.227 ; gain = 1056.828 ; free physical = 6121 ; free virtual = 13156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2801.227 ; gain = 0.000 ; free physical = 6120 ; free virtual = 13155
+INFO: [Netlist 29-17] Analyzing 1799 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.328 ; gain = 0.000 ; free physical = 6125 ; free virtual = 13161
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  LD => LDCE: 80 instances
+
+Synth Design complete | Checksum: 56fd15b9
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 335 Warnings, 24 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:43 . Memory (MB): peak = 2845.328 ; gain = 1312.531 ; free physical = 6127 ; free virtual = 13163
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 7197.106; main = 2017.277; forked = 5722.713
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 13552.770; main = 2845.332; forked = 11083.930
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2869.340 ; gain = 0.000 ; free physical = 6127 ; free virtual = 13163
+INFO: [Common 17-1381] The checkpoint '/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.runs/synth_1/CPU8051.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file CPU8051_utilization_synth.rpt -pb CPU8051_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 20:03:10 2025...

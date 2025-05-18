@@ -1,0 +1,6 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/diogo/Final_micro_sempipeline/Final_micro_sempipeline.sim/sim_1/impl/timing/xsim/CPU8051_tb_time_impl.v,1745416427,verilog,,/home/diogo/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v,,CPU8051;RAM;ROM;alu_unit;cpu_fsm;decode;dist_mem_gen_0;dist_mem_gen_0_dist_mem_gen_v8_0_15;dist_mem_gen_0_dist_mem_gen_v8_0_15_synth;dist_mem_gen_0_rom;execute;fetch;glbl;program_counter;registers;sfr,,,,,,,,
+/home/diogo/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v,1745274954,verilog,,,,CPU8051_tb,,,,,,,,

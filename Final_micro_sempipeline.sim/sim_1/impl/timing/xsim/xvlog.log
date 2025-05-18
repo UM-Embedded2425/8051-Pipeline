@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diogo/Final_micro_sempipeline/Final_micro_sempipeline.sim/sim_1/impl/timing/xsim/CPU8051_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module alu_unit
+INFO: [VRFC 10-311] analyzing module cpu_fsm
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_15
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_15_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_rom
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diogo/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051_tb

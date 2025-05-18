@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.sim/sim_1/synth/func/xsim/CPU8051_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module alu_unit
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-311] analyzing module cpu_fsm
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_15
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_15_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_rom
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_4_8
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0_blk_mem_gen_v8_4_8_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051_tb

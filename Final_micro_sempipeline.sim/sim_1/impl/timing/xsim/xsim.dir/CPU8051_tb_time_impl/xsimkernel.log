@@ -1,0 +1,7 @@
+Running: xsim.dir/CPU8051_tb_time_impl/xsimk -simmode gui -wdb CPU8051_tb_time_impl.wdb -simrunnum 0 -socket 37301
+Design successfully loaded
+Design Loading Memory Usage: 137520 KB (Peak: 137520 KB)
+Design Loading CPU Usage: 260 ms
+Simulation completed
+Simulation Memory Usage: 219556 KB (Peak: 276788 KB)
+Simulation CPU Usage: 1450 ms

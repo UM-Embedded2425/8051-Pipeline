@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"CPU8051_tb_time_impl.v" \
+"../../../../../Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v" \
+
+# Do not sort compile order
+nosort
