@@ -13,3 +13,33 @@ INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_8_output_stage
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_8_softecc_output_reg_stage
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_8_mem_module
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_4_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.ip_user_files/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/CPU8051.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module execute
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Fetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fetch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/interrupt_control/8051-Pipeline/pipelinedV1/pipelinedV1.srcs/sources_1/new/Interrupt_Controler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Interrupt_Controler
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/SFR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU8051_tb

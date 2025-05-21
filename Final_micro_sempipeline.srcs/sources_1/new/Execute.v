@@ -18,8 +18,11 @@ module execute(
     output reg [7:0] ACC_we, SP_we, DPL_we, DPH_we, B_we, PSW_we, P0_we, P1_we, P2_we, P3_we,
     output reg [7:0] TMOD_we, TCON_we, TH0_we, TL0_we, TH1_we, TL1_we, IE_we, IP_we, SCON_we, SBUF_we, 
     output reg [7:0] data_in, data_in1, reg_write,
-    output reg branch_en_exe,branch_en, 
-    output reg is_isr_complete
+    output reg branch_en_exe, branch_en, 
+    //isr
+    output reg is_isr_complete,
+    input isr_pc_to_sp,
+    output reg isr_ready_to_jump
     );
     
     wire [7:0] result;
@@ -72,8 +75,11 @@ module execute(
     
 
     always @(posedge clk or posedge reset)begin
+        //isr
+        
         if(reset)begin 
             is_isr_complete <= 0;
+            isr_ready_to_jump <= 0;
             branch_en <= 0;
             branch_en_exe <= 0;
             reg_write <= 0;
@@ -86,6 +92,13 @@ module execute(
             P0_we <= 0; P1_we <= 0; P2_we <= 0; P3_we <= 0;
             TMOD_we <= 0; TCON_we <= 0; TH0_we <= 0; TL0_we <= 0;
             TH1_we <= 0; TL1_we <= 0; IE_we <= 0; IP_we <= 0; SCON_we <= 0; SBUF_we <= 0;
+        end else if(isr_pc_to_sp && en_execute) begin
+            //CALL
+            SP_we <= result;
+            data_in <= PC[7:0];
+            data_in1 <= PC[15:8];
+            isr_ready_to_jump <= 1;
+        
         end else if(en_execute)begin
             PSW_we <= psw_out;
             branch_en <= 0;
@@ -153,6 +166,7 @@ module execute(
                     PC_out[7:0] <= data_out1; 
                     PC_out[15:8] <= data_out; 
                     is_isr_complete <= 1;
+                    isr_ready_to_jump <= 0; //javardo
                 end
                 
                 // Data Transfer Instructions

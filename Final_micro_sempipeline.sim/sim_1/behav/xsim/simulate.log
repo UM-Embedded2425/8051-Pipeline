@@ -1,7 +1,0 @@
-Time resolution is 1 ps
-WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
- Block Memory Generator module loading initial data...
- Block Memory Generator data initialization complete.
-Block Memory Generator module CPU8051_tb.dut.ram_inst.RAM_IP.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Stopped at time : 445 ns : File "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sources_1/new/Execute.v" Line 155
-$finish called at time : 775 ns : File "/home/viny/Desktop/Final_micro_sempipeline/Final_micro_sempipeline.srcs/sim_1/new/CPU8051_tb.v" Line 48

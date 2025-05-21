@@ -3,7 +3,7 @@
 module CPU8051(
     input clk, 
     input reset,
-    input [4:0]isr_signals
+    input [5:0]isr_signals
     //output wire [7:0] ACC,
     //output wire [7:0] TL0,
     //output wire [7:0] SCON,
@@ -21,9 +21,10 @@ module CPU8051(
     // FSM control signals
     wire fetch_en;           
     wire decode_en;           
-    wire execute_en;   
-    wire mem_acess_en;    
-    wire writeback_en;
+    wire execute_en;    
+    wire mem_acess_en;     
+    wire writeback_en; 
+    
     // PC, IR, Branch
     wire [15:0] PC;
     wire [15:0] PC_out;
@@ -37,7 +38,7 @@ module CPU8051(
     wire [7:0] operand_1;
     wire [2:0] mux_select1, mux_select2;
     wire [7:0] reg_read;
-    
+    wire [7:0] result;
     // RAM control
     wire re_A, we_A, re_B, we_B;
     wire [7:0] address, address1,address_sfr, data_in, data_in1, data_out, data_out1;
@@ -61,6 +62,8 @@ module CPU8051(
     wire ci_isr_trigger;
     wire [15:0]ci_isr_jmp_addr;
     wire is_isr_complete;
+    wire isr_pc_to_sp;
+    wire isr_ready_to_jump;
     //wire [4:0]isr_signals;
     
     Interrupt_Controler isr_controler
@@ -126,7 +129,12 @@ module CPU8051(
         .mux_select2(mux_select2),
         .absol_address(absol_address),
         .alu(alu),
+        //.branch_en(branch_en),
+        //.branch_en_exe(branch_en_exe),
+        .isr_pc_to_sp(isr_pc_to_sp),
+        .PC(PC),
         .address_sfr(address_sfr)
+        
     );
 
     execute execute_unit (
@@ -159,7 +167,12 @@ module CPU8051(
         .reg_write(reg_write),
         .branch_en_exe(branch_en_exe),
         .address_sfr(address_sfr),
+        .isr_pc_to_sp(isr_pc_to_sp),
+        //.PC(PC),
+        .isr_ready_to_jump(isr_ready_to_jump),
         .is_isr_complete(is_isr_complete)
+        
+        
     );
     
         program_counter pc_unit (
@@ -175,6 +188,21 @@ module CPU8051(
         .branch_en(branch_en),
         .branch_en_exe(branch_en_exe),
         .rel_address(rel_address),
+//        .result(result),
+//        .SP(SP),
+//        .address_type(address_type),
+//        .sfr_re(sfr_re), 
+//        .sfr_we(sfr_we),
+//        .we_A(we_A),
+//        .re_B(re_B),
+//        .mux_select1(mux_select1),
+//        .address(address), 
+//        .address1(address1),
+//        .SP_we(SP_we),
+//        .data_in(data_in),
+//        .alu(alu),
+        .isr_ready_to_jump(isr_ready_to_jump),
+        .isr_pc_to_sp(isr_pc_to_sp),
         .absol_address(absol_address)
     );
 
@@ -192,9 +220,10 @@ module CPU8051(
         .we_B(we_B),
         .data_in(data_in),
         .data_in1(data_in1),
+        //.branch_en(branch_en),
+        //.branch_en_exe(branch_en_exe)
         .data_out(data_out),
         .data_out1(data_out1)
-//        .branch_en(branch_en),
-//        .branch_en_exe(branch_en_exe)
+        
     );
 endmodule

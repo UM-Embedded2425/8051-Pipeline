@@ -19,12 +19,14 @@
         output reg [1:0]address_type,
         output reg [2:0] mux_select1, mux_select2,
         output reg [15:0]absol_address,
-
-        output reg [5:0]alu
+        output reg sfr_re, sfr_we,
+        output reg [5:0]alu,
+        //isr
+        input isr_pc_to_sp,
+        input wire PC
     );
-    
     reg [7:0] reg_address;
-    reg sfr_re, sfr_we, reg_we, reg_re;
+    reg reg_we, reg_re;
     wire [1:0] rs;
     
     registers registers_inst(
@@ -64,6 +66,25 @@
     
         //Unconditional Branches, Calls and Return Instructions
     always @(posedge clk or posedge reset)begin
+        //isr
+        if(isr_pc_to_sp && decode_en) begin
+            //CALL
+            //write_back
+            we_A <= 1;
+            address_type <= 3;
+            address <= SP;
+            
+            //sfrs
+            sfr_re <= 1;
+            sfr_we <= 1;
+            
+            //ADD SP #2
+            alu <= 5'b00000;
+            mux_select1 <= 3'b100;
+            mux_select2 <= 3'b101;
+            operand_1 <= 2;
+            
+        end 
         if(reset)begin 
             
             rel_address <= 8'h00;
@@ -80,23 +101,30 @@
             address <= 0;
             alu <= 5'b00000;
             address_type <= 0;
-            
+            //branch_en <= 0;
         end else if(decode_en)begin
-            
+            //branch_en <= 0;
             casex (IR1[7:0])
               `ACALL : begin
                     //absol_address <= {IR1[15:8], IR1[7:4]};
                     absol_address <= IR1[15:8];
                     
+                    //write_back
+                    we_A <= 1;
                     address_type <= 3;
+                    address <= SP;
+                    
+                    //sfrs
                     sfr_re <= 1;
                     sfr_we <= 1;
+                    
+                    //add sp #2
                     alu <= 5'b00000;
                     mux_select1 <= 3'b100;
                     mux_select2 <= 3'b101;
                     operand_1 <= 2;
-                    we_A <= 1;
-                    address <= SP;
+                    
+                    
               end 
               `AJMP  : begin
                     absol_address <= IR1[15:8];
@@ -114,6 +142,7 @@
                     address_type <= 3;
               end 
               `LJMP : begin
+                    //branch_en <= 1;
                     absol_address <= IR1[23:8];//[15:0]
               end
               `SJMP : rel_address <= IR1[15:8];
@@ -131,15 +160,21 @@
                 end
                 
                 `RETI: begin 
+                    //write back
+                    re_A <= 1;
                     address_type <= 3;
+                    address <= SP;
+                    
+                    //sfr
                     sfr_we <= 1;
                     sfr_re <= 1;
-                    re_A <= 1;
+                    
+                    // subb SP #2
                     alu <= 5'b00010;
                     mux_select1 <= 3'b100;
                     mux_select2 <= 3'b101;
                     operand_1 <= 2;
-                    address <= SP;
+                    
                 end
                 
                 // INC           

@@ -11,7 +11,7 @@ module CPU8051_tb;
 //  wire [7:0] SCON;
 //  wire [7:0] SBUF;
 //  wire [7:0] IE;
-  reg [4:0] isr_signals;
+  reg [5:0] isr_signals;
 
   CPU8051 dut (
     .clk(clk),
@@ -36,6 +36,7 @@ module CPU8051_tb;
     isr_signals[2] <= 0;
     isr_signals[3] <= 0;
     isr_signals[4] <= 0;
+    isr_signals[5] <= 0;
     #15;
     reset = 0;
 

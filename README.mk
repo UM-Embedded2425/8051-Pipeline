@@ -22,7 +22,7 @@ O controle de interrupções funciona da seguinte forma:
 Durante a integração, o `jmp` da ISR foi adicionado diretamente ao **Program Counter (PC)**.  
 No entanto, isso alterou os tempos de execução, fazendo com que a **simulação de síntese deixasse de funcionar corretamente** (não atinge mais 100%).
 
-> **Observação:** Ainda **não há suporte ao `RETI` funcional**, pois o **PC ainda não é salvo na stack**.
+> **Problemas:** ele, após retornar do RETI, continua a fazer jumps pro mesmo lugar
 
 ## COE (Código de Execução)
 

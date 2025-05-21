@@ -1,7 +1,4 @@
-Running: xsim.dir/CPU8051_tb_behav/xsimk -simmode gui -wdb CPU8051_tb_behav.wdb -simrunnum 0 -socket 49083
+Running: xsim.dir/CPU8051_tb_behav/xsimk -simmode gui -wdb CPU8051_tb_behav.wdb -simrunnum 0 -socket 55191
 Design successfully loaded
-Design Loading Memory Usage: 182208 KB (Peak: 182208 KB)
-Design Loading CPU Usage: 1100 ms
-Simulation completed
-Simulation Memory Usage: 277172 KB (Peak: 321476 KB)
-Simulation CPU Usage: 1120 ms
+Design Loading Memory Usage: 182204 KB (Peak: 182204 KB)
+Design Loading CPU Usage: 1060 ms

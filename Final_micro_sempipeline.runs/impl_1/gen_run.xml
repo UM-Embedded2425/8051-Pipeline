@@ -221,6 +221,6 @@
     <Step Id="write_bitstream"/>
     <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

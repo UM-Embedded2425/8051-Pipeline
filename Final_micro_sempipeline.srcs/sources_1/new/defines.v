@@ -1,4 +1,4 @@
-`define ACALL     8'bxxxx_0001 // absolute call
+`define ACALL     8'bxxxx_0001 // absolute call               //URGENTE
 
 `define ADD_C     8'b0010_0100 // add A=A+constant            //TESTADO
 `define ADD_D     8'b0010_0101 // add A=A+(direct)            //TESTADO
@@ -102,11 +102,11 @@
 `define ORL_NB    8'b1010_0000 // or c = c or !bit
 `define ORL_R     8'b0100_1xxx // or A=A or Rn
 
-`define POP       8'b1101_0000 // stack pop
-`define PUSH      8'b1100_0000 // stack push
+`define POP       8'b1101_0000 // stack pop               //URGENTE
+`define PUSH      8'b1100_0000 // stack push               //URGENTE
 
-`define RET       8'b0010_0010 // return from subrutine
-`define RETI      8'b0011_0010 // return from interrupt
+`define RET       8'b0010_0010 // return from subrutine               //URGENTE
+`define RETI      8'b0011_0010 // return from interrupt               //URGENTE
 
 `define RL        8'b0010_0011 // rotate left
 `define RLC       8'b0011_0011 // rotate left thrugh carry

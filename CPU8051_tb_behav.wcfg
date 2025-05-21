@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="445.001 ns"></ZoomEndTime>
-      <Cursor1Time time="445.000 ns"></Cursor1Time>
+      <ZoomStartTime time="370.833 ns"></ZoomStartTime>
+      <ZoomEndTime time="855.834 ns"></ZoomEndTime>
+      <Cursor1Time time="619.706 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="62"></NameColumnWidth>
-      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="17" />
    <wvobject type="logic" fp_name="/CPU8051_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -29,8 +29,8 @@
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/CPU8051_tb/isr_signals">
-      <obj_property name="ElementShortName">isr_signals[4:0]</obj_property>
-      <obj_property name="ObjectShortName">isr_signals[4:0]</obj_property>
+      <obj_property name="ElementShortName">isr_signals[5:0]</obj_property>
+      <obj_property name="ObjectShortName">isr_signals[5:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/CPU8051_tb/dut/ACC">
       <obj_property name="ElementShortName">ACC[7:0]</obj_property>
@@ -41,7 +41,53 @@
       <obj_property name="ObjectShortName">IE[7:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/CPU8051_tb/dut/execute_unit/PC">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">PC[15:0]</obj_property>
       <obj_property name="ObjectShortName">PC[15:0]</obj_property>
+      <obj_property name="label">PC</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/isr_controler/jmp_addr">
+      <obj_property name="ElementShortName">jmp_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">jmp_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CPU8051_tb/dut/isr_controler/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/fsm/current_state">
+      <obj_property name="ElementShortName">current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/fetch_unit/IR1">
+      <obj_property name="ElementShortName">IR1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">IR1[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CPU8051_tb/dut/execute_unit/branch_en">
+      <obj_property name="ElementShortName">branch_en</obj_property>
+      <obj_property name="ObjectShortName">branch_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CPU8051_tb/dut/pc_unit/isr_trigger_historic">
+      <obj_property name="ElementShortName">isr_trigger_historic</obj_property>
+      <obj_property name="ObjectShortName">isr_trigger_historic</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CPU8051_tb/dut/pc_unit/isr_pc_to_sp">
+      <obj_property name="ElementShortName">isr_pc_to_sp</obj_property>
+      <obj_property name="ObjectShortName">isr_pc_to_sp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CPU8051_tb/dut/pc_unit/isr_ready_to_jump">
+      <obj_property name="ElementShortName">isr_ready_to_jump</obj_property>
+      <obj_property name="ObjectShortName">isr_ready_to_jump</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/ram_inst/shadow_ram[30]">
+      <obj_property name="ElementShortName">[30][7:0]</obj_property>
+      <obj_property name="ObjectShortName">[30][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/SP">
+      <obj_property name="ElementShortName">SP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SP[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CPU8051_tb/dut/execute_unit/alu_inst/opcode">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -10,12 +10,14 @@ module RAM(
     input wire re_A, we_A,
     input wire re_B, we_B,
     
+    //output reg branch_en_exe,branch_en,
+    
     input wire [7:0] data_in,       //PORTA A
     input wire [7:0] data_in1,      //PORTA B
     
     output reg [7:0] data_out,     //PORTA A
     output reg [7:0] data_out1   //PORTA B
-
+    
     );
     
 wire [7:0] addra, addrb;
@@ -66,6 +68,7 @@ always @(posedge clk) begin
         dinb <= 8'h00;
         data_out <= 0;
         data_out1 <= 0;    
+        //branch_en <=0;
     end else begin
         if(re_A && !writeback_en) begin
             wea <= 0;
@@ -119,7 +122,7 @@ always @(posedge clk) begin
                     
                     BOTH: begin //DIRETO E INDIRETO
                         if(address >= 8'h00 && address <= 8'h7F) begin
-                            dina <= data_in;  
+                            dina <= data_in;
                             shadow_ram[address] <= data_in;      
                         end
                     end
@@ -127,8 +130,8 @@ always @(posedge clk) begin
                     STACK: begin
                         web <= 1;
                         if(address >= 8'h30) begin
-                            shadow_ram[address+1] <= data_in;
-                            shadow_ram[address+2] <= data_in1; 
+                            shadow_ram[address] <= data_in;
+                            shadow_ram[address-1] <= data_in1; 
                             dina <= data_in;
                             dinb <= data_in1;  
                                                       
@@ -195,5 +198,6 @@ always @(posedge clk) begin
                 endcase
         end
     end  
+    //if (writeback_en) begin branch_en <= 0; end
 end   
 endmodule

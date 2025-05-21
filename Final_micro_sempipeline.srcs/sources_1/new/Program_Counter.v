@@ -12,8 +12,24 @@
     input [15:0]absol_address,
     input wire isr_trigger,
     input wire [15:0] isr_adress,
-    output reg [15:0]PC
-    
+ 
+    //isr push
+    /*
+    input wire [7:0] result,
+    input wire [7:0] SP,
+    input wire [7:0] data_out,
+    output wire [1:0] address_type,
+    output wire sfr_re, sfr_we,
+    output wire we_A,re_B,
+    output wire [2:0] mux_select1,
+    output wire [7:0] address, address1,
+    output wire [7:0] SP_we,
+    output wire [7:0] data_in,
+    output wire [5:0] alu,
+    */
+    output reg isr_pc_to_sp,
+    input isr_ready_to_jump,
+    output reg [15:0]PC   
     );
     reg isr_trigger_historic;
     always @(posedge clk or posedge reset) begin
@@ -22,8 +38,23 @@
         end
         if (reset) begin
             PC <= 16'h0000;
+            isr_pc_to_sp <= 0;
+            isr_trigger_historic <= 0;
         end else begin
-           
+            if (en_fetch) begin
+                if (isr_trigger_historic) begin
+                    if (isr_ready_to_jump) begin
+                        PC <= isr_adress;
+                        isr_trigger_historic <= 0;
+                        isr_pc_to_sp <= 0;
+                    end
+                    else
+                        isr_pc_to_sp <= 1;
+                end
+                else
+                    PC <= PC + 1; 
+            end
+            else
             if (en_execute) begin
                 if (branch_en)
                     PC <= absol_address;
@@ -31,17 +62,9 @@
                 if (branch_en_exe) begin
                     PC <= PC + rel_address; 
                 end 
-                else if (PC_out) PC <= PC_out;     
-            end 
-            else
-            if (en_fetch) begin
-                PC <= PC + 1; 
-                if (isr_trigger_historic) begin
-                    PC <= isr_adress;
-                    isr_trigger_historic <= 0;
-                end
-            end
- 
+                else if (PC_out) 
+                    PC <= PC_out;     
+            end            
         end
     end
    
