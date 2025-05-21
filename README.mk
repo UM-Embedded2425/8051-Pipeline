@@ -14,12 +14,12 @@ O controle de interrupções funciona da seguinte forma:
 
   permanecem **ativos por pelo menos 1 segundo**.
 
-- Uma vez ativados, se o **registrador IE da ISR estiver habilitado**, os sinais são considerados **pendentes**.
+- Uma vez ativados, se o **registro IE da ISR estiver habilitado**, os sinais são considerados **pendentes**.
 - O **IC** (controlador de interrupções) gera um **sinal de trigger** e fica à espera de um **sinal de done**.
 
 ## Integração
 
-Durante a integração, o `jmp` da ISR foi adicionado diretamente ao **Program Counter (PC)**.  
+Durante a integração, o "jmp" da ISR foi adicionado diretamente ao **Program Counter (PC)**.  
 No entanto, isso alterou os tempos de execução, fazendo com que a **simulação de síntese deixasse de funcionar corretamente** (não atinge mais 100%).
 
 > **Problemas:** ele, após retornar do RETI, continua a fazer jumps pro mesmo lugar
