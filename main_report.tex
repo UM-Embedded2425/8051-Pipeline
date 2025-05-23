@@ -1,46 +1,137 @@
-\documentclass[12pt]{article}
-\usepackage{lingmacros}
-\usepackage{tree-dvips}
+\documentclass[11pt]{report}
+
+\usepackage{subfig}
+\usepackage[a4paper, top=1in, bottom=1in, left=1in, right=1in,, headheight=1in, headsep=5pt]{geometry} 
+\usepackage[english]{babel} 
+\usepackage{graphicx} 
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{acronym}
+\usepackage{hyperref}
+%\usepackage{soul}
+%\usepackage{natbib}
+%\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+%\bibliographystyle{plain}
+%\bibliography{bib/bibliography.bib} %Import the bibliography file
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+%\renewcommand{\headrulewidth}{0pt} % Remove header line
+\renewcommand{\footrulewidth}{0.1pt} % Remove header line
+% Redefine \chaptermark to avoid chapter title in \leftmark
+\renewcommand{\baselinestretch}{1.05}
+
+
+
+\pagestyle{fancy} % Enable custom headers/footers
+\fancyhf{} % Clear default header/footer
+
+\fancyfoot[C]{A project on the master’s in industrial Electronics and Computers
+Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
+\fancyfoot[R]{\newline\newline\thepage}
+
+%\fancyhead{}
+\fancyhead[R] {\footnotesize\nouppercase{\leftmark}}
+\fancyhead[LO]{\footnotesize\nouppercase{\leftmark}}
+\fancyhead[R]
+{
+
+%\includegraphics[width=0.17\textwidth]{images/logos/TOP_ENG_LOGO.png}  % Adjust the width as necessary
+%\caption{This is a Header_image}
+\label{fig:UM_LOGO}
+\hspace{0.1cm}
+%\caption{This is a Header_image}
+
+}
+
+
+
 \begin{document}
+    \begin{titlepage}
+        \include{title_page/title}
+    \end{titlepage}
+    \pagenumbering{roman}
+    %index table of images and acronims
+    \tableofcontents  
+    \listoffigures
+    \listoftables
+    \textbf{\Huge Acronyms} %remove indentation
+    \normalsize
+    \begin{acronym}[UART] % Give the longest label here so that the list is nicely aligned
+        \acro{UART}{Universal asynchronous receiver/transmitter}
 
-\section*{Notes for My Paper}
+    \end{acronym}
+    
+    \newpage
 
-Don't forget to include examples of topicalization.
-They look like this:
+    \pagenumbering{arabic}
+    
+    \setcounter{page}{1}
+    
+    %Intro
+    \include{chapters/introduction/introduction}
+    
+    %Analysis
+    \include{chapters/analysis/analysis}
+    \include{chapters/analysis/fsm}
+    \include{chapters/analysis/pc}
+    \include{chapters/analysis/fetch}
+    \include{chapters/analysis/decode}
+    \include{chapters/analysis/memory_acess}
+    \include{chapters/analysis/execute}
+    \include{chapters/analysis/writeback}
+    \include{chapters/analysis/peripherals/peripherals}
+    \include{chapters/analysis/peripherals/interrupt_controler}
+    \include{chapters/analysis/peripherals/GPIO}
+    \include{chapters/analysis/peripherals/ps2}
+    \include{chapters/analysis/peripherals/timer}
+    \include{chapters/analysis/peripherals/uart}
+    \include{chapters/analysis/peripherals/vga}
 
-{\small
-\enumsentence{Topicalization from sentential subject:\\ 
-\shortex{7}{a John$_i$ [a & kltukl & [el & 
-  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
-{ & {\bf R-}clear & {\sc comp} & 
-  {\bf IR}.{\sc 3s}-love   & P & him & }
-{John, (it's) clear that Mary loves (him).}}
-}
+    %Design
+    \include{chapters/design/design}
+    \include{chapters/design/fsm}
+    \include{chapters/design/pc}
+    \include{chapters/design/fetch}
+    \include{chapters/design/decode}
+    \include{chapters/design/memory_acess}
+    \include{chapters/design/execute}
+    \include{chapters/design/writeback}
+    \include{chapters/design/peripherals/peripherals}
+    \include{chapters/design/peripherals/interrupt_controler}
+    \include{chapters/design/peripherals/GPIO}
+    \include{chapters/design/peripherals/ps2}
+    \include{chapters/design/peripherals/timer}
+    \include{chapters/design/peripherals/uart}
+    \include{chapters/design/peripherals/vga}
 
-\subsection*{How to handle topicalization}
 
-I'll just assume a tree structure like (\ex{1}).
+    %Implementation
+    \include{chapters/implementation/implementation}
+    \include{chapters/implementation/fsm}
+    \include{chapters/implementation/pc}
+    \include{chapters/implementation/fetch}
+    \include{chapters/implementation/decode}
+    \include{chapters/implementation/memory_acess}
+    \include{chapters/implementation/execute}
+    \include{chapters/implementation/writeback}
+    \include{chapters/implementation/peripherals/peripherals}
+    \include{chapters/implementation/peripherals/interrupt_controler}
+    \include{chapters/implementation/peripherals/GPIO}
+    \include{chapters/implementation/peripherals/ps2}
+    \include{chapters/implementation/peripherals/timer}
+    \include{chapters/implementation/peripherals/uart}
+    \include{chapters/implementation/peripherals/vga}
 
-{\small
-\enumsentence{Structure of A$'$ Projections:\\ [2ex]
-\begin{tabular}[t]{cccc}
-    & \node{i}{CP}\\ [2ex]
-    \node{ii}{Spec} &   &\node{iii}{C$'$}\\ [2ex]
-        &\node{iv}{C} & & \node{v}{SAgrP}
-\end{tabular}
-\nodeconnect{i}{ii}
-\nodeconnect{i}{iii}
-\nodeconnect{iii}{iv}
-\nodeconnect{iii}{v}
-}
-}
 
-\subsection*{Mood}
-
-Mood changes when there is a topic, as well as when
-there is WH-movement.  \emph{Irrealis} is the mood when
-there is a non-subject topic or WH-phrase in Comp.
-\emph{Realis} is the mood when there is a subject topic
-or WH-phrase.
-
+    %Conclusion
+    \include{chapters/conclusion/conclusion}
+    
 \end{document}
