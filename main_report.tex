@@ -32,18 +32,22 @@
 %defining the shortcut command
 \newcommand{\shortcut}[2]{
     \label{sec:#1 #2}
+    
+    \vspace{-1cm}
+    \hspace{4cm}
     \ifthenelse{\not\equal{#1}{analysis}}
     {
-        \hyperref[sec:analysis #2]{Analysis} \\
+        \hyperref[sec:analysis #2]{\hspace{1cm}Analysis} 
     }{}
     \ifthenelse{\not\equal{#1}{design}}
     {
-        \hyperref[sec:design #2]{Design} \\
+        \hyperref[sec:design #2]{\hspace{1cm}Design} 
     }{}
     \ifthenelse{\not\equal{#1}{implementation}}
     {
-        \hyperref[sec:implementation #2]{Implementation} \\
+        \hyperref[sec:implementation #2]{\hspace{1cm}Implementation} 
     }{}
+    
 }
 
 \pagestyle{fancy} % Enable custom headers/footers

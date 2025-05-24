@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  24 MAY 2025 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  24 MAY 2025 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -262,24 +262,24 @@ LaTeX Warning: Label `sec:analysis VGA' multiply defined.
 ) (./chapters/analysis/pipeline/pipeline.aux) (./chapters/analysis/pipeline/cache.aux) (./chapters/analysis/pipeline/hazard_control.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/design/pipeline/pipeline.aux) (./chapters/design/pipeline/cache.aux) (./chapters/design/pipeline/hazard_control.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/implementation/pipeline/pipeline.aux) (./chapters/implementation/pipeline/cache.aux) (./chapters/implementation/pipeline/hazard_control.aux) (./chapters/conclusion/conclusion.aux))
 \openout1 = `main_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -345,7 +345,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 76.
  (./main_report.out) (./main_report.out)
 \@outlinefile=\write3
 \openout3 = `main_report.out'.
@@ -382,10 +382,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 88.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 84.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 88.
 
 [4
 
@@ -398,7 +398,7 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.95 ...nclude{chapters/introduction/introduction}
+l.99 ...nclude{chapters/introduction/introduction}
                                                    [1
 
 
@@ -413,12 +413,7 @@ LaTeX Warning: Hyper reference `sec:design analysis' on page 2 undefined on inpu
 
 LaTeX Warning: Hyper reference `sec:implementation analysis' on page 2 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--98
-
- []
-
-[2
+) [2
 
 
 
@@ -426,96 +421,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--98
 ]
 \openout2 = `chapters/analysis/fsm.aux'.
 
- (./chapters/analysis/fsm.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--99
-
- []
-
-[3
+ (./chapters/analysis/fsm.tex) [3
 
 
 
 ]
 \openout2 = `chapters/analysis/pc.aux'.
 
- (./chapters/analysis/pc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--100
-
- []
-
-[4
+ (./chapters/analysis/pc.tex) [4
 
 
 
 ]
 \openout2 = `chapters/analysis/fetch.aux'.
 
- (./chapters/analysis/fetch.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--101
-
- []
-
-[5
+ (./chapters/analysis/fetch.tex) [5
 
 
 
 ]
 \openout2 = `chapters/analysis/decode.aux'.
 
- (./chapters/analysis/decode.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--102
-
- []
-
-[6
+ (./chapters/analysis/decode.tex) [6
 
 
 
 ]
 \openout2 = `chapters/analysis/memory_acess.aux'.
 
- (./chapters/analysis/memory_acess.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--103
-
- []
-
-[7
+ (./chapters/analysis/memory_acess.tex) [7
 
 
 
 ]
 \openout2 = `chapters/analysis/execute.aux'.
 
- (./chapters/analysis/execute.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--104
-
- []
-
-[8
+ (./chapters/analysis/execute.tex) [8
 
 
 
 ]
 \openout2 = `chapters/analysis/writeback.aux'.
 
- (./chapters/analysis/writeback.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--105
-
- []
-
-[9
+ (./chapters/analysis/writeback.tex) [9
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/peripherals.aux'.
 
- (./chapters/analysis/peripherals/peripherals.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--106
-
- []
-
-[10
+ (./chapters/analysis/peripherals/peripherals.tex) [10
 
 
 
@@ -529,96 +484,56 @@ LaTeX Warning: Hyper reference `sec:design IC' on page 11 undefined on input lin
 
 LaTeX Warning: Hyper reference `sec:implementation IC' on page 11 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--107
-
- []
-
-[11
+) [11
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/GPIO.aux'.
 
- (./chapters/analysis/peripherals/GPIO.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--108
-
- []
-
-[12
+ (./chapters/analysis/peripherals/GPIO.tex) [12
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/ps2.aux'.
 
- (./chapters/analysis/peripherals/ps2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--109
-
- []
-
-[13
+ (./chapters/analysis/peripherals/ps2.tex) [13
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/timer.aux'.
 
- (./chapters/analysis/peripherals/timer.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--110
-
- []
-
-[14
+ (./chapters/analysis/peripherals/timer.tex) [14
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/uart.aux'.
 
- (./chapters/analysis/peripherals/uart.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--111
-
- []
-
-[15
+ (./chapters/analysis/peripherals/uart.tex) [15
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/vga.aux'.
 
- (./chapters/analysis/peripherals/vga.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--112
-
- []
-
-[16
+ (./chapters/analysis/peripherals/vga.tex) [16
 
 
 
 ]
 \openout2 = `chapters/analysis/pipeline/pipeline.aux'.
 
- (./chapters/analysis/pipeline/pipeline.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--113
-
- []
-
-[17
+ (./chapters/analysis/pipeline/pipeline.tex) [17
 
 
 
 ]
 \openout2 = `chapters/analysis/pipeline/cache.aux'.
 
- (./chapters/analysis/pipeline/cache.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--114
-
- []
-
-[18
+ (./chapters/analysis/pipeline/cache.tex) [18
 
 
 
@@ -632,12 +547,7 @@ LaTeX Warning: Hyper reference `sec:design Hazard Control' on page 19 undefined 
 
 LaTeX Warning: Hyper reference `sec:implementation Hazard Control' on page 19 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--115
-
- []
-
-[19
+) [19
 
 
 
@@ -652,12 +562,7 @@ LaTeX Warning: Hyper reference `sec:analysis design' on page 20 undefined on inp
 
 LaTeX Warning: Hyper reference `sec:implementation design' on page 20 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--119
-
- []
-
-[20
+) [20
 
 
 
@@ -665,96 +570,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--119
 ]
 \openout2 = `chapters/design/fsm.aux'.
 
- (./chapters/design/fsm.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--120
-
- []
-
-[21
+ (./chapters/design/fsm.tex) [21
 
 
 
 ]
 \openout2 = `chapters/design/pc.aux'.
 
- (./chapters/design/pc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--121
-
- []
-
-[22
+ (./chapters/design/pc.tex) [22
 
 
 
 ]
 \openout2 = `chapters/design/fetch.aux'.
 
- (./chapters/design/fetch.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--122
-
- []
-
-[23
+ (./chapters/design/fetch.tex) [23
 
 
 
 ]
 \openout2 = `chapters/design/decode.aux'.
 
- (./chapters/design/decode.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--123
-
- []
-
-[24
+ (./chapters/design/decode.tex) [24
 
 
 
 ]
 \openout2 = `chapters/design/memory_acess.aux'.
 
- (./chapters/design/memory_acess.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--124
-
- []
-
-[25
+ (./chapters/design/memory_acess.tex) [25
 
 
 
 ]
 \openout2 = `chapters/design/execute.aux'.
 
- (./chapters/design/execute.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--125
-
- []
-
-[26
+ (./chapters/design/execute.tex) [26
 
 
 
 ]
 \openout2 = `chapters/design/writeback.aux'.
 
- (./chapters/design/writeback.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--126
-
- []
-
-[27
+ (./chapters/design/writeback.tex) [27
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/peripherals.aux'.
 
- (./chapters/design/peripherals/peripherals.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--127
-
- []
-
-[28
+ (./chapters/design/peripherals/peripherals.tex) [28
 
 
 
@@ -765,96 +630,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--127
 
 LaTeX Warning: Hyper reference `sec:analysis ic' on page 29 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--128
-
- []
-
-[29
+) [29
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/GPIO.aux'.
 
- (./chapters/design/peripherals/GPIO.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--129
-
- []
-
-[30
+ (./chapters/design/peripherals/GPIO.tex) [30
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/ps2.aux'.
 
- (./chapters/design/peripherals/ps2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--130
-
- []
-
-[31
+ (./chapters/design/peripherals/ps2.tex) [31
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/timer.aux'.
 
- (./chapters/design/peripherals/timer.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--131
-
- []
-
-[32
+ (./chapters/design/peripherals/timer.tex) [32
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/uart.aux'.
 
- (./chapters/design/peripherals/uart.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--132
-
- []
-
-[33
+ (./chapters/design/peripherals/uart.tex) [33
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/vga.aux'.
 
- (./chapters/design/peripherals/vga.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--133
-
- []
-
-[34
+ (./chapters/design/peripherals/vga.tex) [34
 
 
 
 ]
 \openout2 = `chapters/design/pipeline/pipeline.aux'.
 
- (./chapters/design/pipeline/pipeline.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--134
-
- []
-
-[35
+ (./chapters/design/pipeline/pipeline.tex) [35
 
 
 
 ]
 \openout2 = `chapters/design/pipeline/cache.aux'.
 
- (./chapters/design/pipeline/cache.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--135
-
- []
-
-[36
+ (./chapters/design/pipeline/cache.tex) [36
 
 
 
@@ -865,12 +690,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--135
 
 LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 37 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--136
-
- []
-
-[37
+) [37
 
 
 
@@ -885,12 +705,7 @@ LaTeX Warning: Hyper reference `sec:analysis implementation' on page 38 undefine
 
 LaTeX Warning: Hyper reference `sec:design implementation' on page 38 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--139
-
- []
-
-[38
+) [38
 
 
 
@@ -898,96 +713,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--139
 ]
 \openout2 = `chapters/implementation/fsm.aux'.
 
- (./chapters/implementation/fsm.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--140
-
- []
-
-[39
+ (./chapters/implementation/fsm.tex) [39
 
 
 
 ]
 \openout2 = `chapters/implementation/pc.aux'.
 
- (./chapters/implementation/pc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--141
-
- []
-
-[40
+ (./chapters/implementation/pc.tex) [40
 
 
 
 ]
 \openout2 = `chapters/implementation/fetch.aux'.
 
- (./chapters/implementation/fetch.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--142
-
- []
-
-[41
+ (./chapters/implementation/fetch.tex) [41
 
 
 
 ]
 \openout2 = `chapters/implementation/decode.aux'.
 
- (./chapters/implementation/decode.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--143
-
- []
-
-[42
+ (./chapters/implementation/decode.tex) [42
 
 
 
 ]
 \openout2 = `chapters/implementation/memory_acess.aux'.
 
- (./chapters/implementation/memory_acess.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--144
-
- []
-
-[43
+ (./chapters/implementation/memory_acess.tex) [43
 
 
 
 ]
 \openout2 = `chapters/implementation/execute.aux'.
 
- (./chapters/implementation/execute.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--145
-
- []
-
-[44
+ (./chapters/implementation/execute.tex) [44
 
 
 
 ]
 \openout2 = `chapters/implementation/writeback.aux'.
 
- (./chapters/implementation/writeback.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--146
-
- []
-
-[45
+ (./chapters/implementation/writeback.tex) [45
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/peripherals.aux'.
 
- (./chapters/implementation/peripherals/peripherals.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--147
-
- []
-
-[46
+ (./chapters/implementation/peripherals/peripherals.tex) [46
 
 
 
@@ -998,96 +773,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--147
 
 LaTeX Warning: Hyper reference `sec:analysis ic' on page 47 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--148
-
- []
-
-[47
+) [47
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/GPIO.aux'.
 
- (./chapters/implementation/peripherals/GPIO.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--149
-
- []
-
-[48
+ (./chapters/implementation/peripherals/GPIO.tex) [48
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/ps2.aux'.
 
- (./chapters/implementation/peripherals/ps2.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--150
-
- []
-
-[49
+ (./chapters/implementation/peripherals/ps2.tex) [49
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/timer.aux'.
 
- (./chapters/implementation/peripherals/timer.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--151
-
- []
-
-[50
+ (./chapters/implementation/peripherals/timer.tex) [50
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/uart.aux'.
 
- (./chapters/implementation/peripherals/uart.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--152
-
- []
-
-[51
+ (./chapters/implementation/peripherals/uart.tex) [51
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/vga.aux'.
 
- (./chapters/implementation/peripherals/vga.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--153
-
- []
-
-[52
+ (./chapters/implementation/peripherals/vga.tex) [52
 
 
 
 ]
 \openout2 = `chapters/implementation/pipeline/pipeline.aux'.
 
- (./chapters/implementation/pipeline/pipeline.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--154
-
- []
-
-[53
+ (./chapters/implementation/pipeline/pipeline.tex) [53
 
 
 
 ]
 \openout2 = `chapters/implementation/pipeline/cache.aux'.
 
- (./chapters/implementation/pipeline/cache.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 2--155
-
- []
-
-[54
+ (./chapters/implementation/pipeline/cache.tex) [54
 
 
 
@@ -1098,12 +833,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--155
 
 LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 55 undefined on input line 2.
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 2--156
-
- []
-
-[55
+) [55
 
 
 
@@ -1141,7 +871,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,12n,79p,368b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on main_report.pdf (61 pages, 133506 bytes).
+Output written on main_report.pdf (61 pages, 133661 bytes).
 PDF statistics:
  711 PDF objects out of 1000 (max. 8388607)
  629 compressed objects within 7 object streams
