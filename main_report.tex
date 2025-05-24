@@ -8,6 +8,7 @@
 \usepackage{float}
 \usepackage{acronym}
 \usepackage{hyperref}
+\usepackage{ifthen}
 %\usepackage{soul}
 %\usepackage{natbib}
 %\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
@@ -28,13 +29,28 @@
 % Redefine \chaptermark to avoid chapter title in \leftmark
 \renewcommand{\baselinestretch}{1.05}
 
-
+%defining the shortcut command
+\newcommand{\shortcut}[2]{
+    \label{sec:#1 #2}
+    \ifthenelse{\not\equal{#1}{analysis}}
+    {
+        \hyperref[sec:analysis #2]{Analysis} \\
+    }{}
+    \ifthenelse{\not\equal{#1}{design}}
+    {
+        \hyperref[sec:design #2]{Design} \\
+    }{}
+    \ifthenelse{\not\equal{#1}{implementation}}
+    {
+        \hyperref[sec:implementation #2]{Implementation} \\
+    }{}
+}
 
 \pagestyle{fancy} % Enable custom headers/footers
 \fancyhf{} % Clear default header/footer
 
 \fancyfoot[C]{A project on the master’s in industrial Electronics and Computers
-Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
+Engineering by the professor Adriano Tavares 2024/2025}
 \fancyfoot[R]{\newline\newline\thepage}
 
 %\fancyhead{}
@@ -93,7 +109,11 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
     \include{chapters/analysis/peripherals/ps2}
     \include{chapters/analysis/peripherals/timer}
     \include{chapters/analysis/peripherals/uart}
-    \include{chapters/analysis/peripherals/vga}
+    \include{chapters/analysis/peripherals/vga} 
+    \include{chapters/analysis/pipeline/pipeline}
+    \include{chapters/analysis/pipeline/cache}
+    \include{chapters/analysis/pipeline/hazard_control}
+
 
     %Design
     \include{chapters/design/design}
@@ -111,7 +131,9 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
     \include{chapters/design/peripherals/timer}
     \include{chapters/design/peripherals/uart}
     \include{chapters/design/peripherals/vga}
-
+    \include{chapters/design/pipeline/pipeline}
+    \include{chapters/design/pipeline/cache}
+    \include{chapters/design/pipeline/hazard_control}
 
     %Implementation
     \include{chapters/implementation/implementation}
@@ -129,6 +151,9 @@ Engineering by the professors Luis Gonçalves and Sérgio Lopes 2024/2025}
     \include{chapters/implementation/peripherals/timer}
     \include{chapters/implementation/peripherals/uart}
     \include{chapters/implementation/peripherals/vga}
+    \include{chapters/implementation/pipeline/pipeline}
+    \include{chapters/implementation/pipeline/cache}
+    \include{chapters/implementation/pipeline/hazard_control}
 
 
     %Conclusion

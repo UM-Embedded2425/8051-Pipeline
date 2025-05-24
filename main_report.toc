@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {2.2}Program Counter}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Fetch}{5}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Decode}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Memory Acess}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Memory Access}{7}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Execute}{8}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Writeback}{9}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Peripherals}{10}{section.2.8}%
@@ -16,34 +16,43 @@
 \contentsline {subsection}{\numberline {2.8.4}Timer}{14}{subsection.2.8.4}%
 \contentsline {subsection}{\numberline {2.8.5}UART}{15}{subsection.2.8.5}%
 \contentsline {subsection}{\numberline {2.8.6}VGA}{16}{subsection.2.8.6}%
-\contentsline {chapter}{\numberline {3}Design}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}FSM}{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Program Counter}{19}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Fetch}{20}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Decode}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Memory Acess}{22}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Execute}{23}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Writeback}{24}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Peripherals}{25}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Interrupt Controler}{26}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}GPIO}{27}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}PS2}{28}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}Timer}{29}{subsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.8.5}UART}{30}{subsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.8.6}VGA}{31}{subsection.3.8.6}%
-\contentsline {chapter}{\numberline {4}Implementation}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}FSM}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Program Counter}{34}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fetch}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Decode}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Memory Acess}{37}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Execute}{38}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Writeback}{39}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Peripherals}{40}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Interrupt Controler}{41}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}GPIO}{42}{subsection.4.8.2}%
-\contentsline {subsection}{\numberline {4.8.3}PS2}{43}{subsection.4.8.3}%
-\contentsline {subsection}{\numberline {4.8.4}Timer}{44}{subsection.4.8.4}%
-\contentsline {subsection}{\numberline {4.8.5}UART}{45}{subsection.4.8.5}%
-\contentsline {subsection}{\numberline {4.8.6}VGA}{46}{subsection.4.8.6}%
-\contentsline {chapter}{\numberline {5}Conclusion}{47}{chapter.5}%
+\contentsline {section}{\numberline {2.9}Pipeline}{17}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}Cache}{18}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}Hazard Control}{19}{subsection.2.9.2}%
+\contentsline {chapter}{\numberline {3}Design}{20}{chapter.3}%
+\contentsline {section}{\numberline {3.1}FSM}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Program Counter}{22}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Fetch}{23}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Decode}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Memory Access}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Execute}{26}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Writeback}{27}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Peripherals}{28}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Interrupt Controler}{29}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}GPIO}{30}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}PS2}{31}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Timer}{32}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}UART}{33}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}VGA}{34}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}Pipeline}{35}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Cache}{36}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Hazard Control}{37}{subsection.3.9.2}%
+\contentsline {chapter}{\numberline {4}Implementation}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}FSM}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Program Counter}{40}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fetch}{41}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Decode}{42}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Memory Acess}{43}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Execute}{44}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Writeback}{45}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Peripherals}{46}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Interrupt Controler}{47}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}GPIO}{48}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}PS2}{49}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.4}Timer}{50}{subsection.4.8.4}%
+\contentsline {subsection}{\numberline {4.8.5}UART}{51}{subsection.4.8.5}%
+\contentsline {subsection}{\numberline {4.8.6}VGA}{52}{subsection.4.8.6}%
+\contentsline {section}{\numberline {4.9}Pipeline}{53}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Cache}{54}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Hazard Control}{55}{subsection.4.9.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{56}{chapter.5}%

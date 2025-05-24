@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  23 MAY 2025 03:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  24 MAY 2025 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -247,33 +247,39 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip64
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box53
-) (./main_report.aux (./title_page/title.aux) (./chapters/introduction/introduction.aux) (./chapters/analysis/analysis.aux) (./chapters/analysis/fsm.aux) (./chapters/analysis/pc.aux) (./chapters/analysis/fetch.aux) (./chapters/analysis/decode.aux) (./chapters/analysis/memory_acess.aux) (./chapters/analysis/execute.aux) (./chapters/analysis/writeback.aux) (./chapters/analysis/peripherals/peripherals.aux) (./chapters/analysis/peripherals/interrupt_controler.aux) (./chapters/analysis/peripherals/GPIO.aux) (./chapters/analysis/peripherals/ps2.aux) (./chapters/analysis/peripherals/timer.aux) (./chapters/analysis/peripherals/uart.aux) (./chapters/analysis/peripherals/vga.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/conclusion/conclusion.aux))
+) (./main_report.aux (./title_page/title.aux) (./chapters/introduction/introduction.aux) (./chapters/analysis/analysis.aux) (./chapters/analysis/fsm.aux) (./chapters/analysis/pc.aux) (./chapters/analysis/fetch.aux) (./chapters/analysis/decode.aux) (./chapters/analysis/memory_acess.aux) (./chapters/analysis/execute.aux) (./chapters/analysis/writeback.aux) (./chapters/analysis/peripherals/peripherals.aux) (./chapters/analysis/peripherals/interrupt_controler.aux) (./chapters/analysis/peripherals/GPIO.aux) (./chapters/analysis/peripherals/ps2.aux) (./chapters/analysis/peripherals/timer.aux) (./chapters/analysis/peripherals/uart.aux) (./chapters/analysis/peripherals/vga.aux
+
+LaTeX Warning: Label `sec:analysis VGA' multiply defined.
+
+) (./chapters/analysis/pipeline/pipeline.aux) (./chapters/analysis/pipeline/cache.aux) (./chapters/analysis/pipeline/hazard_control.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/design/pipeline/pipeline.aux) (./chapters/design/pipeline/cache.aux) (./chapters/design/pipeline/hazard_control.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/implementation/pipeline/pipeline.aux) (./chapters/implementation/pipeline/cache.aux) (./chapters/implementation/pipeline/hazard_control.aux) (./chapters/conclusion/conclusion.aux))
 \openout1 = `main_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -339,7 +345,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 56.
+Package hyperref Info: Link coloring ON on input line 72.
  (./main_report.out) (./main_report.out)
 \@outlinefile=\write3
 \openout3 = `main_report.out'.
@@ -376,10 +382,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 68.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 84.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 68.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 84.
 
 [4
 
@@ -392,7 +398,7 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.79 ...nclude{chapters/introduction/introduction}
+l.95 ...nclude{chapters/introduction/introduction}
                                                    [1
 
 
@@ -401,7 +407,18 @@ l.79 ...nclude{chapters/introduction/introduction}
 
  (./chapters/analysis/analysis.tex
 Chapter 2.
-) [2
+
+LaTeX Warning: Hyper reference `sec:design analysis' on page 2 undefined on input line 2.
+
+
+LaTeX Warning: Hyper reference `sec:implementation analysis' on page 2 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--98
+
+ []
+
+[2
 
 
 
@@ -409,98 +426,218 @@ Chapter 2.
 ]
 \openout2 = `chapters/analysis/fsm.aux'.
 
- (./chapters/analysis/fsm.tex) [3
+ (./chapters/analysis/fsm.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--99
+
+ []
+
+[3
 
 
 
 ]
 \openout2 = `chapters/analysis/pc.aux'.
 
- (./chapters/analysis/pc.tex) [4
+ (./chapters/analysis/pc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--100
+
+ []
+
+[4
 
 
 
 ]
 \openout2 = `chapters/analysis/fetch.aux'.
 
- (./chapters/analysis/fetch.tex) [5
+ (./chapters/analysis/fetch.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--101
+
+ []
+
+[5
 
 
 
 ]
 \openout2 = `chapters/analysis/decode.aux'.
 
- (./chapters/analysis/decode.tex) [6
+ (./chapters/analysis/decode.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--102
+
+ []
+
+[6
 
 
 
 ]
 \openout2 = `chapters/analysis/memory_acess.aux'.
 
- (./chapters/analysis/memory_acess.tex) [7
+ (./chapters/analysis/memory_acess.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--103
+
+ []
+
+[7
 
 
 
 ]
 \openout2 = `chapters/analysis/execute.aux'.
 
- (./chapters/analysis/execute.tex) [8
+ (./chapters/analysis/execute.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--104
+
+ []
+
+[8
 
 
 
 ]
 \openout2 = `chapters/analysis/writeback.aux'.
 
- (./chapters/analysis/writeback.tex) [9
+ (./chapters/analysis/writeback.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--105
+
+ []
+
+[9
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/peripherals.aux'.
 
- (./chapters/analysis/peripherals/peripherals.tex) [10
+ (./chapters/analysis/peripherals/peripherals.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--106
+
+ []
+
+[10
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/interrupt_controler.aux'.
 
- (./chapters/analysis/peripherals/interrupt_controler.tex) [11
+ (./chapters/analysis/peripherals/interrupt_controler.tex
+
+LaTeX Warning: Hyper reference `sec:design IC' on page 11 undefined on input line 2.
+
+
+LaTeX Warning: Hyper reference `sec:implementation IC' on page 11 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--107
+
+ []
+
+[11
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/GPIO.aux'.
 
- (./chapters/analysis/peripherals/GPIO.tex) [12
+ (./chapters/analysis/peripherals/GPIO.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--108
+
+ []
+
+[12
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/ps2.aux'.
 
- (./chapters/analysis/peripherals/ps2.tex) [13
+ (./chapters/analysis/peripherals/ps2.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--109
+
+ []
+
+[13
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/timer.aux'.
 
- (./chapters/analysis/peripherals/timer.tex) [14
+ (./chapters/analysis/peripherals/timer.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--110
+
+ []
+
+[14
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/uart.aux'.
 
- (./chapters/analysis/peripherals/uart.tex) [15
+ (./chapters/analysis/peripherals/uart.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--111
+
+ []
+
+[15
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/vga.aux'.
 
- (./chapters/analysis/peripherals/vga.tex) [16
+ (./chapters/analysis/peripherals/vga.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 3--112
+
+ []
+
+[16
+
+
+
+]
+\openout2 = `chapters/analysis/pipeline/pipeline.aux'.
+
+ (./chapters/analysis/pipeline/pipeline.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--113
+
+ []
+
+[17
+
+
+
+]
+\openout2 = `chapters/analysis/pipeline/cache.aux'.
+
+ (./chapters/analysis/pipeline/cache.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--114
+
+ []
+
+[18
+
+
+
+]
+\openout2 = `chapters/analysis/pipeline/hazard_control.aux'.
+
+ (./chapters/analysis/pipeline/hazard_control.tex
+
+LaTeX Warning: Hyper reference `sec:design Hazard Control' on page 19 undefined on input line 2.
+
+
+LaTeX Warning: Hyper reference `sec:implementation Hazard Control' on page 19 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--115
+
+ []
+
+[19
 
 
 
@@ -509,7 +646,18 @@ Chapter 2.
 
  (./chapters/design/design.tex
 Chapter 3.
-) [17
+
+LaTeX Warning: Hyper reference `sec:analysis design' on page 20 undefined on input line 2.
+
+
+LaTeX Warning: Hyper reference `sec:implementation design' on page 20 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--119
+
+ []
+
+[20
 
 
 
@@ -517,98 +665,212 @@ Chapter 3.
 ]
 \openout2 = `chapters/design/fsm.aux'.
 
- (./chapters/design/fsm.tex) [18
+ (./chapters/design/fsm.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--120
+
+ []
+
+[21
 
 
 
 ]
 \openout2 = `chapters/design/pc.aux'.
 
- (./chapters/design/pc.tex) [19
+ (./chapters/design/pc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--121
+
+ []
+
+[22
 
 
 
 ]
 \openout2 = `chapters/design/fetch.aux'.
 
- (./chapters/design/fetch.tex) [20
+ (./chapters/design/fetch.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--122
+
+ []
+
+[23
 
 
 
 ]
 \openout2 = `chapters/design/decode.aux'.
 
- (./chapters/design/decode.tex) [21
+ (./chapters/design/decode.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--123
+
+ []
+
+[24
 
 
 
 ]
 \openout2 = `chapters/design/memory_acess.aux'.
 
- (./chapters/design/memory_acess.tex) [22
+ (./chapters/design/memory_acess.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--124
+
+ []
+
+[25
 
 
 
 ]
 \openout2 = `chapters/design/execute.aux'.
 
- (./chapters/design/execute.tex) [23
+ (./chapters/design/execute.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--125
+
+ []
+
+[26
 
 
 
 ]
 \openout2 = `chapters/design/writeback.aux'.
 
- (./chapters/design/writeback.tex) [24
+ (./chapters/design/writeback.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--126
+
+ []
+
+[27
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/peripherals.aux'.
 
- (./chapters/design/peripherals/peripherals.tex) [25
+ (./chapters/design/peripherals/peripherals.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--127
+
+ []
+
+[28
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/interrupt_controler.aux'.
 
- (./chapters/design/peripherals/interrupt_controler.tex) [26
+ (./chapters/design/peripherals/interrupt_controler.tex
+
+LaTeX Warning: Hyper reference `sec:analysis ic' on page 29 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--128
+
+ []
+
+[29
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/GPIO.aux'.
 
- (./chapters/design/peripherals/GPIO.tex) [27
+ (./chapters/design/peripherals/GPIO.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--129
+
+ []
+
+[30
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/ps2.aux'.
 
- (./chapters/design/peripherals/ps2.tex) [28
+ (./chapters/design/peripherals/ps2.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--130
+
+ []
+
+[31
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/timer.aux'.
 
- (./chapters/design/peripherals/timer.tex) [29
+ (./chapters/design/peripherals/timer.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--131
+
+ []
+
+[32
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/uart.aux'.
 
- (./chapters/design/peripherals/uart.tex) [30
+ (./chapters/design/peripherals/uart.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--132
+
+ []
+
+[33
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/vga.aux'.
 
- (./chapters/design/peripherals/vga.tex) [31
+ (./chapters/design/peripherals/vga.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--133
+
+ []
+
+[34
+
+
+
+]
+\openout2 = `chapters/design/pipeline/pipeline.aux'.
+
+ (./chapters/design/pipeline/pipeline.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--134
+
+ []
+
+[35
+
+
+
+]
+\openout2 = `chapters/design/pipeline/cache.aux'.
+
+ (./chapters/design/pipeline/cache.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--135
+
+ []
+
+[36
+
+
+
+]
+\openout2 = `chapters/design/pipeline/hazard_control.aux'.
+
+ (./chapters/design/pipeline/hazard_control.tex
+
+LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 37 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--136
+
+ []
+
+[37
 
 
 
@@ -617,7 +879,18 @@ Chapter 3.
 
  (./chapters/implementation/implementation.tex
 Chapter 4.
-) [32
+
+LaTeX Warning: Hyper reference `sec:analysis implementation' on page 38 undefined on input line 2.
+
+
+LaTeX Warning: Hyper reference `sec:design implementation' on page 38 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--139
+
+ []
+
+[38
 
 
 
@@ -625,98 +898,212 @@ Chapter 4.
 ]
 \openout2 = `chapters/implementation/fsm.aux'.
 
- (./chapters/implementation/fsm.tex) [33
+ (./chapters/implementation/fsm.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--140
+
+ []
+
+[39
 
 
 
 ]
 \openout2 = `chapters/implementation/pc.aux'.
 
- (./chapters/implementation/pc.tex) [34
+ (./chapters/implementation/pc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--141
+
+ []
+
+[40
 
 
 
 ]
 \openout2 = `chapters/implementation/fetch.aux'.
 
- (./chapters/implementation/fetch.tex) [35
+ (./chapters/implementation/fetch.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--142
+
+ []
+
+[41
 
 
 
 ]
 \openout2 = `chapters/implementation/decode.aux'.
 
- (./chapters/implementation/decode.tex) [36
+ (./chapters/implementation/decode.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--143
+
+ []
+
+[42
 
 
 
 ]
 \openout2 = `chapters/implementation/memory_acess.aux'.
 
- (./chapters/implementation/memory_acess.tex) [37
+ (./chapters/implementation/memory_acess.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--144
+
+ []
+
+[43
 
 
 
 ]
 \openout2 = `chapters/implementation/execute.aux'.
 
- (./chapters/implementation/execute.tex) [38
+ (./chapters/implementation/execute.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--145
+
+ []
+
+[44
 
 
 
 ]
 \openout2 = `chapters/implementation/writeback.aux'.
 
- (./chapters/implementation/writeback.tex) [39
+ (./chapters/implementation/writeback.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--146
+
+ []
+
+[45
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/peripherals.aux'.
 
- (./chapters/implementation/peripherals/peripherals.tex) [40
+ (./chapters/implementation/peripherals/peripherals.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--147
+
+ []
+
+[46
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/interrupt_controler.aux'.
 
- (./chapters/implementation/peripherals/interrupt_controler.tex) [41
+ (./chapters/implementation/peripherals/interrupt_controler.tex
+
+LaTeX Warning: Hyper reference `sec:analysis ic' on page 47 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--148
+
+ []
+
+[47
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/GPIO.aux'.
 
- (./chapters/implementation/peripherals/GPIO.tex) [42
+ (./chapters/implementation/peripherals/GPIO.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--149
+
+ []
+
+[48
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/ps2.aux'.
 
- (./chapters/implementation/peripherals/ps2.tex) [43
+ (./chapters/implementation/peripherals/ps2.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--150
+
+ []
+
+[49
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/timer.aux'.
 
- (./chapters/implementation/peripherals/timer.tex) [44
+ (./chapters/implementation/peripherals/timer.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--151
+
+ []
+
+[50
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/uart.aux'.
 
- (./chapters/implementation/peripherals/uart.tex) [45
+ (./chapters/implementation/peripherals/uart.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--152
+
+ []
+
+[51
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/vga.aux'.
 
- (./chapters/implementation/peripherals/vga.tex) [46
+ (./chapters/implementation/peripherals/vga.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--153
+
+ []
+
+[52
+
+
+
+]
+\openout2 = `chapters/implementation/pipeline/pipeline.aux'.
+
+ (./chapters/implementation/pipeline/pipeline.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--154
+
+ []
+
+[53
+
+
+
+]
+\openout2 = `chapters/implementation/pipeline/cache.aux'.
+
+ (./chapters/implementation/pipeline/cache.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--155
+
+ []
+
+[54
+
+
+
+]
+\openout2 = `chapters/implementation/pipeline/hazard_control.aux'.
+
+ (./chapters/implementation/pipeline/hazard_control.tex
+
+LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 55 undefined on input line 2.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2--156
+
+ []
+
+[55
 
 
 
@@ -725,12 +1112,12 @@ Chapter 4.
 
  (./chapters/conclusion/conclusion.tex
 Chapter 5.
-) [47
+) [56
 
 
 
 
-] (./main_report.aux (./title_page/title.aux) (./chapters/introduction/introduction.aux) (./chapters/analysis/analysis.aux) (./chapters/analysis/fsm.aux) (./chapters/analysis/pc.aux) (./chapters/analysis/fetch.aux) (./chapters/analysis/decode.aux) (./chapters/analysis/memory_acess.aux) (./chapters/analysis/execute.aux) (./chapters/analysis/writeback.aux) (./chapters/analysis/peripherals/peripherals.aux) (./chapters/analysis/peripherals/interrupt_controler.aux) (./chapters/analysis/peripherals/GPIO.aux) (./chapters/analysis/peripherals/ps2.aux) (./chapters/analysis/peripherals/timer.aux) (./chapters/analysis/peripherals/uart.aux) (./chapters/analysis/peripherals/vga.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/conclusion/conclusion.aux))
+] (./main_report.aux (./title_page/title.aux) (./chapters/introduction/introduction.aux) (./chapters/analysis/analysis.aux) (./chapters/analysis/fsm.aux) (./chapters/analysis/pc.aux) (./chapters/analysis/fetch.aux) (./chapters/analysis/decode.aux) (./chapters/analysis/memory_acess.aux) (./chapters/analysis/execute.aux) (./chapters/analysis/writeback.aux) (./chapters/analysis/peripherals/peripherals.aux) (./chapters/analysis/peripherals/interrupt_controler.aux) (./chapters/analysis/peripherals/GPIO.aux) (./chapters/analysis/peripherals/ps2.aux) (./chapters/analysis/peripherals/timer.aux) (./chapters/analysis/peripherals/uart.aux) (./chapters/analysis/peripherals/vga.aux) (./chapters/analysis/pipeline/pipeline.aux) (./chapters/analysis/pipeline/cache.aux) (./chapters/analysis/pipeline/hazard_control.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/design/pipeline/pipeline.aux) (./chapters/design/pipeline/cache.aux) (./chapters/design/pipeline/hazard_control.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/implementation/pipeline/pipeline.aux) (./chapters/implementation/pipeline/cache.aux) (./chapters/implementation/pipeline/hazard_control.aux) (./chapters/conclusion/conclusion.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -739,22 +1126,25 @@ L3 programming layer <2024-01-22>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main_report.out' has not changed.
-(rerunfilecheck)             Checksum: 4073CC677B556078B0C65BD5841A89F4;4652.
+(rerunfilecheck)             Checksum: 1BE9CD025748C862C588082D18EA72CA;5613.
  ) 
 Here is how much of TeX's memory you used:
- 13559 strings out of 474222
- 253310 string characters out of 5748733
+ 13929 strings out of 474222
+ 267501 string characters out of 5748733
  1937975 words of memory out of 5000000
- 35257 multiletter control sequences out of 15000+600000
+ 35546 multiletter control sequences out of 15000+600000
  564443 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,368b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,368b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on main_report.pdf (52 pages, 122855 bytes).
+Output written on main_report.pdf (61 pages, 133506 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 457 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 629 compressed objects within 7 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 
