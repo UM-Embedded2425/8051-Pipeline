@@ -33,20 +33,41 @@
 \newcommand{\shortcut}[2]{
     \label{sec:#1 #2}
     
-    \vspace{-1cm}
-    \hspace{4cm}
-    \ifthenelse{\not\equal{#1}{analysis}}
+    
+    \ifthenelse{\equal{#1}{#2}}
     {
-        \hyperref[sec:analysis #2]{\hspace{1cm}Analysis} 
-    }{}
-    \ifthenelse{\not\equal{#1}{design}}
+        \vspace{-2cm}
+        \hspace{9cm}
+        \ifthenelse{\not\equal{#1}{analysis}}
+        {
+            \hyperref[sec:analysis analysis]{\hspace{1cm}Analysis} 
+        }{}
+        \ifthenelse{\not\equal{#1}{design}}
+        {
+            \hyperref[sec:design design]{\hspace{1cm}Design} 
+        }{}
+        \ifthenelse{\not\equal{#1}{implementation}}
+        {
+            \hyperref[sec:implementation implementation]{\hspace{1cm}Implementation} 
+        }{}
+    }
     {
-        \hyperref[sec:design #2]{\hspace{1cm}Design} 
-    }{}
-    \ifthenelse{\not\equal{#1}{implementation}}
-    {
-        \hyperref[sec:implementation #2]{\hspace{1cm}Implementation} 
-    }{}
+        \vspace{-1cm}
+        \hspace{9cm}
+        \ifthenelse{\not\equal{#1}{analysis}}
+        {
+            \hyperref[sec:analysis #2]{\hspace{1cm}Analysis} 
+        }{}
+        \ifthenelse{\not\equal{#1}{design}}
+        {
+            \hyperref[sec:design #2]{\hspace{1cm}Design} 
+        }{}
+        \ifthenelse{\not\equal{#1}{implementation}}
+        {
+            \hyperref[sec:implementation #2]{\hspace{1cm}Implementation} 
+        }{}
+    }
+    
     
 }
 
