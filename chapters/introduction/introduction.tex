@@ -1,2 +1,50 @@
 \chapter{Introduction}
-\section{Problem Statment}
+\section{Problem Statement}
+
+This project involves the design and implementation of an 8051-compatible microcontroller 
+using Verilog HDL on a ZyboZ7 FPGA development board. The 8051 architecture is well known by
+the class and serves as a practical foundation for applying digital design concepts. 
+The project is distributed across the entire class, with themes rotating every two weeks. 
+In addition to the core components—peripherals, single-cycle CPU, and pipelined CPU—a final 
+theme will involve the development of a simple C compiler targeting the designed 
+microcontroller.
+
+The project is divided into two main versions of the microcontroller architecture:
+\begin{enumerate}
+    \item \textbf{Single-Cycle Version}
+    \item \textbf{Pipelined Version}
+\end{enumerate}
+
+Each version must be capable of executing a defined subset of the 8051 instruction set and 
+interfacing with a set of peripherals also developed by the class. The final implementation
+ should demonstrate correct execution of programs and proper interaction with these
+  peripherals through memory-mapped I/O or equivalent interfacing strategies.
+
+Both architectures must include:
+\begin{itemize}
+    \item Instruction fetch, decode, execution, and write-back stages (as applicable)
+    \item A register file, ALU, and control logic
+    \item Memory interface for instruction and data access
+    \item Access to a shared peripheral interface/bus
+\end{itemize}
+
+This project will be completed in phases, with key milestones to be defined by the
+ Professor and class schedule. Documentation, simulation, synthesis, and on-board 
+ testing are required deliverables.
+
+\vspace{0.5cm}
+The C-compiler for this 8051 will be presented in a separate documentation.
+\vspace{0.5cm}
+
+This project follows a \textbf{waterfall development approach}, 
+where each stage of the system's creation—analysis, design, implementation, testing, 
+and deployment—is.addressed in sequence. The purpose of this chapter is to analyze the functional 
+and structural requirements of the 8051-compatible microcontroller and its subsystems, which 
+include the single-cycle CPU, pipelined CPU, peripheral interfaces, and C compiler backend.
+
+
+\section {Requirements}
+
+\section {Constraints}
+
+\section{System Overview}

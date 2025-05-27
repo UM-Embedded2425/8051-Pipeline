@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  24 MAY 2025 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.27)  27 MAY 2025 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -250,7 +250,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
@@ -262,24 +262,24 @@ LaTeX Warning: Label `sec:analysis VGA' multiply defined.
 ) (./chapters/analysis/pipeline/pipeline.aux) (./chapters/analysis/pipeline/cache.aux) (./chapters/analysis/pipeline/hazard_control.aux) (./chapters/design/design.aux) (./chapters/design/fsm.aux) (./chapters/design/pc.aux) (./chapters/design/fetch.aux) (./chapters/design/decode.aux) (./chapters/design/memory_acess.aux) (./chapters/design/execute.aux) (./chapters/design/writeback.aux) (./chapters/design/peripherals/peripherals.aux) (./chapters/design/peripherals/interrupt_controler.aux) (./chapters/design/peripherals/GPIO.aux) (./chapters/design/peripherals/ps2.aux) (./chapters/design/peripherals/timer.aux) (./chapters/design/peripherals/uart.aux) (./chapters/design/peripherals/vga.aux) (./chapters/design/pipeline/pipeline.aux) (./chapters/design/pipeline/cache.aux) (./chapters/design/pipeline/hazard_control.aux) (./chapters/implementation/implementation.aux) (./chapters/implementation/fsm.aux) (./chapters/implementation/pc.aux) (./chapters/implementation/fetch.aux) (./chapters/implementation/decode.aux) (./chapters/implementation/memory_acess.aux) (./chapters/implementation/execute.aux) (./chapters/implementation/writeback.aux) (./chapters/implementation/peripherals/peripherals.aux) (./chapters/implementation/peripherals/interrupt_controler.aux) (./chapters/implementation/peripherals/GPIO.aux) (./chapters/implementation/peripherals/ps2.aux) (./chapters/implementation/peripherals/timer.aux) (./chapters/implementation/peripherals/uart.aux) (./chapters/implementation/peripherals/vga.aux) (./chapters/implementation/pipeline/pipeline.aux) (./chapters/implementation/pipeline/cache.aux) (./chapters/implementation/pipeline/hazard_control.aux) (./chapters/conclusion/conclusion.aux))
 \openout1 = `main_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -345,17 +345,28 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 97.
+Package hyperref Info: Link coloring ON on input line 100.
  (./main_report.out) (./main_report.out)
 \@outlinefile=\write3
 \openout3 = `main_report.out'.
 
 \openout2 = `title_page/title.aux'.
 
- (./title_page/title.tex) [1
+ (./title_page/title.tex
+<images/ENG-EN.png, id=249, 301.125pt x 273.02pt>
+File: images/ENG-EN.png Graphic file (type png)
+<use images/ENG-EN.png>
+Package pdftex.def Info: images/ENG-EN.png  used on input line 3.
+(pdftex.def)             Requested size: 135.89174pt x 123.21196pt.
+<images/Labs-ESRG-resized.png, id=251, 580.1675pt x 545.03625pt>
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 7.
+(pdftex.def)             Requested size: 113.24197pt x 106.37727pt.
+) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main_report.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/ENG-EN.png> <./images/Labs-ESRG-resized.png>] (./main_report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -370,7 +381,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write4
 \openout4 = `main_report.toc'.
 
- [2] (./main_report.lof)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 107.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+<images/TOP_ENG_LOGO.png, id=331, 1204.5pt x 632.3625pt>
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 107.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [2 <./images/TOP_ENG_LOGO.png (PNG copy)>] (./main_report.lof)
 \tf@lof=\write5
 \openout5 = `main_report.lof'.
 
@@ -382,10 +402,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 109.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 112.
 
 
-LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 109.
+LaTeX Warning: Hyper reference `acro:UART' on page iv undefined on input line 112.
 
 [4
 
@@ -398,16 +418,25 @@ Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 ...clude{chapters/introduction/introduction}
+l.123 ...clude{chapters/introduction/introduction}
                                                    [1
 
 
-]
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 123.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 123.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [2]
 \openout2 = `chapters/analysis/analysis.aux'.
 
  (./chapters/analysis/analysis.tex
 Chapter 2.
-) [2
+) [3
 
 
 
@@ -415,133 +444,272 @@ Chapter 2.
 ]
 \openout2 = `chapters/analysis/fsm.aux'.
 
- (./chapters/analysis/fsm.tex) [3
+ (./chapters/analysis/fsm.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 127.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 127.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [4
 
 
 
 ]
 \openout2 = `chapters/analysis/pc.aux'.
 
- (./chapters/analysis/pc.tex) [4
+ (./chapters/analysis/pc.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 128.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 128.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [5
 
 
 
 ]
 \openout2 = `chapters/analysis/fetch.aux'.
 
- (./chapters/analysis/fetch.tex) [5
+ (./chapters/analysis/fetch.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 129.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 129.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [6
 
 
 
 ]
 \openout2 = `chapters/analysis/decode.aux'.
 
- (./chapters/analysis/decode.tex) [6
+ (./chapters/analysis/decode.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 130.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 130.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [7
 
 
 
 ]
 \openout2 = `chapters/analysis/memory_acess.aux'.
 
- (./chapters/analysis/memory_acess.tex) [7
+ (./chapters/analysis/memory_acess.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 131.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 131.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [8
 
 
 
 ]
 \openout2 = `chapters/analysis/execute.aux'.
 
- (./chapters/analysis/execute.tex) [8
+ (./chapters/analysis/execute.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 132.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 132.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [9
 
 
 
 ]
 \openout2 = `chapters/analysis/writeback.aux'.
 
- (./chapters/analysis/writeback.tex) [9
+ (./chapters/analysis/writeback.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 133.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 133.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [10
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/peripherals.aux'.
 
- (./chapters/analysis/peripherals/peripherals.tex) [10
+ (./chapters/analysis/peripherals/peripherals.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 134.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 134.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [11
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/interrupt_controler.aux'.
 
- (./chapters/analysis/peripherals/interrupt_controler.tex
-
-LaTeX Warning: Hyper reference `sec:design IC' on page 11 undefined on input line 2.
-
-
-LaTeX Warning: Hyper reference `sec:implementation IC' on page 11 undefined on input line 2.
-
-) [11
+ (./chapters/analysis/peripherals/interrupt_controler.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 135.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 135.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [12
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/GPIO.aux'.
 
- (./chapters/analysis/peripherals/GPIO.tex) [12
+ (./chapters/analysis/peripherals/GPIO.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 136.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 136.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [13
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/ps2.aux'.
 
- (./chapters/analysis/peripherals/ps2.tex) [13
+ (./chapters/analysis/peripherals/ps2.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 137.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 137.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [14
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/timer.aux'.
 
- (./chapters/analysis/peripherals/timer.tex) [14
+ (./chapters/analysis/peripherals/timer.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 138.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 138.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [15
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/uart.aux'.
 
- (./chapters/analysis/peripherals/uart.tex) [15
+ (./chapters/analysis/peripherals/uart.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 139.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 139.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [16
 
 
 
 ]
 \openout2 = `chapters/analysis/peripherals/vga.aux'.
 
- (./chapters/analysis/peripherals/vga.tex) [16
+ (./chapters/analysis/peripherals/vga.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 140.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 140.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [17
 
 
 
 ]
 \openout2 = `chapters/analysis/pipeline/pipeline.aux'.
 
- (./chapters/analysis/pipeline/pipeline.tex) [17
+ (./chapters/analysis/pipeline/pipeline.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 141.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 141.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [18
 
 
 
 ]
 \openout2 = `chapters/analysis/pipeline/cache.aux'.
 
- (./chapters/analysis/pipeline/cache.tex) [18
+ (./chapters/analysis/pipeline/cache.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 142.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 142.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [19
 
 
 
 ]
 \openout2 = `chapters/analysis/pipeline/hazard_control.aux'.
 
- (./chapters/analysis/pipeline/hazard_control.tex
-
-LaTeX Warning: Hyper reference `sec:design Hazard Control' on page 19 undefined on input line 2.
-
-
-LaTeX Warning: Hyper reference `sec:implementation Hazard Control' on page 19 undefined on input line 2.
-
-) [19
+ (./chapters/analysis/pipeline/hazard_control.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 143.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 143.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [20
 
 
 
@@ -550,7 +718,7 @@ LaTeX Warning: Hyper reference `sec:implementation Hazard Control' on page 19 un
 
  (./chapters/design/design.tex
 Chapter 3.
-) [20
+) [21
 
 
 
@@ -558,127 +726,272 @@ Chapter 3.
 ]
 \openout2 = `chapters/design/fsm.aux'.
 
- (./chapters/design/fsm.tex) [21
+ (./chapters/design/fsm.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 148.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 148.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [22
 
 
 
 ]
 \openout2 = `chapters/design/pc.aux'.
 
- (./chapters/design/pc.tex) [22
+ (./chapters/design/pc.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 149.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 149.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [23
 
 
 
 ]
 \openout2 = `chapters/design/fetch.aux'.
 
- (./chapters/design/fetch.tex) [23
+ (./chapters/design/fetch.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 150.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 150.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [24
 
 
 
 ]
 \openout2 = `chapters/design/decode.aux'.
 
- (./chapters/design/decode.tex) [24
+ (./chapters/design/decode.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 151.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 151.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [25
 
 
 
 ]
 \openout2 = `chapters/design/memory_acess.aux'.
 
- (./chapters/design/memory_acess.tex) [25
+ (./chapters/design/memory_acess.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 152.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 152.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [26
 
 
 
 ]
 \openout2 = `chapters/design/execute.aux'.
 
- (./chapters/design/execute.tex) [26
+ (./chapters/design/execute.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 153.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 153.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [27
 
 
 
 ]
 \openout2 = `chapters/design/writeback.aux'.
 
- (./chapters/design/writeback.tex) [27
+ (./chapters/design/writeback.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 154.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 154.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [28
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/peripherals.aux'.
 
- (./chapters/design/peripherals/peripherals.tex) [28
+ (./chapters/design/peripherals/peripherals.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 155.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 155.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [29
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/interrupt_controler.aux'.
 
- (./chapters/design/peripherals/interrupt_controler.tex
-
-LaTeX Warning: Hyper reference `sec:analysis ic' on page 29 undefined on input line 2.
-
-) [29
+ (./chapters/design/peripherals/interrupt_controler.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 156.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 156.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [30
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/GPIO.aux'.
 
- (./chapters/design/peripherals/GPIO.tex) [30
+ (./chapters/design/peripherals/GPIO.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 157.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 157.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [31
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/ps2.aux'.
 
- (./chapters/design/peripherals/ps2.tex) [31
+ (./chapters/design/peripherals/ps2.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 158.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 158.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [32
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/timer.aux'.
 
- (./chapters/design/peripherals/timer.tex) [32
+ (./chapters/design/peripherals/timer.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 159.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 159.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [33
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/uart.aux'.
 
- (./chapters/design/peripherals/uart.tex) [33
+ (./chapters/design/peripherals/uart.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 160.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 160.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [34
 
 
 
 ]
 \openout2 = `chapters/design/peripherals/vga.aux'.
 
- (./chapters/design/peripherals/vga.tex) [34
+ (./chapters/design/peripherals/vga.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 161.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 161.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [35
 
 
 
 ]
 \openout2 = `chapters/design/pipeline/pipeline.aux'.
 
- (./chapters/design/pipeline/pipeline.tex) [35
+ (./chapters/design/pipeline/pipeline.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 162.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 162.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [36
 
 
 
 ]
 \openout2 = `chapters/design/pipeline/cache.aux'.
 
- (./chapters/design/pipeline/cache.tex) [36
+ (./chapters/design/pipeline/cache.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 163.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 163.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [37
 
 
 
 ]
 \openout2 = `chapters/design/pipeline/hazard_control.aux'.
 
- (./chapters/design/pipeline/hazard_control.tex
-
-LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 37 undefined on input line 2.
-
-) [37
+ (./chapters/design/pipeline/hazard_control.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 164.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 164.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [38
 
 
 
@@ -687,7 +1000,7 @@ LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 37 undefine
 
  (./chapters/implementation/implementation.tex
 Chapter 4.
-) [38
+) [39
 
 
 
@@ -695,127 +1008,272 @@ Chapter 4.
 ]
 \openout2 = `chapters/implementation/fsm.aux'.
 
- (./chapters/implementation/fsm.tex) [39
+ (./chapters/implementation/fsm.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 168.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 168.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [40
 
 
 
 ]
 \openout2 = `chapters/implementation/pc.aux'.
 
- (./chapters/implementation/pc.tex) [40
+ (./chapters/implementation/pc.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 169.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 169.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [41
 
 
 
 ]
 \openout2 = `chapters/implementation/fetch.aux'.
 
- (./chapters/implementation/fetch.tex) [41
+ (./chapters/implementation/fetch.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 170.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 170.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [42
 
 
 
 ]
 \openout2 = `chapters/implementation/decode.aux'.
 
- (./chapters/implementation/decode.tex) [42
+ (./chapters/implementation/decode.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 171.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 171.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [43
 
 
 
 ]
 \openout2 = `chapters/implementation/memory_acess.aux'.
 
- (./chapters/implementation/memory_acess.tex) [43
+ (./chapters/implementation/memory_acess.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 172.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 172.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [44
 
 
 
 ]
 \openout2 = `chapters/implementation/execute.aux'.
 
- (./chapters/implementation/execute.tex) [44
+ (./chapters/implementation/execute.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 173.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 173.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [45
 
 
 
 ]
 \openout2 = `chapters/implementation/writeback.aux'.
 
- (./chapters/implementation/writeback.tex) [45
+ (./chapters/implementation/writeback.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 174.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 174.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [46
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/peripherals.aux'.
 
- (./chapters/implementation/peripherals/peripherals.tex) [46
+ (./chapters/implementation/peripherals/peripherals.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 175.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 175.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [47
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/interrupt_controler.aux'.
 
- (./chapters/implementation/peripherals/interrupt_controler.tex
-
-LaTeX Warning: Hyper reference `sec:analysis ic' on page 47 undefined on input line 2.
-
-) [47
+ (./chapters/implementation/peripherals/interrupt_controler.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 176.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 176.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [48
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/GPIO.aux'.
 
- (./chapters/implementation/peripherals/GPIO.tex) [48
+ (./chapters/implementation/peripherals/GPIO.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 177.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 177.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [49
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/ps2.aux'.
 
- (./chapters/implementation/peripherals/ps2.tex) [49
+ (./chapters/implementation/peripherals/ps2.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 178.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 178.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [50
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/timer.aux'.
 
- (./chapters/implementation/peripherals/timer.tex) [50
+ (./chapters/implementation/peripherals/timer.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 179.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 179.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [51
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/uart.aux'.
 
- (./chapters/implementation/peripherals/uart.tex) [51
+ (./chapters/implementation/peripherals/uart.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 180.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 180.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [52
 
 
 
 ]
 \openout2 = `chapters/implementation/peripherals/vga.aux'.
 
- (./chapters/implementation/peripherals/vga.tex) [52
+ (./chapters/implementation/peripherals/vga.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 181.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 181.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [53
 
 
 
 ]
 \openout2 = `chapters/implementation/pipeline/pipeline.aux'.
 
- (./chapters/implementation/pipeline/pipeline.tex) [53
+ (./chapters/implementation/pipeline/pipeline.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 182.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 182.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [54
 
 
 
 ]
 \openout2 = `chapters/implementation/pipeline/cache.aux'.
 
- (./chapters/implementation/pipeline/cache.tex) [54
+ (./chapters/implementation/pipeline/cache.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 183.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 183.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [55
 
 
 
 ]
 \openout2 = `chapters/implementation/pipeline/hazard_control.aux'.
 
- (./chapters/implementation/pipeline/hazard_control.tex
-
-LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 55 undefined on input line 2.
-
-) [55
+ (./chapters/implementation/pipeline/hazard_control.tex)
+File: images/Labs-ESRG-resized.png Graphic file (type png)
+<use images/Labs-ESRG-resized.png>
+Package pdftex.def Info: images/Labs-ESRG-resized.png  used on input line 184.
+(pdftex.def)             Requested size: 45.29955pt x 42.5559pt.
+File: images/TOP_ENG_LOGO.png Graphic file (type png)
+<use images/TOP_ENG_LOGO.png>
+Package pdftex.def Info: images/TOP_ENG_LOGO.png  used on input line 184.
+(pdftex.def)             Requested size: 77.00371pt x 40.41992pt.
+ [56
 
 
 
@@ -824,7 +1282,12 @@ LaTeX Warning: Hyper reference `sec:analysis hazard control' on page 55 undefine
 
  (./chapters/conclusion/conclusion.tex
 Chapter 5.
-) [56
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+) [57
 
 
 
@@ -842,21 +1305,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main_report.out' has not changed.
-(rerunfilecheck)             Checksum: 1BE9CD025748C862C588082D18EA72CA;5613.
+(rerunfilecheck)             Checksum: 784C5BCAEE807C5DF33E546DB47D3A4A;6081.
  ) 
 Here is how much of TeX's memory you used:
- 13923 strings out of 474222
- 267347 string characters out of 5748733
+ 13967 strings out of 474222
+ 268185 string characters out of 5748733
  1937975 words of memory out of 5000000
- 35540 multiletter control sequences out of 15000+600000
- 564443 words of font info for 57 fonts, out of 8000000 for 9000
+ 35565 multiletter control sequences out of 15000+600000
+ 564952 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,368b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on main_report.pdf (61 pages, 133985 bytes).
+ 75i,15n,79p,476b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main_report.pdf (62 pages, 279696 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
- 123 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
+ 139 named destinations out of 1000 (max. 500000)
+ 504 words of extra memory for PDF output out of 10000 (max. 10000000)
 

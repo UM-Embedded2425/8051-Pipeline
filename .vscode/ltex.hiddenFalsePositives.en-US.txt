@@ -1,0 +1,1 @@
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QBoth architectures must include: Instruction fetch, decode, execution, and write-back stages (as applicable) A register file, ALU, and control logic Memory interface for instruction and data access Access to a shared peripheral interface/bus\\E$"}
