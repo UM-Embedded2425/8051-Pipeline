@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../PLLtest.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../PLLtest.gen/sources_1/bd/design_1/ipshared/86fe/hdl" --include "/tools/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
+"top_tb_time_impl.v" \
+"../../../../../PLLtest.srcs/sim_1/new/top_tb.v" \
+
+# Do not sort compile order
+nosort

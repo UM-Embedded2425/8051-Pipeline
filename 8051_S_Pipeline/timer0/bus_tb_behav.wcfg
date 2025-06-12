@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="bus_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="bus_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,253.419 ns"></ZoomEndTime>
+      <Cursor1Time time="285.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="117"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="38" />
+   <wvobject type="logic" fp_name="/bus_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/address">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+      <obj_property name="label">addr cpu</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="label">data cpu</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/rec_data">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">rec_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_data[7:0]</obj_property>
+      <obj_property name="label">data perif</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/re">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider446" type="divider">
+      <obj_property name="label">Bus</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/addr">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/addr_bus">
+      <obj_property name="ElementShortName">addr_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/wdata_bus">
+      <obj_property name="ElementShortName">wdata_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/bus/read_bus_en">
+      <obj_property name="ElementShortName">read_bus_en</obj_property>
+      <obj_property name="ObjectShortName">read_bus_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/bus/write_bus_en">
+      <obj_property name="ElementShortName">write_bus_en</obj_property>
+      <obj_property name="ObjectShortName">write_bus_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/rdata_bus">
+      <obj_property name="ElementShortName">rdata_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/rdata">
+      <obj_property name="ElementShortName">rdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/bus/rdata_reg">
+      <obj_property name="ElementShortName">rdata_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider445" type="divider">
+      <obj_property name="label">Toptimer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/addr_bus">
+      <obj_property name="ElementShortName">addr_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/wdata_bus">
+      <obj_property name="ElementShortName">wdata_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/read_bus_en">
+      <obj_property name="ElementShortName">read_bus_en</obj_property>
+      <obj_property name="ObjectShortName">read_bus_en</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/rdata_bus">
+      <obj_property name="ElementShortName">rdata_bus[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_bus[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/TimerOverflow">
+      <obj_property name="ElementShortName">TimerOverflow</obj_property>
+      <obj_property name="ObjectShortName">TimerOverflow</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/enable_sw">
+      <obj_property name="ElementShortName">enable_sw</obj_property>
+      <obj_property name="ObjectShortName">enable_sw</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/tmod">
+      <obj_property name="ElementShortName">tmod[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tmod[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/th0">
+      <obj_property name="ElementShortName">th0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">th0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/tl0">
+      <obj_property name="ElementShortName">tl0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tl0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/divisor">
+      <obj_property name="ElementShortName">divisor[2:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/autoreload">
+      <obj_property name="ElementShortName">autoreload</obj_property>
+      <obj_property name="ObjectShortName">autoreload</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider444" type="divider">
+      <obj_property name="label">Timer0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/uut/i_TR0">
+      <obj_property name="ElementShortName">i_TR0</obj_property>
+      <obj_property name="ObjectShortName">i_TR0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/i_TMOD">
+      <obj_property name="ElementShortName">i_TMOD[1:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TMOD[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/i_TH0">
+      <obj_property name="ElementShortName">i_TH0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TH0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/i_TL0">
+      <obj_property name="ElementShortName">i_TL0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TL0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/i_Divisor">
+      <obj_property name="ElementShortName">i_Divisor[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i_Divisor[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/uut/o_TF0">
+      <obj_property name="ElementShortName">o_TF0</obj_property>
+      <obj_property name="ObjectShortName">o_TF0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/bus_tb/uut/t0/uut/o_TF0_extra">
+      <obj_property name="ElementShortName">o_TF0_extra</obj_property>
+      <obj_property name="ObjectShortName">o_TF0_extra</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/o_TL0">
+      <obj_property name="ElementShortName">o_TL0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_TL0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/bus_tb/uut/t0/uut/o_TH0">
+      <obj_property name="ElementShortName">o_TH0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_TH0[7:0]</obj_property>
+   </wvobject>
+</wave_config>

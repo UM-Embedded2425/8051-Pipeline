@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ps2bus_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ps2bus" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.992645 us"></ZoomStartTime>
+      <ZoomEndTime time="12.952646 us"></ZoomEndTime>
+      <Cursor1Time time="8.592645 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="101"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/ps2bus/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/address">
+      <obj_property name="ElementShortName">address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">address[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/in_data">
+      <obj_property name="ElementShortName">in_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/ps2_data">
+      <obj_property name="ElementShortName">ps2_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ps2_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/re">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/ps2_clk">
+      <obj_property name="ElementShortName">ps2_clk</obj_property>
+      <obj_property name="ObjectShortName">ps2_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/rec_data">
+      <obj_property name="ElementShortName">rec_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rec_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/uut/ps2_peripheral_inst/ps2_keyboard_inst/bit_count">
+      <obj_property name="ElementShortName">bit_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/uut/ps2_peripheral_inst/PS2_CONTROL">
+      <obj_property name="ElementShortName">PS2_CONTROL[0:0]</obj_property>
+      <obj_property name="ObjectShortName">PS2_CONTROL[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/uut/ps2_peripheral_inst/fifo/din">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/uut/ps2_peripheral_inst/fifo/dout">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/uut/ps2_peripheral_inst/fifo/wr_en">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/uut/ps2_peripheral_inst/fifo/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/uut/ps2_peripheral_inst/write_en_IBUF">
+      <obj_property name="ElementShortName">write_en_IBUF</obj_property>
+      <obj_property name="ObjectShortName">write_en_IBUF</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ps2bus/uut/ps2_peripheral_inst/ps2_keyboard_inst/wr_i_1_n_0">
+      <obj_property name="ElementShortName">wr_i_1_n_0</obj_property>
+      <obj_property name="ObjectShortName">wr_i_1_n_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ps2bus/uut/ps2_peripheral_inst/ps2_keyboard_inst/state">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+</wave_config>

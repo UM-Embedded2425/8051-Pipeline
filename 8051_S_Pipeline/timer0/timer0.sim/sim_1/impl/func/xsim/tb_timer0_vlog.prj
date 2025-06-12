@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_timer0_func_impl.v" \
+"../../../../../timer0.srcs/sources_1/new/timer0.v" \
+"../../../../../timer0.srcs/sim_1/new/tb_timer0.v" \
+
+# Do not sort compile order
+nosort

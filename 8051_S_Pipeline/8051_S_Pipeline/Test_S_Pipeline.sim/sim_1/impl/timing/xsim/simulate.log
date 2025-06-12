@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+WARNING: "/tools/Xilinx/Vivado/2024.2/data/verilog/src/unisims/FDCE.v" Line 170: Timing violation in scope /top_tb/uC/cpu/decode_unit/sfr_en_reg/TChk170_46050 at time 110100 ps $setuphold (posedge C,posedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly)  $hold violation detected. Time: 110100 ps, Ref Event Time Stamp: 110048 ps, Data Event Time Stamp: 110100 ps, Limit: 262 ps
+INFO: xsimkernel Simulation Memory Usage: 482580 KB (Peak: 538120 KB), Simulation CPU Usage: 4730 ms

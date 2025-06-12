@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_axi_timer_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_axi_timer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,246.741 ns"></ZoomEndTime>
+      <Cursor1Time time="595.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="132"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/tb_axi_timer/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/w_ClkDiv4">
+      <obj_property name="ElementShortName">w_ClkDiv4</obj_property>
+      <obj_property name="ObjectShortName">w_ClkDiv4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/i_enable">
+      <obj_property name="ElementShortName">i_enable</obj_property>
+      <obj_property name="ObjectShortName">i_enable</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/i_TH0">
+      <obj_property name="ElementShortName">i_TH0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TH0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/i_TL0">
+      <obj_property name="ElementShortName">i_TL0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_TL0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/i_Divisor">
+      <obj_property name="ElementShortName">i_Divisor[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i_Divisor[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/i_AutoReload">
+      <obj_property name="ElementShortName">i_AutoReload</obj_property>
+      <obj_property name="ObjectShortName">i_AutoReload</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/timer_inst/r_timer_16bit">
+      <obj_property name="ElementShortName">r_timer_16bit[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_timer_16bit[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_axi_timer/timer_axi_wrapper_inst/o_timer_overflow">
+      <obj_property name="ElementShortName">o_timer_overflow</obj_property>
+      <obj_property name="ObjectShortName">o_timer_overflow</obj_property>
+   </wvobject>
+</wave_config>

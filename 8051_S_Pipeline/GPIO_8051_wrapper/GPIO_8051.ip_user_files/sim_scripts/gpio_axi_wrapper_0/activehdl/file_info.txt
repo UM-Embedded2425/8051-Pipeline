@@ -1,0 +1,4 @@
+gpio.v,verilog,xil_defaultlib,../../../../GPIO_8051.gen/sources_1/ip/gpio_axi_wrapper_0/GPIO_8051.srcs/sources_1/new/gpio.v,
+gpio_axi_wrapper.v,verilog,xil_defaultlib,../../../../GPIO_8051.gen/sources_1/ip/gpio_axi_wrapper_0/GPIO_8051.srcs/sources_1/new/gpio_axi_wrapper.v,
+gpio_axi_wrapper_0.v,verilog,xil_defaultlib,../../../../GPIO_8051.gen/sources_1/ip/gpio_axi_wrapper_0/sim/gpio_axi_wrapper_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
