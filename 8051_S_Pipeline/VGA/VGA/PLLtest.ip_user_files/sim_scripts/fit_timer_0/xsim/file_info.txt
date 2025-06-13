@@ -1,0 +1,2 @@
+fit_timer_0.vhd,vhdl,xil_defaultlib,../../../../PLLtest.gen/sources_1/ip/fit_timer_0/sim/fit_timer_0.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

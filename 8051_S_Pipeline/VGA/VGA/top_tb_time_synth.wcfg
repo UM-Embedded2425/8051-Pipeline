@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,972.466 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,101.067 ns"></ZoomEndTime>
+      <Cursor1Time time="3,100.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="151"></NameColumnWidth>
+      <ValueColumnWidth column_width="165"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject type="logic" fp_name="/top_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/hsync">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/vsync">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/red">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/green">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/blue">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/addr">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/in_data">
+      <obj_property name="ElementShortName">in_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/re">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/out_data">
+      <obj_property name="ElementShortName">out_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/VGA_ADDR_H">
+      <obj_property name="ElementShortName">VGA_ADDR_H[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_ADDR_H[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/VGA_ADDR_L">
+      <obj_property name="ElementShortName">VGA_ADDR_L[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_ADDR_L[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/VGA_DATA">
+      <obj_property name="ElementShortName">VGA_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/VGA_CONF">
+      <obj_property name="ElementShortName">VGA_CONF[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_CONF[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/addr">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/in_data">
+      <obj_property name="ElementShortName">in_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/new_data">
+      <obj_property name="ElementShortName">new_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">new_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uut/vga_inst/new_conf">
+      <obj_property name="ElementShortName">new_conf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">new_conf[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uut/main_timer/Interrupt">
+      <obj_property name="ElementShortName">Interrupt</obj_property>
+      <obj_property name="ObjectShortName">Interrupt</obj_property>
+   </wvobject>
+</wave_config>

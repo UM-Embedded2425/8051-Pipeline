@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/timer_1_v1/timer_1/timer0/timer0.sim/sim_1/synth/func/xsim/bus_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_bus
+INFO: [VRFC 10-311] analyzing module timer0
+INFO: [VRFC 10-311] analyzing module top_timer
+INFO: [VRFC 10-311] analyzing module top_timerbus
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/timer_1_v1/timer_1/timer0/timer0.srcs/sim_1/new/bus_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bus_tb

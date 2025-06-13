@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../project_1.srcs/sources_1/new/custom_bus.v" \
+"../../../../project_1.srcs/sources_1/new/ps2_bus.v" \
+"../../../../sources_1/new/ps2_keyboard.v" \
+"../../../../project_1.srcs/sources_1/new/ps2_peripherals_showcase.v" \
+"../../../../project_1.srcs/sim_1/new/ps2bus.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
