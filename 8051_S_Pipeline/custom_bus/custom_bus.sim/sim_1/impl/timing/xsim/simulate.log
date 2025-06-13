@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-WARNING: "/tools/Xilinx/Vivado/2024.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /top_tb/top_sim/uart/reg_SCON0_WRITE_reg/TChk150_19171 at time 275238 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly)  $setup violation detected. Time: 275238 ps, Data Event Time Stamp: 275238 ps, Ref Event Time Stamp: 275088 ps, Limit: -45 ps
-WARNING: "/tools/Xilinx/Vivado/2024.2/data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /top_tb/top_sim/uart/reg_SCON0_WRITE_reg/TChk150_19171 at time 275238 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly)  $hold violation detected. Time: 275238 ps, Ref Event Time Stamp: 275088 ps, Data Event Time Stamp: 275238 ps, Limit: 241 ps
-$finish called at time : 500 ns : File "/home/telmo/Desktop/Vivado/8051/custom_bus/custom_bus.srcs/sim_1/new/top_tb.v" Line 141

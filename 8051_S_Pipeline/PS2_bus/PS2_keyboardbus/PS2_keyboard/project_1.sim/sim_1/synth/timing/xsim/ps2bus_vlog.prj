@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"ps2bus_time_synth.v" \
-"../../../../../project_1.srcs/sim_1/new/ps2bus.v" \
-
-# Do not sort compile order
-nosort

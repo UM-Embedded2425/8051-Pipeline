@@ -1,6 +1,0 @@
-0.7
-2020.2
-Nov  8 2024
-22:36:55
-/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.sim/sim_1/synth/func/xsim/ps2bus_func_synth.v,1747833372,verilog,,/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v,,custom_bus;fifo_generator_0;fifo_generator_0_blk_mem_gen_generic_cstr;fifo_generator_0_blk_mem_gen_prim_width;fifo_generator_0_blk_mem_gen_prim_wrapper;fifo_generator_0_blk_mem_gen_top;fifo_generator_0_blk_mem_gen_v8_4_9;fifo_generator_0_blk_mem_gen_v8_4_9_synth;fifo_generator_0_fifo_generator_ramfifo;fifo_generator_0_fifo_generator_top;fifo_generator_0_fifo_generator_v13_2_11;fifo_generator_0_fifo_generator_v13_2_11_synth;fifo_generator_0_memory;fifo_generator_0_rd_bin_cntr;fifo_generator_0_rd_logic;fifo_generator_0_rd_status_flags_ss;fifo_generator_0_reset_blk_ramfifo;fifo_generator_0_wr_bin_cntr;fifo_generator_0_wr_logic;fifo_generator_0_wr_status_flags_ss;glbl;ps2_keyboard;ps2_peripheral;ps2_peripherals_showcase,,,,,,,,
-/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v,1747833023,verilog,,,,ps2bus,,,,,,,,

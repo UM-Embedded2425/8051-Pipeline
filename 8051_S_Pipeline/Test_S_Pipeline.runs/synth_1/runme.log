@@ -1,0 +1,638 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri Jun 13 02:05:12 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 239290
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1974.355 ; gain = 418.828 ; free physical = 503 ; free virtual = 7246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'test', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:76]
+INFO: [Synth 8-11241] undeclared symbol 'h16', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:43]
+INFO: [Synth 8-11241] undeclared symbol 'h0', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:44]
+INFO: [Synth 8-11241] undeclared symbol 'out_TH0', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:74]
+INFO: [Synth 8-11241] undeclared symbol 'out_TL0', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:75]
+INFO: [Synth 8-11241] undeclared symbol 'bus_rst', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:72]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ROM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registers' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:144]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:144]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:144]
+WARNING: [Synth 8-151] case item 8'b00000001 is unreachable [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-226] default block is never used [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:40]
+INFO: [Synth 8-6157] synthesizing module 'alu_unit' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:364]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'custom_bus' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'custom_bus' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dummy_peripheral1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/dummy_peripheral1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dummy_peripheral1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/dummy_peripheral1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'UART_Simple_Protocol_Wrapper' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:187]
+INFO: [Synth 8-6157] synthesizing module 'BaudRateGenerator' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'BaudRateGenerator' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:236]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:55]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:187]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Simple_Protocol_Wrapper' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timer_wrapper' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:10]
+INFO: [Synth 8-6157] synthesizing module 'timer0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer0.v:22]
+INFO: [Synth 8-226] default block is never used [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer0.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'timer0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer0.v:22]
+WARNING: [Synth 8-6104] Input port 'TimerOverflow' has an internal driver [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:72]
+WARNING: [Synth 8-6104] Input port 'TimerOverflow_extra' has an internal driver [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:73]
+WARNING: [Synth 8-689] width (1) of port connection 'o_TH0' does not match port width (8) of module 'timer0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:74]
+WARNING: [Synth 8-689] width (1) of port connection 'o_TL0' does not match port width (8) of module 'timer0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'timer_wrapper' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/timer_wrapper.v:10]
+WARNING: [Synth 8-7071] port 'TimerOverflow' of module 'timer_wrapper' is unconnected for instance 't0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:99]
+WARNING: [Synth 8-7071] port 'TimerOverflow_extra' of module 'timer_wrapper' is unconnected for instance 't0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:99]
+WARNING: [Synth 8-7023] instance 't0' of module 'timer_wrapper' has 9 connections declared, but only 7 given [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:99]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
+	Parameter VGA_CONF_ADDR bound to: 8'b10011010 
+	Parameter VGA_DATA_ADDR bound to: 8'b10011011 
+	Parameter VGA_ADDR_H_ADDR bound to: 8'b10011100 
+	Parameter VGA_ADDR_L_ADDR bound to: 8'b10011101 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'image' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'image' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
+INFO: [Synth 8-6157] synthesizing module 'text_mod' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-239232-telmo-pc/realtime/dist_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (10) of port connection 'a' does not match port width (14) of module 'dist_mem_gen_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'text_mod' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'new_address' does not match port width (14) of module 'text_mod' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_peripheral' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_peripheral' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+	1: Invalid write to RAM. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'shadow_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "shadow_ram_reg" dissolved into registers
+WARNING: [Synth 8-6014] Unused sequential element counterAUX_reg was removed.  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:24]
+WARNING: [Synth 8-7137] Register TL1_OUT_reg in module BaudRateGenerator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:25]
+WARNING: [Synth 8-7137] Register shift_reg_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:160]
+WARNING: [Synth 8-7137] Register data_out_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:168]
+WARNING: [Synth 8-7137] Register rx9bit_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:169]
+WARNING: [Synth 8-7137] Register last_SCON_write_reg in module UART has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:301]
+WARNING: [Synth 8-7137] Register reg_SCON0_WRITE_reg in module UART_Simple_Protocol_Wrapper has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:48]
+WARNING: [Synth 8-6014] Unused sequential element re_prev_reg was removed.  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2134.324 ; gain = 578.797 ; free physical = 333 ; free virtual = 7076
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2146.199 ; gain = 590.672 ; free physical = 333 ; free virtual = 7078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2146.199 ; gain = 590.672 ; free physical = 333 ; free virtual = 7078
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2152.137 ; gain = 0.000 ; free physical = 330 ; free virtual = 7074
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/dist_mem_gen_0_0/dist_mem_gen_0_0/dist_mem_gen_0_0_in_context.xdc] for cell 'vga/img_mem/monoram'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/dist_mem_gen_0_0/dist_mem_gen_0_0/dist_mem_gen_0_0_in_context.xdc] for cell 'vga/img_mem/monoram'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'vga/pll_inst'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'vga/pll_inst'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu/fetch_unit/rom_instance/ROM_ip'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'cpu/fetch_unit/rom_instance/ROM_ip'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc:1]
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2246.938 ; gain = 0.000 ; free physical = 297 ; free virtual = 7043
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2246.938 ; gain = 0.000 ; free physical = 297 ; free virtual = 7043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2246.938 ; gain = 691.410 ; free physical = 315 ; free virtual = 7060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2254.941 ; gain = 699.414 ; free physical = 315 ; free virtual = 7060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for vga/img_mem/monoram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/ram_inst/RAM_IP. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ps2/fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga/text_mod_inst/fifo_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga/text_mod_inst/char_mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga/pll_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga/img_mem/mem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/fetch_unit/rom_instance/ROM_ip. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2254.941 ; gain = 699.414 ; free physical = 315 ; free virtual = 7060
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2254.941 ; gain = 699.414 ; free physical = 315 ; free virtual = 7060
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6702] IncrSynth : Over 50% of reference run partitions are impacted by design changes. Reverting to default synthesis
+top__GC0RAM__GB4RAM__GB3IncrSyn: Total reference run partitions are 7, Impacted partitions are 4.
+IncrSyn: List of changed modules: 
+	Changed Module : decode
+	Changed Module : execute
+WARNING: [Synth 8-6702] IncrSynth : Reverting to default synthesis
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2254.941 ; gain = 699.414 ; free physical = 316 ; free virtual = 7061
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |                            00001 |                              000
+                  DECODE |                            00010 |                              001
+               MEM_ACESS |                            00100 |                              010
+                 EXECUTE |                            01000 |                              011
+               WRITEBACK |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   START |                             0010 |                               01
+                    DATA |                             0100 |                               10
+                    STOP |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    DATA |                              010 |                               01
+                    STOP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2254.941 ; gain = 699.414 ; free physical = 337 ; free virtual = 7086
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : Change is too high
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 2     
+	   4 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 481   
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 40    
++---Muxes : 
+	   2 Input 2048 Bit        Muxes := 4     
+	   4 Input 2048 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input   15 Bit        Muxes := 3     
+	   2 Input   14 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 442   
+	   3 Input    8 Bit        Muxes := 96    
+	   4 Input    8 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 15    
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 52    
+	   4 Input    1 Bit        Muxes := 37    
+	   3 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[8]' (FDCE) to 'execute_unit/PC_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[9]' (FDCE) to 'execute_unit/PC_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[10]' (FDCE) to 'execute_unit/PC_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[11]' (FDCE) to 'execute_unit/PC_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[12]' (FDCE) to 'execute_unit/PC_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[13]' (FDCE) to 'execute_unit/PC_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'execute_unit/PC_out_reg[14]' (FDCE) to 'execute_unit/PC_out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/PC_out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'decode_unit/reg_address_reg[6]' (FDCE) to 'decode_unit/alu_reg[5]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/reg_address_reg[7]' (FDCE) to 'decode_unit/alu_reg[5]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/reg_address_reg[5]' (FDCE) to 'decode_unit/alu_reg[5]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/reg_address_reg[3]' (FDCE) to 'decode_unit/alu_reg[5]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/reg_address_reg[4]' (FDCE) to 'decode_unit/alu_reg[5]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/rs_reg[0]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[7]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[6]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[5]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[4]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[3]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[2]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[1]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/sfr_inst/P0_reg[0]' (FDRE) to 'decode_unit/sfr_inst/rs_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/sfr_inst/\rs_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/\alu_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IP_we_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/IE_we_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\execute_unit/B_we_reg[6] )
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[23][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[22][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[21][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[20][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[19][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[18][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[17][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[16][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[15][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[14][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[13][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[12][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[11][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[10][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[9][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[8][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[31][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[30][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[29][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[28][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[27][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[26][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][7]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[25][7]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][7] )
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[23][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[22][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[21][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[20][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[19][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[18][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[17][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[16][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[15][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[14][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[13][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[12][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[11][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[10][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[9][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[8][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[31][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[30][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[29][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[28][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[27][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[26][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][0]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[25][0]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][0] )
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[23][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[22][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[21][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[20][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[19][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[18][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[17][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[16][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[15][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[14][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[13][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[12][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[11][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[10][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[9][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[8][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[31][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[30][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[29][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[28][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[27][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[26][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[26][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[25][1]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[24][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][1] )
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[23][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[22][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[21][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[20][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[19][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[18][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[17][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[16][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[15][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Synth 8-3886] merging instance 'decode_unit/registers_inst/reg_file_reg[14][2]' (FDRE) to 'decode_unit/registers_inst/reg_file_reg[30][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (decode_unit/registers_inst/\reg_file_reg[24][6] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:05 . Memory (MB): peak = 2282.875 ; gain = 727.348 ; free physical = 230 ; free virtual = 2447
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:01:16 . Memory (MB): peak = 2341.953 ; gain = 786.426 ; free physical = 1379 ; free virtual = 3683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:23 . Memory (MB): peak = 2458.562 ; gain = 903.035 ; free physical = 1271 ; free virtual = 3595
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk'
+WARNING: [Synth 8-565] redefining clock 'clk'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:34 . Memory (MB): peak = 2486.496 ; gain = 930.969 ; free physical = 401 ; free virtual = 2792
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:01:43 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 365 ; free virtual = 2846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:01:43 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 365 ; free virtual = 2846
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:00 ; elapsed = 00:01:45 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 364 ; free virtual = 2845
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:00 ; elapsed = 00:01:46 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 364 ; free virtual = 2845
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:01:47 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 372 ; free virtual = 2854
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:01:47 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 372 ; free virtual = 2854
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |dist_mem_gen_0   |         1|
+|2     |blk_mem_gen_0    |         1|
+|3     |fifo_generator_0 |         2|
+|4     |clk_wiz_0        |         1|
+|5     |blk_mem_gen_1    |         1|
+|6     |dist_mem_gen_0_0 |         1|
+|7     |dist_mem_gen_1   |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen      |     2|
+|3     |clk_wiz          |     1|
+|4     |dist_mem_gen     |     1|
+|5     |dist_mem_gen_0   |     1|
+|6     |dist_mem_gen     |     1|
+|7     |fifo_generator   |     1|
+|8     |fifo_generator_0 |     1|
+|9     |BUFG             |     2|
+|10    |CARRY4           |    89|
+|11    |LUT1             |    47|
+|12    |LUT2             |   286|
+|13    |LUT3             |   523|
+|14    |LUT4             |  2167|
+|15    |LUT5             |  3362|
+|16    |LUT6             |  9831|
+|17    |MUXF7            |  1240|
+|18    |MUXF8            |   608|
+|19    |FDCE             |   543|
+|20    |FDPE             |    14|
+|21    |FDRE             |  3434|
+|22    |FDSE             |     6|
+|23    |LDC              |     8|
+|24    |IBUF             |     4|
+|25    |OBUF             |    18|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:01:48 . Memory (MB): peak = 2533.395 ; gain = 977.867 ; free physical = 372 ; free virtual = 2854
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 105 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:58 ; elapsed = 00:01:45 . Memory (MB): peak = 2537.309 ; gain = 881.043 ; free physical = 5289 ; free virtual = 7771
+Synthesis Optimization Complete : Time (s): cpu = 00:02:02 ; elapsed = 00:01:48 . Memory (MB): peak = 2537.309 ; gain = 981.781 ; free physical = 5292 ; free virtual = 7767
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2537.309 ; gain = 0.000 ; free physical = 5303 ; free virtual = 7767
+INFO: [Netlist 29-17] Analyzing 1945 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2581.418 ; gain = 0.000 ; free physical = 5319 ; free virtual = 7783
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LDC => LDCE: 8 instances
+
+Synth Design complete | Checksum: 32134f45
+INFO: [Common 17-83] Releasing license: Synthesis
+242 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:01:57 . Memory (MB): peak = 2581.418 ; gain = 1146.438 ; free physical = 5322 ; free virtual = 7787
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 7433.088; main = 1887.254; forked = 6140.505
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 14722.531; main = 2581.422; forked = 12443.570
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2605.430 ; gain = 0.000 ; free physical = 5321 ; free virtual = 7786
+INFO: [Common 17-1381] The checkpoint '/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 02:07:18 2025...

@@ -1,7 +1,0 @@
-Running: xsim.dir/ps2bus_behav/xsimk -simmode gui -wdb ps2bus_behav.wdb -simrunnum 0 -socket 52463
-Design successfully loaded
-Design Loading Memory Usage: 180856 KB (Peak: 180856 KB)
-Design Loading CPU Usage: 1270 ms
-Simulation completed
-Simulation Memory Usage: 262852 KB (Peak: 320124 KB)
-Simulation CPU Usage: 1290 ms

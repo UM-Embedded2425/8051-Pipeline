@@ -1,2 +1,0 @@
-Breakpoint File Version 1.0
-84,true,"/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sources_1/new/ps2_bus.v"
