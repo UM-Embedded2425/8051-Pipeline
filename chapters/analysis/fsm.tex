@@ -1,12 +1,19 @@
 \section{FSM}
 \shortcut{analysis}{fsm}
 
+\vspace{0.75cm}
 
-In the context of the 8051 microcontroller project, a \textbf{Finite State Machine (FSM)} is a key design structure used to manage the control flow of sequential logic elements, particularly in the CPU and peripheral modules. FSMs are essential for defining how a system transitions between various operational states based on inputs and internal conditions.
+
+In the context of the 8051 microcontroller project, a \textbf{Finite State Machine (FSM)} 
+is a key design structure used to manage the control flow of sequential logic elements,
+particularly in the CPU and peripheral modules. FSMs are essential for defining how a 
+system transitions between various operational states based on inputs and internal conditions.
 
 \subsection*{1. CPU Control Unit}
 
-In both the single-cycle and pipelined implementations of the 8051 CPU, FSMs are employed in the control unit to govern the sequence of operations. The instruction execution path is typically broken into the following stages:
+In both the single-cycle and pipelined implementations of the 8051 CPU, FSMs are employed
+in the control unit to govern the sequence of operations. The instruction execution path 
+is typically broken into the following stages:
 
 \begin{enumerate}
     \item \textbf{Fetch (IF)} – Instruction is fetched from instruction memory.
@@ -16,11 +23,16 @@ In both the single-cycle and pipelined implementations of the 8051 CPU, FSMs are
     \item \textbf{Write-back (WB)} – Results are written back to the register file.
 \end{enumerate}
 
-The FSM transitions between these states on each clock cycle, generating appropriate control signals to activate the required components. This staged breakdown allows the design to support more complex operations and prepares the structure for pipelining.
+The FSM transitions between these states on each clock cycle, generating appropriate control 
+signals to activate the required components. This staged breakdown allows the design to 
+support more complex operations and prepares the structure for pipelining.
 
 \subsection*{2. Peripherals}
 
-Each peripheral device (e.g., UART, timer, GPIO) includes its own FSM to manage internal behavior such as data transfer, mode switching, and status updates. For example, a UART FSM might transition through states such as \texttt{Idle}, \texttt{Start}, \texttt{Data Transfer}, \texttt{Stop}, and \texttt{Ready}.
+Each peripheral device (e.g., UART, timer, GPIO) includes its own FSM to manage internal
+behavior such as data transfer, mode switching, and status updates. For example, a UART FSM
+might transition through states such as 
+\texttt{Idle}, \texttt{Start}, \texttt{Data Transfer}, \texttt{Stop}, and \texttt{Ready}.
 
 \subsection*{3. Compiler Integration and Memory Loader}
 
@@ -30,8 +42,12 @@ FSMs can also be used in modules that handle:
     \item Interaction with a C compiler backend or debugger interface.
 \end{itemize}
 
-These FSMs typically control the sequencing of memory writes, flag signaling, or program counter initialization.
+These FSMs typically control the sequencing of memory writes, flag signaling, or program
+counter initialization.
 
 \subsection*{Summary}
 
-FSMs offer a reliable, modular, and synthesizable approach to managing sequential behavior in both CPU and peripheral subsystems. Their deterministic nature ensures predictable transitions and clear operational flow, which is essential for the complexity of a multistage microcontroller like the 8051.
+FSMs offer a reliable, modular, and synthesize approach to managing sequential behavior 
+in both CPU and peripheral subsystems. Their deterministic nature ensures predictable 
+transitions and clear operational flow, which is essential for the complexity of a 
+multistage microcontroller like the 8051.
