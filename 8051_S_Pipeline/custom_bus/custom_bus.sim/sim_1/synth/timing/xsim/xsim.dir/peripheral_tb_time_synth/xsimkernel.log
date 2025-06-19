@@ -1,7 +1,0 @@
-Running: xsim.dir/peripheral_tb_time_synth/xsimk -simmode gui -wdb peripheral_tb_time_synth.wdb -simrunnum 0 -socket 45137
-Design successfully loaded
-Design Loading Memory Usage: 180708 KB (Peak: 180764 KB)
-Design Loading CPU Usage: 1060 ms
-Simulation completed
-Simulation Memory Usage: 262704 KB (Peak: 319976 KB)
-Simulation CPU Usage: 1060 ms

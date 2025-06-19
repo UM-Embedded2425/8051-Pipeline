@@ -1,0 +1,2 @@
+Time resolution is 1 ps
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance top_tb.uC.pll.inst.plle2_adv_inst are not same.

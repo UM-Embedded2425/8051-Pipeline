@@ -1,7 +1,0 @@
-Running: xsim.dir/TIMER_AXI_BoardWrapper_behav/xsimk -simmode gui -wdb TIMER_AXI_BoardWrapper_behav.wdb -simrunnum 0 -socket 54861
-Design successfully loaded
-Design Loading Memory Usage: 20288 KB (Peak: 20728 KB)
-Design Loading CPU Usage: 30 ms
-Simulation completed
-Simulation Memory Usage: 102284 KB (Peak: 159556 KB)
-Simulation CPU Usage: 30 ms

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="33,540.418 ns"></ZoomStartTime>
+      <ZoomEndTime time="34,323.872 ns"></ZoomEndTime>
+      <Cursor1Time time="34,193.296 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject type="logic" fp_name="/top_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ps2_clk">
+      <obj_property name="ElementShortName">ps2_clk</obj_property>
+      <obj_property name="ObjectShortName">ps2_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/ps2_data">
+      <obj_property name="ElementShortName">ps2_data</obj_property>
+      <obj_property name="ObjectShortName">ps2_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/hsync">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/vsync">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/red">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/green">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/blue">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/ps2/PS2_CONTROL">
+      <obj_property name="ElementShortName">PS2_CONTROL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PS2_CONTROL[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/vga/VGA_CONF">
+      <obj_property name="ElementShortName">VGA_CONF[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_CONF[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/vga/VGA_DATA">
+      <obj_property name="ElementShortName">VGA_DATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">VGA_DATA[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/cpu/PC">
+      <obj_property name="ElementShortName">PC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/cpu/IR_1">
+      <obj_property name="ElementShortName">IR_1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">IR_1[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_tb/uC/cpu/ACC">
+      <obj_property name="ElementShortName">ACC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ACC[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_tb/uC/clka">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+</wave_config>
