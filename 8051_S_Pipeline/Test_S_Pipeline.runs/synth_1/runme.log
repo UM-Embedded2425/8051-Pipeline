@@ -7,90 +7,112 @@
   **** SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Thu Jun 19 02:40:40 2025
+  **** Start of session at: Fri Jun 20 03:39:02 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1999431
+INFO: [Synth 8-7075] Helper process launched with PID 104531
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1983.441 ; gain = 419.797 ; free physical = 1320 ; free virtual = 16072
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1976.270 ; gain = 420.711 ; free physical = 3343 ; free virtual = 7062
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'test', assumed default net type 'wire' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:79]
-INFO: [Synth 8-6157] synthesizing module 'top' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/clk_wiz_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/clk_wiz_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
-INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
-INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_2_stub.v:6]
-WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'blk_mem_gen_2' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
-INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
-INFO: [Synth 8-6157] synthesizing module 'decode' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
-INFO: [Synth 8-6157] synthesizing module 'registers' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'registers' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
-INFO: [Synth 8-6157] synthesizing module 'sfr' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'sfr' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
-INFO: [Synth 8-6157] synthesizing module 'execute' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
-INFO: [Synth 8-226] default block is never used [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:40]
-INFO: [Synth 8-6157] synthesizing module 'alu_unit' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
-INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:364]
-INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
-INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
-INFO: [Synth 8-6157] synthesizing module 'custom_bus' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'custom_bus' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
-INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
+INFO: [Synth 8-11241] undeclared symbol 'test', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:79]
+INFO: [Synth 8-11241] undeclared symbol 'rdata6', assumed default net type 'wire' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:102]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/clk_wiz_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'CPU8051' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpu_fsm' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-226] default block is never used [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_fsm' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fetch' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (12) of module 'blk_mem_gen_2' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'fetch' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'decode' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'registers' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'registers' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v:54]
+INFO: [Synth 8-6157] synthesizing module 'sfr' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sfr' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'decode' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v:4]
+INFO: [Synth 8-6157] synthesizing module 'execute' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-226] default block is never used [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:40]
+INFO: [Synth 8-6157] synthesizing module 'alu_unit' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'alu_unit' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'execute' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v:4]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:365]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'CPU8051' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v:3]
+INFO: [Synth 8-6157] synthesizing module 'custom_bus' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'custom_bus' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_Controler' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Interrupt_Controler.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_5' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_5' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_5_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_Controler' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Interrupt_Controler.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'b_data_out' does not match port width (8) of module 'Interrupt_Controler' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:102]
+INFO: [Synth 8-6157] synthesizing module 'UART_Simple_Protocol_Wrapper' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:187]
+INFO: [Synth 8-6157] synthesizing module 'BaudRateGenerator' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'BaudRateGenerator' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:8]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:236]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:55]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:187]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Simple_Protocol_Wrapper' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
 	Parameter VGA_CONF_ADDR bound to: 8'b10011010 
 	Parameter VGA_DATA_ADDR bound to: 8'b10011011 
 	Parameter VGA_ADDR_H_ADDR bound to: 8'b10011100 
 	Parameter VGA_ADDR_L_ADDR bound to: 8'b10011101 
-INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
-INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
-INFO: [Synth 8-6157] synthesizing module 'image' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_3' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_3' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'image' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
-INFO: [Synth 8-6157] synthesizing module 'text_mod' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/fifo_generator_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/fifo_generator_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_4' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_4' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/blk_mem_gen_4_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'text_mod' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
-WARNING: [Synth 8-689] width (16) of port connection 'new_address' does not match port width (14) of module 'text_mod' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:96]
-INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ps2_peripheral' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
-INFO: [Synth 8-6157] synthesizing module 'ps2_ascii' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'ps2_ascii' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/fifo_generator_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-1999364-user-GF65-Thin-10SER/realtime/fifo_generator_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ps2_peripheral' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'image' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_3' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_3' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'image' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v:3]
+INFO: [Synth 8-6157] synthesizing module 'text_mod' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_1' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_1' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/fifo_generator_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_4' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_4' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/blk_mem_gen_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'text_mod' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'new_address' does not match port width (14) of module 'text_mod' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_peripheral' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ps2_keyboard' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ps2_ascii' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_ascii' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_keyboard' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v:22]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/.Xil/Vivado-104471-telmo-pc/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_peripheral' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:3]
 WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 	1: Invalid write to RAM. 
 	2: Unable to determine number of words or word size in RAM. 
@@ -98,187 +120,203 @@ WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or D
 RAM dissolved into registers
 WARNING: [Synth 8-4767] Trying to implement RAM 'shadow_ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
-	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	1: Invalid write to RAM. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "shadow_ram_reg" dissolved into registers
-WARNING: [Synth 8-6014] Unused sequential element re_prev_reg was removed.  [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:63]
-WARNING: [Synth 8-3848] Net rdata_bus1 in module/entity top does not have driver. [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:31]
-WARNING: [Synth 8-3848] Net rdata_bus2 in module/entity top does not have driver. [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:31]
-WARNING: [Synth 8-3848] Net rdata_bus3 in module/entity top does not have driver. [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:31]
+WARNING: [Synth 8-6014] Unused sequential element counterAUX_reg was removed.  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:24]
+WARNING: [Synth 8-7137] Register TL1_OUT_reg in module BaudRateGenerator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:25]
+WARNING: [Synth 8-7137] Register shift_reg_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:160]
+WARNING: [Synth 8-7137] Register data_out_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:168]
+WARNING: [Synth 8-7137] Register rx9bit_reg in module UART_RX has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:169]
+WARNING: [Synth 8-7137] Register last_SCON_write_reg in module UART has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v:301]
+WARNING: [Synth 8-7137] Register reg_SCON0_WRITE_reg in module UART_Simple_Protocol_Wrapper has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v:48]
+WARNING: [Synth 8-6014] Unused sequential element re_prev_reg was removed.  [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v:63]
+WARNING: [Synth 8-3848] Net rdata_bus2 in module/entity top does not have driver. [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:39]
+WARNING: [Synth 8-3848] Net rdata_bus3 in module/entity top does not have driver. [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:39]
+WARNING: [Synth 8-3848] Net rdata_bus6 in module/entity top does not have driver. [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v:39]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2119.379 ; gain = 555.734 ; free physical = 1179 ; free virtual = 16005
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2113.207 ; gain = 557.648 ; free physical = 3173 ; free virtual = 6897
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2137.191 ; gain = 573.547 ; free physical = 1264 ; free virtual = 16019
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2128.051 ; gain = 572.492 ; free physical = 3182 ; free virtual = 6906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2137.191 ; gain = 573.547 ; free physical = 1264 ; free virtual = 16019
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2128.051 ; gain = 572.492 ; free physical = 3182 ; free virtual = 6906
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 2143.129 ; gain = 0.000 ; free physical = 1261 ; free virtual = 16016
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2133.988 ; gain = 0.000 ; free physical = 3190 ; free virtual = 6914
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'vga/img_mem/monoram'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'vga/img_mem/monoram'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'cpu/fetch_unit/ROM'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'cpu/fetch_unit/ROM'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pll'
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pll'
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc:1]
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1/fifo_generator_0_in_context.xdc] for cell 'vga/text_mod_inst/fifo_inst'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'vga/img_mem/monoram'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'vga/img_mem/monoram'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'ps2/fifo'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'vga/img_mem/mem'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'cpu/ram_inst/RAM_IP'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'vga/text_mod_inst/char_mem'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pll'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'pll'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'ic/lookup'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5/blk_mem_gen_5_in_context.xdc] for cell 'ic/lookup'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'cpu/fetch_unit/ROM'
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'cpu/fetch_unit/ROM'
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc:1]
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.930 ; gain = 0.000 ; free physical = 1247 ; free virtual = 16002
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2226.789 ; gain = 0.000 ; free physical = 3204 ; free virtual = 6929
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2237.930 ; gain = 0.000 ; free physical = 1247 ; free virtual = 16002
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2226.789 ; gain = 0.000 ; free physical = 3202 ; free virtual = 6927
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2237.930 ; gain = 674.285 ; free physical = 1319 ; free virtual = 16055
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2226.789 ; gain = 671.230 ; free physical = 3195 ; free virtual = 6920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1319 ; free virtual = 16055
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2234.793 ; gain = 679.234 ; free physical = 3195 ; free virtual = 6920
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
 Applied set_property KEEP_HIERARCHY = SOFT for vga/text_mod_inst/fifo_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga/img_mem/monoram. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for cpu/fetch_unit/ROM. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ps2/fifo. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga/img_mem/mem. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for cpu/ram_inst/RAM_IP. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for vga/text_mod_inst/char_mem. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for pll. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ic/lookup. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpu/fetch_unit/ROM. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1304 ; free virtual = 16055
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2234.793 ; gain = 679.234 ; free physical = 3193 ; free virtual = 6917
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_keyboard'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   FETCH |                         00000001 |                              000
+                  DECODE |                         00000010 |                              001
+               MEM_ACESS |                         00000100 |                              010
+                 EXECUTE |                         00001000 |                              011
+               WRITEBACK |                         00010000 |                              100
+                    IRQ1 |                         00100000 |                              101
+                    IRQ2 |                         01000000 |                              110
+                    IRQ3 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   START |                             0010 |                               01
+                    DATA |                             0100 |                               10
+                    STOP |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    DATA |                              010 |                               01
+                    STOP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                 CAPTURE |                               01 |                               01
+                  PARITY |                               10 |                               10
+                  DECODE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ps2_keyboard'
 ---------------------------------------------------------------------------------
-Start Preparing Guide Design
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2234.793 ; gain = 679.234 ; free physical = 3257 ; free virtual = 6984
 ---------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1298 ; free virtual = 16052
----------------------------------------------------------------------------------
-CPU8051__GC0RAM__GB4RAM__GB3RAM__GB2RAM__GB1---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1297 ; free virtual = 16051
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1296 ; free virtual = 16050
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Mimic Skeleton from Reference
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2245.934 ; gain = 682.289 ; free physical = 1293 ; free virtual = 16047
----------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: yes
-
-   Stitch points used : unchanged
-
-
-2. Change Summary
-
-Report Incremental Modules: 
-+------+----------------+------------+----------+----------+
-|      |Changed Modules |Replication |Instances |Changed % |
-+------+----------------+------------+----------+----------+
-|1     |vga_controller  |           1|      1262|    0.6985|
-+------+----------------+------------+----------+----------+
-
-
-   Full Design Size (number of cells) : 180668
-   Resynthesis Design Size (number of cells) : 93967
-   Resynth % : 52.0109,  Reuse % : 47.9891
-
-3. Reference Checkpoint Information
-
-+---------------------------------------------------------------------------------------------------------------------------------------+
-| DCP Location:  | /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp |
-+---------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------+------------------------------+
-|         DCP Information        |             Value            |
-+--------------------------------+------------------------------+
-| Vivado Version                 |                    v2024.2 |
-| DCP State                      |                              |
-+--------------------------------+------------------------------+
-
-
-
-Report RTL Partitions: 
-+------+---------------------+------------+----------+
-|      |RTL Partition        |Replication |Instances |
-+------+---------------------+------------+----------+
-|1     |top__GC0             |           1|      1783|
-|2     |muxpart__402_RAM     |           1|     92184|
-|3     |RAM__GB1_#REUSE#     |           1|         0|
-|4     |RAM__GB2_#REUSE#     |           1|         0|
-|5     |RAM__GB3_#REUSE#     |           1|         0|
-|6     |RAM__GB4_#REUSE#     |           1|         0|
-|7     |CPU8051__GC0_#REUSE# |           1|         0|
-+------+---------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   16 Bit       Adders := 2     
 	   2 Input   15 Bit       Adders := 1     
 	   2 Input   14 Bit       Adders := 3     
 	   2 Input   10 Bit       Adders := 3     
+	   3 Input    9 Bit       Adders := 2     
+	   4 Input    9 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 5     
+	   3 Input    8 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
+	   4 Input    5 Bit       Adders := 1     
 	   2 Input    5 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
 +---XORs : 
 	                8 Bit    Wide XORs := 1     
 +---Registers : 
+	               16 Bit    Registers := 3     
 	               14 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
-	                9 Bit    Registers := 1     
-	                8 Bit    Registers := 7     
-	                4 Bit    Registers := 5     
-	                1 Bit    Registers := 8     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 334   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 35    
 +---ROMs : 
 	                    ROMs := 1     
 +---Muxes : 
+	   4 Input 2048 Bit        Muxes := 1     
+	   2 Input 2048 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 4     
 	   2 Input   14 Bit        Muxes := 7     
-	   4 Input    9 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 20    
-	   2 Input    4 Bit        Muxes := 15    
-	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 52    
+	   4 Input    8 Bit        Muxes := 4     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 17    
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
 	   4 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 10    
-	   4 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 58    
+	   4 Input    1 Bit        Muxes := 34    
+	   3 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -294,24 +332,24 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP vga/text_mod_inst/write_address, operation Mode is: C+(D+(A:0x3fffffff))*(B:0x28).
-DSP Report: operator vga/text_mod_inst/write_address is absorbed into DSP vga/text_mod_inst/write_address.
-DSP Report: operator vga/text_mod_inst/write_address0 is absorbed into DSP vga/text_mod_inst/write_address.
-DSP Report: operator vga/text_mod_inst/write_address1 is absorbed into DSP vga/text_mod_inst/write_address.
+DSP Report: Generating DSP text_mod_inst/write_address, operation Mode is: C+(D+(A:0x3fffffff))*(B:0x28).
+DSP Report: operator text_mod_inst/write_address is absorbed into DSP text_mod_inst/write_address.
+DSP Report: operator text_mod_inst/write_address0 is absorbed into DSP text_mod_inst/write_address.
+DSP Report: operator text_mod_inst/write_address1 is absorbed into DSP text_mod_inst/write_address.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2273.867 ; gain = 710.223 ; free physical = 310 ; free virtual = 15101
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:12 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2757 ; free virtual = 6521
 ---------------------------------------------------------------------------------
- Sort Area is top__GC0 vga/text_mod_inst/write_address_0 : 0 0 : 120 120 : Used 1 time 0
+ Sort Area is top__GC0 text_mod_inst/write_address_0 : 0 0 : 120 120 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+------------+-------------------------------------+---------------+----------------+
-|Module Name | RTL Object                          | Depth x Width | Implemented As | 
-+------------+-------------------------------------+---------------+----------------+
-|top         | ps2/ps2_keyboard_inst/ascii_reg_rep | 256x7         | Block RAM      | 
-+------------+-------------------------------------+---------------+----------------+
++---------------+---------------------------------+---------------+----------------+
+|Module Name    | RTL Object                      | Depth x Width | Implemented As | 
++---------------+---------------------------------+---------------+----------------+
+|ps2_peripheral | ps2_keyboard_inst/ascii_reg_rep | 256x7         | Block RAM      | 
++---------------+---------------------------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
@@ -326,37 +364,24 @@ Note: The table above is a preliminary report that shows the DSPs inferred at th
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Stitch Unchanged AreaOpt Partitions
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 2273.867 ; gain = 710.223 ; free physical = 297 ; free virtual = 15100
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:45 . Memory (MB): peak = 2379.945 ; gain = 816.301 ; free physical = 312 ; free virtual = 15142
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2756 ; free virtual = 6520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2404.977 ; gain = 841.332 ; free physical = 231 ; free virtual = 15070
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2700 ; free virtual = 6475
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance i_0/ps2/ps2_keyboard_inst/ascii_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-7052] The timing for the instance ps2/ps2_keyboard_inst/ascii_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 2424.902 ; gain = 861.258 ; free physical = 194 ; free virtual = 14950
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Stitch Unchanged Partitions
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 2424.902 ; gain = 861.258 ; free physical = 185 ; free virtual = 14942
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2709 ; free virtual = 6474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -370,42 +395,41 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance ps2/ps2_keyboard_inst/ascii_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 2552.801 ; gain = 989.156 ; free physical = 182 ; free virtual = 14915
+Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2694 ; free virtual = 6459
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:03 . Memory (MB): peak = 2552.801 ; gain = 989.156 ; free physical = 182 ; free virtual = 14915
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:39 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2686 ; free virtual = 6451
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:05 . Memory (MB): peak = 2552.801 ; gain = 989.156 ; free physical = 175 ; free virtual = 14910
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2713 ; free virtual = 6478
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:05 . Memory (MB): peak = 2552.801 ; gain = 989.156 ; free physical = 169 ; free virtual = 14910
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:38 ; elapsed = 00:01:40 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2709 ; free virtual = 6474
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:07 . Memory (MB): peak = 2571.613 ; gain = 1007.969 ; free physical = 195 ; free virtual = 14883
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2706 ; free virtual = 6477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:07 . Memory (MB): peak = 2571.613 ; gain = 1007.969 ; free physical = 195 ; free virtual = 14883
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2708 ; free virtual = 6479
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -426,64 +450,66 @@ Report BlackBoxes:
 |1     |clk_wiz_1        |         1|
 |2     |blk_mem_gen_2    |         1|
 |3     |blk_mem_gen_0    |         1|
-|4     |fifo_generator_0 |         1|
-|5     |blk_mem_gen_1    |         1|
-|6     |blk_mem_gen_3    |         1|
-|7     |fifo_generator_1 |         1|
-|8     |blk_mem_gen_4    |         1|
+|4     |blk_mem_gen_5    |         1|
+|5     |fifo_generator_0 |         1|
+|6     |blk_mem_gen_1    |         1|
+|7     |blk_mem_gen_3    |         1|
+|8     |fifo_generator_1 |         1|
+|9     |blk_mem_gen_4    |         1|
 +------+-----------------+----------+
 
 Report Cell Usage: 
-+------+-----------------+------+
-|      |Cell             |Count |
-+------+-----------------+------+
-|1     |blk_mem_gen      |     4|
-|5     |blk_mem_gen_4    |     1|
-|6     |clk_wiz          |     1|
-|7     |fifo_generator   |     1|
-|8     |fifo_generator_1 |     1|
-|9     |CARRY4           |    76|
-|10    |DSP48E1          |     1|
-|11    |LUT1             |    39|
-|12    |LUT2             |   207|
-|13    |LUT3             |   399|
-|14    |LUT4             |  2068|
-|15    |LUT5             |  3252|
-|16    |LUT6             |  9168|
-|17    |MUXF7            |  1102|
-|18    |MUXF8            |   544|
-|19    |RAMB18E1         |     1|
-|20    |FDCE             |   394|
-|21    |FDPE             |     3|
-|22    |FDRE             |  2291|
-|23    |FDSE             |     4|
-|24    |IBUF             |     3|
-|25    |OBUF             |    14|
-+------+-----------------+------+
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |blk_mem_gen    |     6|
+|7     |clk_wiz        |     1|
+|8     |fifo_generator |     2|
+|10    |BUFG           |     1|
+|11    |CARRY4         |    78|
+|12    |DSP48E1        |     1|
+|13    |LUT1           |    20|
+|14    |LUT2           |   254|
+|15    |LUT3           |   531|
+|16    |LUT4           |   878|
+|17    |LUT5           |  2353|
+|18    |LUT6           | 11156|
+|19    |MUXF7          |  1381|
+|20    |MUXF8          |   680|
+|21    |RAMB18E1       |     1|
+|22    |FDCE           |   526|
+|23    |FDPE           |    14|
+|24    |FDRE           |  2347|
+|25    |FDSE           |     4|
+|26    |LDC            |     8|
+|27    |IBUF           |     6|
+|28    |OBUF           |    15|
++------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:07 . Memory (MB): peak = 2571.613 ; gain = 1007.969 ; free physical = 195 ; free virtual = 14883
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 2709.410 ; gain = 1153.852 ; free physical = 2700 ; free virtual = 6471
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:08 . Memory (MB): peak = 2575.527 ; gain = 911.145 ; free physical = 1638 ; free virtual = 16331
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:01:10 . Memory (MB): peak = 2575.527 ; gain = 1011.883 ; free physical = 1638 ; free virtual = 16325
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:37 ; elapsed = 00:01:40 . Memory (MB): peak = 2709.410 ; gain = 1055.113 ; free physical = 2707 ; free virtual = 6478
+Synthesis Optimization Complete : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 2709.418 ; gain = 1153.852 ; free physical = 2707 ; free virtual = 6478
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2575.527 ; gain = 0.000 ; free physical = 1633 ; free virtual = 16323
-INFO: [Netlist 29-17] Analyzing 1724 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2709.418 ; gain = 0.000 ; free physical = 2874 ; free virtual = 6646
+INFO: [Netlist 29-17] Analyzing 2149 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2619.637 ; gain = 0.000 ; free physical = 1628 ; free virtual = 16318
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.438 ; gain = 0.000 ; free physical = 2890 ; free virtual = 6660
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 8 instances were transformed.
+  LDC => LDCE: 8 instances
 
-Synth Design complete | Checksum: 33f3add8
+Synth Design complete | Checksum: 8c6bd3e3
 INFO: [Common 17-83] Releasing license: Synthesis
-78 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+107 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:17 . Memory (MB): peak = 2619.637 ; gain = 1244.625 ; free physical = 1587 ; free virtual = 16329
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3221.229; main = 1803.870; forked = 1710.744
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5706.645; main = 2619.641; forked = 3285.652
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2643.648 ; gain = 0.000 ; free physical = 1558 ; free virtual = 16281
-INFO: [Common 17-1381] The checkpoint '/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:51 . Memory (MB): peak = 2765.438 ; gain = 1326.426 ; free physical = 2890 ; free virtual = 6659
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2135.514; main = 1920.315; forked = 260.084
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3626.094; main = 2765.441; forked = 916.680
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2789.449 ; gain = 0.000 ; free physical = 2886 ; free virtual = 6656
+INFO: [Common 17-1381] The checkpoint '/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jun 19 02:42:06 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 20 03:41:02 2025...

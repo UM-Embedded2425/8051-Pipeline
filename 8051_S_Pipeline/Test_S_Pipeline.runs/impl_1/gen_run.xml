@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1750297237">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1750387138">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="top_routed.rqs"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="top.vdi"/>
+  <File Type="BG-DRC" Name="top.drc"/>
   <File Type="BG-BGN" Name="top.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
@@ -15,7 +18,6 @@
   <File Type="RCFI_FILE" Name="top.rcfi"/>
   <File Type="PL-PDI-FILE" Name="top_pld.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="top_boot.pdi"/>
-  <File Type="RDI-RDI" Name="top.vdi"/>
   <File Type="PDI-FILE" Name="top.pdi"/>
   <File Type="BITSTR-MMI" Name="top.mmi"/>
   <File Type="BITSTR-BMM" Name="top_bd.bmm"/>
@@ -23,7 +25,6 @@
   <File Type="BITSTR-RBT" Name="top.rbt"/>
   <File Type="BITSTR-MSK" Name="top.msk"/>
   <File Type="BG-BIN" Name="top.bin"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="BG-BIT" Name="top.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_bus_skew_postroute_physopted.pb"/>
@@ -33,7 +34,6 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_postroute_physopt.dcp"/>
-  <File Type="BG-DRC" Name="top.drc"/>
   <File Type="ROUTE-RQS-PB" Name="top_rqs_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="top_bus_skew_routed.rpx"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="top_bus_skew_routed.pb"/>
@@ -76,13 +76,13 @@
   <File Type="PWROPT-DRC" Name="top_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="top_pwropt.dcp"/>
   <File Type="OPT-RQA-PB" Name="top_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="top_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="top.hwdef"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="top_methodology_drc_opted.rpt"/>
   <File Type="OPT-DRC" Name="top_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="top_opt.dcp"/>
-  <File Type="OPT-TIMING" Name="top_timing_summary_opted.rpt"/>
-  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="INIT-TIMING" Name="top_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="PA-TCL" Name="top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -94,13 +94,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -156,6 +149,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/Interrupt_Controler.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Program_Counter.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -185,6 +185,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/ascii_module.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/base_uart.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -233,6 +240,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/vertical_counter.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -249,14 +263,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/top.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/base_uart.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -286,14 +292,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/uart_wrapper.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/ROM/output.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -301,6 +299,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/ROM/text.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ISR_LUT/isr.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -350,6 +354,8 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_5"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_1"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_4"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>

@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-// Date        : Wed Jun 18 22:57:08 2025
-// Host        : user-GF65-Thin-10SER running 64-bit Ubuntu 24.04.2 LTS
-// Command     : write_verilog -force -mode synth_stub -rename_top blk_mem_gen_2 -prefix
-//               blk_mem_gen_2_ blk_mem_gen_2_stub.v
+// Date        : Fri Jun 20 03:17:33 2025
+// Host        : telmo-pc running 64-bit Ubuntu 22.04.5 LTS
+// Command     : write_verilog -force -mode synth_stub
+//               /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_stub.v
 // Design      : blk_mem_gen_2
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1

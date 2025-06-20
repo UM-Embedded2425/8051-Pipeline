@@ -4,7 +4,7 @@ module sfr(
     input clk,
     input reset,
     input mem_acess_en,
-    input sfr_re, sfr_we, decode_en, writeback_en,
+    input sfr_re, sfr_we, decode_en, writeback_en, isr_en,
     input [7:0] ACC_we, SP_we, DPL_we, DPH_we, B_we, PSW_we,
     input [7:0] sfr_in, address, address1,
     output reg [7:0] sfr_out,
@@ -26,19 +26,19 @@ module sfr(
               TH0_ADDR   = 8'h8C, TL0_ADDR  = 8'h8A, TH1_ADDR  = 8'h8D, TL1_ADDR   = 8'h8B,
               IE_ADDR    = 8'hA8, IP_ADDR   = 8'hB8, SCON_ADDR = 8'h98, SBUF_ADDR  = 8'h99;
 
-       
     always @(posedge clk) begin
     if (reset) begin
         SP <= 8'h30;            
         rs <= 0;
         ACC <= 0; DPL <= 0; DPH <= 0; B <= 0; PSW <= 0;
+        sfr_out <= 0;
     end
     else if (sfr_re && mem_acess_en) begin
         if (b_access) begin
             sfr_out <= b_data_in;
         end
     end   
-    else if (sfr_we && writeback_en) begin
+    else if (sfr_we & (writeback_en | isr_en)) begin
         ACC  <= ACC_we;
         SP   <= SP_we;  
         DPL  <= DPL_we;

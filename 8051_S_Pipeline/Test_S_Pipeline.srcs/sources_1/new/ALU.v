@@ -8,6 +8,7 @@ module alu_unit(
     input [7:0] psw_in,
     output reg [7:0] psw_out,
     input wire en_execute,
+    input wire isr_en,
     output reg [7:0] result
     );
     
@@ -25,7 +26,7 @@ module alu_unit(
         Ov = psw_in[2];
         //result = 8'h00;
         result = 0;
-        if(en_execute) begin    
+        if(en_execute | isr_en) begin    
             case (opcode)
             
                 `OP_ADD: begin //ADD A,#IMM; ADD A, DATA; ADD A, @Rx; ADD A, Rx

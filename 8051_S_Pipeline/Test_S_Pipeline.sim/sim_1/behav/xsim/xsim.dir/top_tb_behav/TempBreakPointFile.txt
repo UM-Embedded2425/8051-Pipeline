@@ -1,4 +1,1 @@
 Breakpoint File Version 1.0
-126,true,"/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v"
-123,true,"/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v"
-121,true,"/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v"

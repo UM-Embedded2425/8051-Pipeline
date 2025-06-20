@@ -5,6 +5,14 @@ module top(
     input clk,
     input rst,
     
+    // Extra IT
+    input en0,
+    input en1,
+    
+    // UART
+    input rx,
+    output tx,
+    
     // PS2
     input ps2_clk,
     input ps2_data,
@@ -28,17 +36,19 @@ module top(
     wire cpu_re, cpu_we, ps2_it;
     
     // Bus connections
-    wire [7:0] addr_bus, wdata_bus, rdata_bus1, rdata_bus2, rdata_bus3, rdata_bus4, rdata_bus5;
+    wire [7:0] addr_bus, wdata_bus, rdata_bus1, rdata_bus2, rdata_bus3, rdata_bus4, rdata_bus5, rdata_bus6;
     wire read_en_bus, write_en_bus, bus_clk;
     wire clk_a, clk_vga, bus_rst;
+    
+    wire ri, ti, trigger, done;
+    wire [15:0] isr_addr;
     
     clk_wiz_1 pll(
     .clk_in1(clk),
     .clk_out1(clk_a),
     .clk_out2(clk_vga)
     );
-    
-    
+        
     CPU8051 cpu(
     .clk(clk_a), 
     .reset(rst),
@@ -46,7 +56,10 @@ module top(
     .b_data_out(cpu_data),    
     .b_re(cpu_re),            
     .b_we(cpu_we),            
-    .b_data_in(rec_data)      
+    .b_data_in(rec_data),
+    .done(done),
+    .trigger_it(trigger),
+    .isr_addr(isr_addr)      
     );
     
     custom_bus bus(
@@ -65,20 +78,30 @@ module top(
     .rdata_bus3(rdata_bus3),
     .rdata_bus4(rdata_bus4),
     .rdata_bus5(rdata_bus5),
+    .rdata_bus6(rdata_bus6),
     .rdata(rec_data),
     .bus_clk(bus_clk),
     .bus_rst(bus_rst)
     );
-  /*  
-    dummy_peripheral1 dummy2(
-    .clk(bus_clk),
-    .rst(bus_rst),
-    .addr(addr_bus),
-    .in_data(wdata_bus),
-    .re(read_en_bus),
-    .we(write_en_bus),
-    .out_data(rdata_bus2)
+    
+    Interrupt_Controler ic(
+    .clk(bus_clk), //clock
+    .rst(bus_rst), //reset signal
+    .en0(en0), // EXT0 -> isr: 0003
+    .en1(en1), // TM0 -> isr: 000b
+    .en2(ri), // UART RI -> isr: 0013
+    .en3(ti), // UART TI -> isr: 001b
+    .en4(ps2_it), // PS2 -> isr: 0023
+    .done(done),
+    .trigger_it(trigger), //there is an ISR signal
+    .jmp_addr(isr_addr), //addres to the isr
+    .b_data_in(wdata_bus),
+    .b_addr(addr_bus),
+    .b_we(write_en_bus),
+    .b_re(read_en_bus),
+    .b_data_out(rdata6)
     );
+   
     
     UART_Simple_Protocol_Wrapper uart(
     .clk(bus_clk),
@@ -92,6 +115,16 @@ module top(
     .tx(tx),
     .RI(ri),
     .TI(ti)
+    );
+    /*   
+    dummy_peripheral1 dummy2(
+    .clk(bus_clk),
+    .rst(bus_rst),
+    .addr(addr_bus),
+    .in_data(wdata_bus),
+    .re(read_en_bus),
+    .we(write_en_bus),
+    .out_data(rdata_bus2)
     );
     
     timer_wrapper t0(

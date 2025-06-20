@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
-| Date         : Thu Jun 19 02:43:00 2025
-| Host         : user-GF65-Thin-10SER running 64-bit Ubuntu 24.04.2 LTS
+| Date         : Fri Jun 20 03:42:19 2025
+| Host         : telmo-pc running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
 | Device       : xc7z010
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    41 |
-|    Minimum number of control sets                        |    41 |
+| Total control sets                                       |    79 |
+|    Minimum number of control sets                        |    79 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    46 |
+| Unused register locations in slices containing registers |   279 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    41 |
-| >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     2 |
+| Total control sets |    79 |
+| >= 0 to < 4        |    27 |
+| >= 4 to < 6        |     4 |
 | >= 6 to < 8        |     1 |
-| >= 8 to < 10       |    24 |
+| >= 8 to < 10       |    30 |
 | >= 10 to < 12      |     3 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     1 |
-| >= 16              |     9 |
+| >= 16              |    12 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,62 +58,100 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              24 |           12 |
-| No           | No                    | Yes                    |              12 |            9 |
-| No           | Yes                   | No                     |              48 |           23 |
-| Yes          | No                    | No                     |            2062 |         1985 |
-| Yes          | No                    | Yes                    |             385 |          176 |
-| Yes          | Yes                   | No                     |             215 |           81 |
+| No           | No                    | No                     |              44 |           21 |
+| No           | No                    | Yes                    |              48 |           28 |
+| No           | Yes                   | No                     |              59 |           33 |
+| Yes          | No                    | No                     |            2071 |         1733 |
+| Yes          | No                    | Yes                    |             489 |          223 |
+| Yes          | Yes                   | No                     |             234 |           92 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+----------------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+--------------+
-|    Clock Signal    |                                                  Enable Signal                                                 |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
-+--------------------+----------------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+--------------+
-|  pll/inst/clk_out1 |                                                                                                                |                              |                3 |              5 |         1.67 |
-|  pll/inst/clk_out1 | cpu/fsm/Q[3]                                                                                                   | rst_IBUF                     |                5 |              5 |         1.00 |
-|  pll/inst/clk_out2 | vga/VGA_H/enb                                                                                                  |                              |                3 |              6 |         2.00 |
-|  pll/inst/clk_out1 | cpu/execute_unit/PC_out[15]_i_1_n_0                                                                            | rst_IBUF                     |                4 |              8 |         2.00 |
-|  pll/inst/clk_out1 | cpu/execute_unit/PC_out[7]_i_1_n_0                                                                             | rst_IBUF                     |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/execute_unit/ACC_we[7]_i_1_n_0                                                                             | rst_IBUF                     |                8 |              8 |         1.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/re_B_reg_0[0]                                                                                  | rst_IBUF                     |                6 |              8 |         1.33 |
-|  pll/inst/clk_out1 | cpu/decode_unit/E[0]                                                                                           | rst_IBUF                     |                4 |              8 |         2.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/sfr_we_reg_2                                                                                   | rst_IBUF                     |                4 |              8 |         2.00 |
-|  pll/inst/clk_out1 | cpu/execute_unit/SP_we[7]_i_1_n_0                                                                              | rst_IBUF                     |                5 |              8 |         1.60 |
-|  pll/inst/clk_out1 | cpu/decode_unit/sfr_inst/sfr_out[7]_i_1_n_0                                                                    |                              |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[7][7]_i_1_n_0                                                          | rst_IBUF                     |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[6][7]_i_1_n_0                                                          | rst_IBUF                     |                1 |              8 |         8.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[5][7]_i_1_n_0                                                          | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[4][7]_i_1_n_0                                                          | rst_IBUF                     |                1 |              8 |         8.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[3][7]_i_1_n_0                                                          | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[2][7]_i_1_n_0                                                          | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[1][7]_i_1_n_0                                                          | rst_IBUF                     |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/decode_unit/registers_inst/reg_file[0][7]_i_1_n_0                                                          | rst_IBUF                     |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/execute_unit/reg_write[7]_i_1_n_0                                                                          | rst_IBUF                     |                5 |              8 |         1.60 |
-|  pll/inst/clk_out1 | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/ram_empty_fb_i_reg[0] | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                  | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                          | rst_IBUF                     |                3 |              8 |         2.67 |
-|  pll/inst/clk_out1 | cpu/execute_unit/sfr_in[7]_i_1_n_0                                                                             | rst_IBUF                     |                4 |              8 |         2.00 |
-|  pll/inst/clk_out1 | ps2/ps2_keyboard_inst/ascii[7]_i_1_n_0                                                                         | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | vga/text_mod_inst/fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]       | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out1 | vga/text_mod_inst/fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]       | rst_IBUF                     |                2 |              8 |         4.00 |
-|  pll/inst/clk_out2 |                                                                                                                | vga/VGA_H/h_count[9]_i_1_n_0 |                3 |             10 |         3.33 |
-|  pll/inst/clk_out2 | vga/VGA_H/E[0]                                                                                                 | vga/VGA_V/v_count[9]_i_1_n_0 |                4 |             10 |         2.50 |
-|  pll/inst/clk_out1 | ps2/ps2_keyboard_inst/shift_reg[8]_i_1_n_0                                                                     | rst_IBUF                     |                2 |             11 |         5.50 |
-|  pll/inst/clk_out1 | cpu/fsm/E[0]                                                                                                   | rst_IBUF                     |                4 |             12 |         3.00 |
-|  pll/inst/clk_out1 | vga/text_mod_inst/base_addr[13]_i_1_n_0                                                                        | rst_IBUF                     |                6 |             14 |         2.33 |
-|  pll/inst/clk_out1 | cpu/execute_unit/DPL_we[7]_i_1_n_0                                                                             | rst_IBUF                     |                7 |             16 |         2.29 |
-|  pll/inst/clk_out1 | cpu/decode_unit/sfr_we_reg_1                                                                                   | rst_IBUF                     |                7 |             16 |         2.29 |
-|  pll/inst/clk_out1 | cpu/execute_unit/data_in[7]_i_1_n_0                                                                            | rst_IBUF                     |                8 |             16 |         2.00 |
-|  pll/inst/clk_out2 |                                                                                                                |                              |                9 |             19 |         2.11 |
-|  pll/inst/clk_out1 | cpu/execute_unit/data_in1[7]_i_1_n_0                                                                           | rst_IBUF                     |               13 |             32 |         2.46 |
-|  pll/inst/clk_out1 | cpu/fsm/FSM_onehot_current_state_reg[2]_0[0]                                                                   | rst_IBUF                     |               22 |             36 |         1.64 |
-|  pll/inst/clk_out1 |                                                                                                                | rst_IBUF                     |               29 |             50 |         1.72 |
-|  pll/inst/clk_out1 | cpu/fsm/Q[1]                                                                                                   | rst_IBUF                     |              106 |            248 |         2.34 |
-|  pll/inst/clk_out1 | cpu/ram_inst/shadow_ram[160][7]_i_1_n_0                                                                        |                              |             1979 |           2048 |         1.03 |
-+--------------------+----------------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+--------------+
++-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|                     Clock Signal                    |                                                  Enable Signal                                                 |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[7]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | cpu/fsm/Q[5]                                       |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[2]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[3]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[4]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[5]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[6]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[1]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[1]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[7]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[6]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[5]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[4]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[3]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[2]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[1]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/TL1_OUT[7]_P_i_1_n_0                                                                   | uart/uart_inst/baud_gen/TL1_OUT_reg[0]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  uart_inst/baud_tick                                |                                                                                                                |                                                    |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[7]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[7]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[6]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[6]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[5]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[5]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart_inst/baud_tick                                | uart/uart_inst/tx_unit/tx_i_1_n_0                                                                              | rst_IBUF                                           |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[2]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[2]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[3]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[3]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[0]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[0]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart/uart_inst/baud_gen/TL1_OUT_reg[4]_LDC_i_1_n_0 |                                                                                                                | uart/uart_inst/baud_gen/TL1_OUT_reg[4]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  uart_inst/baud_tick                                | uart/uart_inst/tx_unit/bit_count                                                                               | rst_IBUF                                           |                1 |              4 |         4.00 |
+|  uart_inst/baud_tick                                | uart/uart_inst/tx_unit/FSM_onehot_state[3]_i_1_n_0                                                             | rst_IBUF                                           |                1 |              4 |         4.00 |
+|  uart_inst/baud_tick                                | uart/uart_inst/rx_unit/bit_count                                                                               | rst_IBUF                                           |                1 |              4 |         4.00 |
+|  uart_inst/baud_tick                                |                                                                                                                | rst_IBUF                                           |                2 |              5 |         2.50 |
+|  pll/inst/clk_out2                                  | vga/VGA_H/enb                                                                                                  |                                                    |                2 |              6 |         3.00 |
+|  pll/inst/clk_out1                                  | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/ram_empty_fb_i_reg[0] | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/rst_6[0]                                                                                       | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[6][7]_i_1_n_0                                                          | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/re_B_reg_2[0]                                                                                  | rst_IBUF                                           |                5 |              8 |         1.60 |
+|  pll/inst/clk_out1                                  | uart/uart_inst/baud_gen/E[0]                                                                                   | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | ps2/ps2_keyboard_inst/ascii[7]_i_1_n_0                                                                         | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | vga/text_mod_inst/fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/E[0]       | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | vga/text_mod_inst/fifo_inst/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]       | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[0][7]_i_1_n_0                                                          | rst_IBUF                                           |                5 |              8 |         1.60 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[1][7]_i_1_n_0                                                          | rst_IBUF                                           |                6 |              8 |         1.33 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[2][7]_i_1_n_0                                                          | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[3][7]_i_1_n_0                                                          | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/E[0]                  | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | ps2/fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]                          | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[7][7]_i_1_n_0                                                          | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[4][7]_i_1_n_0                                                          | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/registers_inst/reg_file[5][7]_i_1_n_0                                                          | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  uart_inst/baud_tick                                | uart/uart_inst/rx_unit/data_out[7]_i_1__0_n_0                                                                  |                                                    |                1 |              8 |         8.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/address1_reg[4]_1[0]                                                                           | rst_IBUF                                           |                5 |              8 |         1.60 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/address1_reg[1]_2[0]                                                                           | rst_IBUF                                           |                4 |              8 |         2.00 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/reg_write[7]_i_1_n_0                                                                          | rst_IBUF                                           |                7 |              8 |         1.14 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/data_in[7]_i_1_n_0                                                                            | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/SP_we0                                                                                        | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/sfr_inst/cpu_re                                                                                | rst_IBUF                                           |                4 |              8 |         2.00 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/ACC_we[7]_i_1_n_0                                                                             | rst_IBUF                                           |                5 |              8 |         1.60 |
+|  pll/inst/clk_out1                                  | cpu/fsm/FSM_onehot_current_state_reg[3]_0[0]                                                                   | rst_IBUF                                           |                5 |              8 |         1.60 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/address1_reg[7]_rep_2[0]                                                                       | rst_IBUF                                           |                3 |              8 |         2.67 |
+|  uart_inst/baud_tick                                | uart/uart_inst/rx_unit/shift_reg[8]_i_1_n_0                                                                    |                                                    |                2 |              9 |         4.50 |
+|  uart_inst/baud_tick                                | uart/uart_inst/tx_unit/shift_reg_0                                                                             | rst_IBUF                                           |                3 |              9 |         3.00 |
+|  pll/inst/clk_out1                                  | uart/E[0]                                                                                                      | rst_IBUF                                           |                3 |              9 |         3.00 |
+|  pll/inst/clk_out2                                  |                                                                                                                | vga/VGA_H/h_count[9]_i_1_n_0                       |                4 |             10 |         2.50 |
+|  pll/inst/clk_out2                                  | vga/VGA_H/E[0]                                                                                                 | vga/VGA_V/v_count[9]_i_1_n_0                       |                4 |             10 |         2.50 |
+|  pll/inst/clk_out1                                  | ps2/ps2_keyboard_inst/shift_reg[8]_i_1__0_n_0                                                                  | rst_IBUF                                           |                3 |             11 |         3.67 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/b_access_reg_3[0]                                                                              | rst_IBUF                                           |                7 |             13 |         1.86 |
+|  pll/inst/clk_out1                                  | vga/text_mod_inst/base_addr[13]_i_1_n_0                                                                        | rst_IBUF                                           |                5 |             14 |         2.80 |
+|  pll/inst/clk_out1                                  | cpu/fsm/E[0]                                                                                                   | rst_IBUF                                           |                9 |             16 |         1.78 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/DPL_we[7]_i_1_n_0                                                                             | rst_IBUF                                           |                7 |             16 |         2.29 |
+|  pll/inst/clk_out2                                  |                                                                                                                |                                                    |               10 |             19 |         1.90 |
+|  pll/inst/clk_out1                                  | cpu/fsm/Q[3]                                                                                                   | rst_IBUF                                           |               12 |             21 |         1.75 |
+|  pll/inst/clk_out1                                  |                                                                                                                |                                                    |               10 |             24 |         2.40 |
+|  pll/inst/clk_out1                                  | cpu/decode_unit/b_access_reg_0                                                                                 | rst_IBUF                                           |               13 |             27 |         2.08 |
+|  pll/inst/clk_out1                                  | cpu/fsm/FSM_onehot_current_state_reg[2]_0[0]                                                                   | rst_IBUF                                           |               16 |             36 |         2.25 |
+|  pll/inst/clk_out1                                  | cpu/execute_unit/data_in1[7]_i_1_n_0                                                                           | rst_IBUF                                           |               14 |             36 |         2.57 |
+|  pll/inst/clk_out1                                  |                                                                                                                | rst_IBUF                                           |               38 |             75 |         1.97 |
+|  pll/inst/clk_out1                                  | cpu/fsm/Q[1]                                                                                                   | rst_IBUF                                           |               41 |             78 |         1.90 |
+|  pll/inst/clk_out1                                  | cpu/fsm/FSM_onehot_current_state_reg[1]_0                                                                      | rst_IBUF                                           |               78 |            198 |         2.54 |
+|  pll/inst/clk_out1                                  | cpu/ram_inst/shadow_ram[128][7]_i_1_n_0                                                                        |                                                    |             1728 |           2048 |         1.19 |
++-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
 
 

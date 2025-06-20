@@ -4,7 +4,7 @@ module program_counter(
     input reset,
     input clk,
     input en_fetch,
-    input en_execute, writeback_en,
+    input en_execute, writeback_en, isr_en,
     input [15:0]PC_out,
     
     input branch_en, branch_en_exe,
@@ -18,14 +18,14 @@ module program_counter(
         if (reset) begin
             PC <= 16'h0000;
         end else begin
-            if (en_execute) begin
+            if (en_execute | isr_en) begin
                 if (branch_en) begin
                     PC <= absol_address; 
                 end 
             end else if (writeback_en) begin
                 if (branch_en_exe) begin
                     PC <= PC + {{8{rel_address[7]}} ,rel_address}; 
-                end else if (PC_out) PC <= PC_out; 
+                end else if (PC_out != 8'h00) PC <= PC_out; 
             end else if (en_fetch) begin
                 PC <= PC + 1; 
             end

@@ -4,7 +4,7 @@
     module decode(
         input clk,
         input reset,
-        input decode_en, writeback_en, mem_acess_en,
+        input decode_en, writeback_en, mem_acess_en, irq_en_r, irq_en_w,
         input [7:0] reg_write, sfr_in, sfr_in1,
         (*keep*) input wire [23:0] IR1,
         input[7:0] ACC_we, SP_we, DPL_we, DPH_we, B_we, PSW_we,
@@ -19,12 +19,14 @@
         output reg [15:0] absol_address,
         output reg sfr_en,
         output reg [5:0]alu,
+        output reg done_isr,
         // Alterado
         output [7:0] b_addr,
         output [7:0] b_data_out,
         output b_we,
         output b_re,
-        input [7:0] b_data_in
+        input [7:0] b_data_in,
+        input [15:0] irq_addr
     );
     
     localparam VGA_CONF_ADDR = 8'h9A, VGA_DATA_ADDR = 8'h9B, VGA_ADDR_H_ADDR = 8'h9C, VGA_ADDR_L_ADDR = 8'h9D; // VGA
@@ -32,6 +34,7 @@
     localparam P0_ADDR = 8'h90; // GPIO
     localparam TCON_ADDR = 8'h88, TMOD_ADDR = 8'h89, TH0_ADDR = 8'h8C, TL0_ADDR = 8'h8A; // TIMER
     localparam PS2_SBUF_ADDR = 8'hC0, PS2_CONTROL_ADDR = 8'hC1, PS2_STATUS = 8'hC2; // PS2
+    localparam IE_ADDR = 8'hA8, IP_ADDR = 8'hB8; // IC
     
     reg [7:0] reg_address;
     reg sfr_re, sfr_we, reg_we, reg_re;
@@ -60,6 +63,7 @@
         .decode_en(decode_en),
         .writeback_en(writeback_en),
         .mem_acess_en(mem_acess_en),
+        .isr_en(irq_en_w),
         .sfr_re(sfr_re), 
         .sfr_we(sfr_we),  
         .sfr_out(sfr_out),
@@ -70,7 +74,6 @@
         .ACC_we(ACC_we), .SP_we(SP_we), .DPL_we(DPL_we), .DPH_we(DPH_we), 
         .B_we(B_we), .PSW_we(PSW_we),
         .ACC(ACC), .SP(SP), .DPL(DPL), .DPH(DPH), .B(B), .PSW(PSW),
-        
         // Alterado
         .b_addr(b_addr),
         .b_data_out(b_data_out),
@@ -104,7 +107,7 @@
             mux_select2 <=0;
             address1 <= 0;
             b_access <= 0;
-
+            done_isr <= 0;
         end else if(decode_en)begin
             branch_en <= 1'b0;
             rel_address <= 8'h00;
@@ -127,14 +130,15 @@
             mux_select2 <=0;
             address1 <= 0;
             b_access <= 0;
+            done_isr <= 0;
             if (IR1[15:8] > 8'h80)sfr_en<=1;
             else sfr_en <= 0;
             if (IR1[15:8] == VGA_CONF_ADDR || IR1[15:8] == VGA_DATA_ADDR || IR1[15:8] == VGA_ADDR_H_ADDR || IR1[15:8] == VGA_ADDR_L_ADDR ||
-            IR1[15:8] == PS2_SBUF_ADDR ||
-                IR1[15:8] == PS2_CONTROL_ADDR || IR1[15:8] == PS2_STATUS) b_access <= 1;
+            IR1[15:8] == SBUF_ADDR || IR1[15:8] == SCON_ADDR || IR1[15:8] == TL1_ADDR || IR1[15:8] == TH1_ADDR || IR1[15:8] == P0_ADDR ||
+            IR1[15:8] == TCON_ADDR || IR1[15:8] == TMOD_ADDR || IR1[15:8] == TH0_ADDR || IR1[15:8] == TL0_ADDR ||
+            IR1[15:8] == PS2_SBUF_ADDR || IR1[15:8] == PS2_CONTROL_ADDR || IR1[15:8] == PS2_STATUS || IR1[15:8] == IE_ADDR || IR1[15:8] == IP_ADDR) b_access <= 1;
             else b_access <= 0; 
             casex (IR1[23:16])
-            /*
               `ACALL : begin
                     //absol_address <= {IR1[7:4], IR1[15:8]};
                     absol_address <= IR1[15:8];
@@ -142,8 +146,9 @@
                     address_type <= 3;
                     sfr_re <= 1;
                     sfr_we <= 1;
-                    alu <= 5'b00011;
+                    alu <= 5'b00000;
                     mux_select1 <= 3'b100;
+                    mux_select2 <= 3'b010;
                     we_A <= 1;
                     address <= SP;
               end 
@@ -156,29 +161,42 @@
                     absol_address <= IR1[23:8];
                     sfr_we <= 1;
                     sfr_re <= 1;
-                    alu <= 5'b00011;
+                    alu <= 5'b00000;
                     mux_select1 <= 3'b100;
+                    mux_select2 <= 3'b010;
                     branch_en <= 1;
                     we_A <= 1;
                     address <= SP;
                     address_type <= 3;
               end
-              */
               `LJMP   : begin
                     absol_address <= IR1[15:0];
                     branch_en <= 1;
               end 
               `SJMP : rel_address <= IR1[15:8];
-              /*
-              `RET || `RETI: begin 
+              
+              `RET : begin 
                     address_type <= 3;
                     sfr_we <= 1;
                     sfr_re <= 1;
                     re_A <= 1;
-                    alu <= 5'b00101;
+                    alu <= 5'b00010;
                     mux_select1 <= 3'b100;
+                    mux_select2 <= 3'b010;
                     address <= SP;
-                end*/
+                end
+              
+              `RETI: begin 
+                    address_type <= 3;
+                    sfr_we <= 1;
+                    sfr_re <= 1;
+                    re_A <= 1;
+                    alu <= 5'b00010;
+                    mux_select1 <= 3'b100;
+                    mux_select2 <= 3'b010;
+                    address <= SP;
+                    done_isr <= 1;
+                end
                 
                 // INC           
                 `INC_A : begin
@@ -423,9 +441,8 @@
                     sfr_re <=1;
                     sfr_we <=1;
                 end
-                 /*
-                
-                //MUL
+                 
+                /*//MUL
                 `MUL: begin
                     alu       <= 5'b00110;
                     mux_select1 <= 3'b101;
@@ -665,7 +682,6 @@
                     address_type <= 1;
                     address <= IR1[15:8]; 
                end 
-              
                //XRL
                `XRL_R: begin
                     alu <= 5'b01101;
@@ -789,8 +805,7 @@
                     we_A <=1;
                     address_type <= 1;
                     address <= IR1[15:8];
-               end
-               */
+               end*/
                
                
                 `JMP_D : begin //JMP @A+DPIR
@@ -821,8 +836,7 @@
                     address <= IR1[15:8];
                     address1 <= SP;  
                  end
-                 /*
-                 //XCH AND XCHD
+                 /*//XCH AND XCHD
                  `XCH_R : begin 
                     reg_re <= 1;
                     reg_we <= 1;
@@ -863,8 +877,7 @@
                     else address <= readr0;
                     re_A <= 1;
                     we_A <= 1;
-                 end 
-                 */
+                 end */
                  //SWAP
                  `SWAP : begin
                     sfr_re <= 1;
@@ -898,7 +911,6 @@
                     rel_address <= IR1[23:16];
                     we_A <= 1;
                 end
-                          
                 // Compare and Jump if Not Equal (Reg)
                 `CJNE_R: begin
                     reg_re <= 1;
@@ -978,8 +990,7 @@
                     address <= IR1[15:8];
                     rel_address <= IR1[23:16];     
                     end
-                end
-                */          
+                end*/        
                 `MOV_CR: begin
                     reg_address <= IR1[18:16]; // Rn
                     reg_we <= 1;
@@ -1123,6 +1134,17 @@
                 `MOV_DP: sfr_we <= 1;                                    
               default : ;
             endcase 
+        end else if (irq_en_r) begin
+            absol_address <= irq_addr;
+            sfr_we <= 1;
+            sfr_re <= 1;
+            alu <= 5'b00000;
+            mux_select1 <= 3'b100;
+            mux_select2 <= 3'b010;
+            branch_en <= 1;
+            we_A <= 1;
+            address <= SP;
+            address_type <= 3;
         end
     end
 endmodule

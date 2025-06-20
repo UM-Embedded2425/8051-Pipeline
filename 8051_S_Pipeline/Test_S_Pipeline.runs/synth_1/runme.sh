@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1'
+HD_PWD='/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

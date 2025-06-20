@@ -5,6 +5,7 @@ module execute(
     input clk,
     input reset,
     input en_execute,
+    input isr_en,
     input [15:0] PC,
     input [5:0] alu,
     (*keep*) input wire [23:0] IR1,
@@ -18,7 +19,6 @@ module execute(
     output reg [7:0] data_in, data_in1, reg_write, sfr_in, sfr_in1,
     output reg branch_en_exe 
     );
-    
     
     wire [7:0] result;
     reg [7:0] mux1_out, mux2_out;
@@ -40,7 +40,7 @@ module execute(
         case (mux_select2)
             3'b000: mux2_out = reg_read;   
             3'b001: mux2_out = data_out;
-            3'b010: mux2_out = PSW;
+            3'b010: mux2_out = 8'b00000010;
             3'b011: mux2_out = B; 
             3'b100: mux2_out = data_out1;  
             3'b101: mux2_out = operand_1; 
@@ -52,6 +52,7 @@ module execute(
             
     alu_unit alu_inst (
         .en_execute(en_execute),
+        .isr_en(isr_en),
         .op1(mux1_out),
         .op2(mux2_out),
         .opcode(alu),
@@ -76,7 +77,7 @@ module execute(
         end else if(en_execute)begin
             PSW_we <= psw_out;
             branch_en_exe <= 0;
-            $display("*** Entering case***");
+            PC_out <= 0; $display("*** Entering case***");
             casex (IR1[23:16])
             
                 `ADD_C,`ADD_D,`ADD_I,`ADD_R,`ADDC_C,`ADDC_D,`ADDC_I,
@@ -118,18 +119,16 @@ module execute(
                     SP_we <= result;
                     data_in <= PC[7:0]; 
                     data_in1 <= PC[15:8]; 
-                end
-                */
+                end*/
                 // Short Jump   
                 `SJMP:begin
-                    branch_en_exe <= 1;
-                    $display("*** LJMP MATCH! ***");
+                    branch_en_exe <= 1; $display("*** LJMP MATCH! ***");
                 end
                 // Return / Return from Interrupt
                 `RET,`RETI: begin
                     SP_we <= result;
-                    PC_out[7:0] <= data_out; 
-                    PC_out[15:8] <= data_out1; 
+                    PC_out[15:8] <= data_out; 
+                    PC_out[7:0] <= data_out1; 
                 end
                 // Data Transfer Instructions
                 `MOV_CR: reg_write <= IR1[15:8];
@@ -267,6 +266,10 @@ module execute(
                  end
                  default : ;
             endcase
+        end else if (isr_en) begin
+            SP_we <= result;
+            data_in <= PC[7:0]; 
+            data_in1 <= PC[15:8];
         end
     end     
 endmodule

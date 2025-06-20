@@ -1,12 +1,19 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.sim/sim_1/synth/timing/xsim/top_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.sim/sim_1/synth/timing/xsim/top_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BaudRateGenerator
 INFO: [VRFC 10-311] analyzing module CPU8051
+INFO: [VRFC 10-311] analyzing module Interrupt_Controler
 INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-311] analyzing module UART_RX
+INFO: [VRFC 10-311] analyzing module UART_Simple_Protocol_Wrapper
+INFO: [VRFC 10-311] analyzing module UART_TX
 INFO: [VRFC 10-311] analyzing module alu_unit
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_1
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_2
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_3
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_4
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5
 INFO: [VRFC 10-311] analyzing module clk_wiz_1
 INFO: [VRFC 10-311] analyzing module clk_wiz_1_clk_wiz
 INFO: [VRFC 10-311] analyzing module cpu_fsm
@@ -88,6 +95,12 @@ INFO: [VRFC 10-311] analyzing module blk_mem_gen_4_blk_mem_gen_prim_wrapper_init
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_4_blk_mem_gen_top
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_4_blk_mem_gen_v8_4_9
 INFO: [VRFC 10-311] analyzing module blk_mem_gen_4_blk_mem_gen_v8_4_9_synth
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_v8_4_9
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_5_blk_mem_gen_v8_4_9_synth
 INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_generic_cstr
 INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_width
 INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_wrapper
@@ -126,5 +139,5 @@ INFO: [VRFC 10-311] analyzing module fifo_generator_1_wr_bin_cntr
 INFO: [VRFC 10-311] analyzing module fifo_generator_1_wr_logic
 INFO: [VRFC 10-311] analyzing module fifo_generator_1_wr_status_flags_ss
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module top_tb

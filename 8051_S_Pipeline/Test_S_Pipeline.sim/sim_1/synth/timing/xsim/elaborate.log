@@ -11,14 +11,15 @@ Completed simulation data flow analysis
 INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "top_tb_time_synth.sdf", for root module "top_tb/uC".
 INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "top_tb_time_synth.sdf", for root module "top_tb/uC".
 Time Resolution for simulation is 1ps
+Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.OBUF
-Compiling module simprims_ver.x_lut2_mux4
-Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.x_lut3_mux8
 Compiling module simprims_ver.LUT3
 Compiling module simprims_ver.LUT6
-Compiling module simprims_ver.LUT5
 Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
 Compiling module simprims_ver.FDCE_default
 Compiling module simprims_ver.x_lut1_mux2
 Compiling module simprims_ver.LUT1
@@ -34,11 +35,11 @@ Compiling module xil_defaultlib.alu_unit
 Compiling module xil_defaultlib.execute
 Compiling module simprims_ver.GND
 Compiling module simprims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
-Compiling module simprims_ver.RAMB36E1(INITP_00=256'b010000010...
+Compiling module simprims_ver.RAMB36E1(INITP_00=256'b010100000...
 Compiling module simprims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
-Compiling module simprims_ver.RAMB36E1(INIT_00=256'b0111110111...
+Compiling module simprims_ver.RAMB36E1(INITP_00=256'b010000000...
 Compiling module simprims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
-Compiling module simprims_ver.RAMB36E1(INIT_00=256'b0100000001...
+Compiling module simprims_ver.RAMB36E1(INIT_00=256'b0100000,IN...
 Compiling module xil_defaultlib.blk_mem_gen_2
 Compiling module xil_defaultlib.fetch
 Compiling module xil_defaultlib.cpu_fsm
@@ -49,9 +50,12 @@ Compiling module xil_defaultlib.blk_mem_gen_0
 Compiling module simprims_ver.MUXF8
 Compiling module xil_defaultlib.RAM
 Compiling module xil_defaultlib.CPU8051
-Compiling module simprims_ver.BUFG
 Compiling module simprims_ver.IBUF
-Compiling module simprims_ver.PLLE2_ADV(CLKFBOUT_MULT=36,CLKIN...
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0100000001...
+Compiling module xil_defaultlib.blk_mem_gen_5
+Compiling module xil_defaultlib.Interrupt_Controler
+Compiling module simprims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
 Compiling module xil_defaultlib.clk_wiz_1_clk_wiz
 Compiling module xil_defaultlib.clk_wiz_1
 Compiling module simprims_ver.RB18_INTERNAL_VLOG(RAM_MODE="SDP...
@@ -62,6 +66,13 @@ Compiling module simprims_ver.RAMB18E1(INIT_00=256'b0110000000...
 Compiling module xil_defaultlib.ps2_ascii
 Compiling module xil_defaultlib.ps2_keyboard
 Compiling module xil_defaultlib.ps2_peripheral
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module xil_defaultlib.BaudRateGenerator
+Compiling module xil_defaultlib.UART_RX
+Compiling module xil_defaultlib.UART_TX
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.UART_Simple_Protocol_Wrapper
 Compiling module xil_defaultlib.horizontal_counter
 Compiling module xil_defaultlib.vertical_counter
 Compiling module simprims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,RAM...

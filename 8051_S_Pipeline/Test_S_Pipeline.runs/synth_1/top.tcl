@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/top.tcl"
+  variable script "/home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,12 +56,9 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 4
 set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {Synth 8-7129}  -string {{WARNING: [Synth 8-7129] Port qspo[23] in module rom is either unconnected or has no load}}  -suppress 
 set_msg_config  -id {Synth 8-7129}  -suppress 
 set_msg_config  -id {Synth 8-7080}  -suppress 
@@ -72,68 +69,75 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.cache/wt [current_project]
-set_property parent.project_path /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.xpr [current_project]
+set_property webtalk.parent_dir /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.cache/wt [current_project]
+set_property parent.project_path /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
-set_property ip_output_repo /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.cache/ip [current_project]
+set_property ip_output_repo /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/ROM/output.coe
-add_files /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/ROM/text.coe
+add_files /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/ROM/output.coe
+add_files /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/ROM/text.coe
+add_files /home/telmo/Desktop/Vivado/8051/ISR_LUT/isr.coe
 read_verilog -library xil_defaultlib {
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/defines.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v
-  /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/defines.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ALU.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/CPU8051.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Decode.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Execute.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/FSM.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Fetch.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Interrupt_Controler.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Program_Counter.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/RAM.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/Registers.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/SFR.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ascii_module.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/base_uart.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/custom_bus.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/horizontal_counter.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/image.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_bus.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/ps2_keyboard.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/text_mod.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/uart_wrapper.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vertical_counter.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/vga_controller.v
+  /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/new/top.v
 }
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc]
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/fifo_generator_1/fifo_generator_1.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1.xdc]
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/fifo_generator_1/fifo_generator_1_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/PLLtest.gen/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
 
-read_ip -quiet /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
-set_property used_in_implementation false [get_files -all /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5_ooc.xdc]
+
+read_ip -quiet /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+set_property used_in_implementation false [get_files -all /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -144,14 +148,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc
-set_property used_in_implementation false [get_files /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
+read_xdc /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc
+set_property used_in_implementation false [get_files /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/constrs_1/new/micro.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/user/Documents/Embedded/8051-Pipeline/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
+read_checkpoint -auto_incremental -incremental /home/telmo/Desktop/Vivado/8051/8051_S_Pipeline/Test_S_Pipeline.srcs/utils_1/imports/synth_1/CPU8051.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

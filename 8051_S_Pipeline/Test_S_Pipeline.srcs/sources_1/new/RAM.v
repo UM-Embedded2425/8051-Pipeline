@@ -204,6 +204,7 @@ module RAM(
     input wire clk,
     input wire reset,
     input wire writeback_en,
+    input wire isr_en,
     input wire [7:0] address, address1,   //PORTA A E PORTA B RESPETIVAMENTE
     input wire [1:0] address_type,
     input wire re_A, we_A,
@@ -257,7 +258,7 @@ always @(posedge clk) begin
         data_out <= 0;
         data_out1 <= 0;       
     end else begin
-        if(re_A && !writeback_en) begin
+        if(re_A && !(writeback_en | isr_en)) begin
             wea <= 0;
             case(address_type)
                 DIRECT: begin  //DIRETO
@@ -285,12 +286,12 @@ always @(posedge clk) begin
                     if(address >= 8'h00) begin
                        // data_out <= douta;
                        // data_out1 <= doutb;    
-                        data_out <= shadow_ram[address];  
-                        data_out1 <= shadow_ram[address-1];      
+                        data_out <= shadow_ram[address-1];  
+                        data_out1 <= shadow_ram[address-2];      
                     end
                 end
             endcase 
-        end else if(we_A && writeback_en) begin
+        end else if(we_A && (writeback_en | isr_en)) begin
             wea <= 1;
                 case(address_type)
                     DIRECT: begin //DIRETO
@@ -317,8 +318,8 @@ always @(posedge clk) begin
                     STACK: begin
                         web <= 1;
                         if(address >= 8'h30) begin
-                            shadow_ram[address+1] <= data_in;
-                            shadow_ram[address+2] <= data_in1; 
+                            shadow_ram[address] <= data_in;
+                            shadow_ram[address] <= data_in1; 
                             dina <= data_in;
                             dinb <= data_in1;  
                                                       
@@ -359,7 +360,7 @@ always @(posedge clk) begin
                     end
                 end
             endcase  
-        end else if(we_B && writeback_en) begin
+        end else if(we_B && (writeback_en | isr_en)) begin
             web <= 1;
                 case(address_type)
                     DIRECT: begin //DIRETO

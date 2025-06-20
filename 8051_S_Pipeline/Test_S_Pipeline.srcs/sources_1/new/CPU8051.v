@@ -3,12 +3,16 @@
 module CPU8051(
     input clk, 
     input reset,
-    // Alterado
+    // Bus
     output [7:0] b_addr,          
     output [7:0] b_data_out,      
     output b_re,                  
     output b_we,                  
-    input [7:0] b_data_in         
+    input [7:0] b_data_in,
+    // IC Signals    
+    output done,        
+    input trigger_it,
+    input [15:0] isr_addr    
 );
 
     // FSM control signals
@@ -17,6 +21,9 @@ module CPU8051(
     wire execute_en;   
     wire mem_acess_en;    
     wire writeback_en;
+    wire irq1_en;
+    wire irq2_en;
+    wire irq3_en;
     // PC, IR, Branch
     wire [15:0] PC;
     wire [15:0] PC_out;
@@ -51,6 +58,10 @@ module CPU8051(
     cpu_fsm fsm (
         .clk(clk),
         .reset(reset),
+        .trigger(trigger_it),
+        .irq1_en(irq1_en),
+        .irq2_en(irq2_en),
+        .irq3_en(irq3_en),
         .fetch_en(fetch_en),
         .decode_en(decode_en),
         .mem_acess_en(mem_acess_en),
@@ -72,6 +83,7 @@ module CPU8051(
         .en_fetch(fetch_en),
         .en_execute(execute_en),
         .writeback_en(writeback_en),
+        .isr_en(irq2_en),
         .PC_out(PC_out),
         .PC(PC),
         .branch_en(branch_en_),
@@ -87,6 +99,8 @@ module CPU8051(
         .writeback_en(writeback_en),
         .reg_write(reg_write),
         .mem_acess_en(mem_acess_en),
+        .irq_en_r(irq1_en),
+        .irq_en_w(irq3_en),
         .IR1(IR_1),
         .ACC_we(ACC_we), .SP_we(SP_we), .DPL_we(DPL_we), .DPH_we(DPH_we), .B_we(B_we), .PSW_we(PSW_we),
         .reg_read(reg_read),
@@ -109,18 +123,20 @@ module CPU8051(
         .mux_select2(mux_select2),
         .absol_address(absol_address),
         .alu(alu),
-        // Alterado
+        .done_isr(done),
         .b_addr(b_addr),
         .b_data_out(b_data_out),
         .b_we(b_we),
         .b_re(b_re),
-        .b_data_in(b_data_in)
+        .b_data_in(b_data_in),
+        .irq_addr(isr_addr)
     );
 
     execute execute_unit (
         .clk(clk),
         .reset(reset),
         .en_execute(execute_en),
+        .isr_en(irq2_en),
         .PC(PC),
         .alu(alu),
         .IR1(IR_1),
@@ -147,6 +163,7 @@ module CPU8051(
         .clk(clk),
         .reset(reset),
         .writeback_en(writeback_en),
+        .isr_en(irq3_en),
         .address(address),
         .address1(address1),
         .address_type(address_type),

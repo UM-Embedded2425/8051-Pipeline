@@ -1,5 +1,5 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../PLLtest.gen/sources_1/ip/clk_wiz_0" --include "../../../../../Test_S_Pipeline.ip_user_files/ipstatic" \
+verilog xil_defaultlib  --include "../../../../../Test_S_Pipeline.ip_user_files/ipstatic" \
 "top_tb_time_impl.v" \
 "../../../../../Test_S_Pipeline.srcs/sim_1/new/top_tb.v" \
 

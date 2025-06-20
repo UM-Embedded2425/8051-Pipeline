@@ -26,10 +26,16 @@ module top_tb();
     reg ps2_clk, ps2_data;
     wire hsync, vsync;
     wire [3:0] red, green, blue;
+    reg en0, en1, rx;
+    wire tx;
     
     top uC(
     .clk(clk),
     .rst(rst),
+    .en0(en0),
+    .en1(en1),
+    .rx(rx),
+    .tx(tx),
     .ps2_clk(ps2_clk),
     .ps2_data(ps2_data),
     .hsync(hsync),
@@ -45,6 +51,9 @@ module top_tb();
         rst = 1;
         ps2_clk = 1;
         ps2_data = 1;
+        en0 = 0; 
+        en1 = 0;
+        rx = 0;
         #10000
         rst = 0;
         #5000;
