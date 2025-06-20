@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"bus_tb_func_synth.v" \
+"../../../../../timer0.srcs/sim_1/new/bus_tb.v" \
+
+# Do not sort compile order
+nosort

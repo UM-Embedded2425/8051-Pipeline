@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun May 18 14:57:41 2025
+# Process ID         : 1650025
+# Current directory  : /home/user/Documents/Embedded/VGA/VGA/PLLtest.runs/synth_1
+# Command line       : vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : /home/user/Documents/Embedded/VGA/VGA/PLLtest.runs/synth_1/top.vds
+# Journal file       : /home/user/Documents/Embedded/VGA/VGA/PLLtest.runs/synth_1/vivado.jou
+# Running On         : user-GF65-Thin-10SER
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 4511.703 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16573 MB
+# Swap memory        : 21171 MB
+# Total Virtual      : 37745 MB
+# Available Virtual  : 17637 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

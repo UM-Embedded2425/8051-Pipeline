@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sources_1/new/custom_bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_bus
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sources_1/new/ps2_bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2_peripheral
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/sources_1/new/ps2_keyboard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2_keyboard
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sources_1/new/ps2_peripherals_showcase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2_peripherals_showcase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2bus
+WARNING: [VRFC 10-3248] data object 'in_data' is already declared [/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v:9]
+WARNING: [VRFC 10-9364] second declaration of 'in_data' is ignored [/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v:9]

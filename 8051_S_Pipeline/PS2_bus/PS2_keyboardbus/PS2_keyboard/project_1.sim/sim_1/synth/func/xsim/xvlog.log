@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.sim/sim_1/synth/func/xsim/ps2bus_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module custom_bus
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-311] analyzing module ps2_keyboard
+INFO: [VRFC 10-311] analyzing module ps2_peripheral
+INFO: [VRFC 10-311] analyzing module ps2_peripherals_showcase
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_v8_4_9
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_v8_4_9_synth
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_ramfifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_v13_2_11
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_v13_2_11_synth
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_memory
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_logic
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_status_flags_ss
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_reset_blk_ramfifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_logic
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_status_flags_ss
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2bus
+WARNING: [VRFC 10-3248] data object 'in_data' is already declared [/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v:9]
+WARNING: [VRFC 10-9364] second declaration of 'in_data' is ignored [/home/diana/Downloads/PS2_keyboardbus/PS2_keyboard/project_1.srcs/sim_1/new/ps2bus.v:9]
